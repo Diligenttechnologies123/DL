@@ -1,350 +1,407 @@
 .introduction {
-    padding-top: 121px;
-    padding-bottom: 94px;
+  padding-top: 121px;
+  padding-bottom: 94px;
 }
 
 .intro {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .intro .ceo {
-    max-width: 882px;
-    padding-left: 68px;
+  max-width: 882px;
+  padding-left: 68px;
+  width: 55%;
+}
+.intro .ceoimage {
+  width: 43%;
+  max-width: 690px;
 }
 
 .ceo .para {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .ceo .para1 {
-    font-weight: 500;
-    font-style: italic;
-    padding-top: 12px;
+  font-weight: 500;
+  font-style: italic;
+  padding-top: 12px;
 }
 
 /* INTRODUcTION ENDS */
 
 /* PROFESSIONAL STARTS */
 .professional {
-    background-color: #3F3F3F;
-    padding-bottom: 32px;
+  background-color: #3f3f3f;
+  padding-bottom: 32px;
 }
 
 .professional h2 {
-    text-align: center;
-    margin: 0 auto;
-    color: white;
-    font-weight: 700;
-    padding: 63px 0;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+  padding: 63px 0;
 }
 
 .professional .main_team {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
 }
 
 .professional .main_team .image1 {
-    padding-right: 105px;
-    position: relative;
+  padding-right: 105px;
+  position: relative;
 }
 
 .professional .main_team .image1:last-child {
-    padding-right: 0px;
+  padding-right: 0px;
 }
 
 .professional .main_team .team_text {
-    width: 100%;
-    max-width: 331px;
-    backdrop-filter: blur(10px);
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    padding-left: 37px;
-    padding-bottom: 20px;
-    border-radius: 0px 0px 16px 16px;
+  width: 100%;
+  max-width: 331px;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding-left: 37px;
+  padding-bottom: 20px;
+  border-radius: 0px 0px 16px 16px;
 }
 
 .professional .row .image001 {
-    max-width: 331px;
-    position: relative;
-    margin-bottom: 31px;
+  max-width: 331px;
+  position: relative;
+  margin-bottom: 31px;
 }
 
 .professional .row .team_text {
-    width: 100%;
-    backdrop-filter: blur(10px);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding-left: 37px;
-    padding-bottom: 20px;
-    border-radius: 0px 0px 16px 16px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 37px;
+  padding-bottom: 20px;
+  border-radius: 0px 0px 16px 16px;
 }
 
 /* Professional ends */
 
 /* join starts */
 .join {
-    background-image: url('./../images/team/join_bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 67px 0;
+  background-image: url("./../images/team/join_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 67px 0;
 }
 
 .join .join_team {
-    background-color: black;
-    border-radius: 25px;
-    padding-bottom: 100px;
-    padding-top: 38px;
+  background-color: black;
+  border-radius: 25px;
+  padding-bottom: 100px;
+  padding-top: 38px;
 }
 
 .join .join_team h2 {
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 722px;
-    padding-bottom: 45px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 722px;
+  padding-bottom: 45px;
 }
 
 .join_form {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .join .join_team .join_form input {
-    background: transparent;
-    border: none;
-    color: white;
-    border-bottom: 2px solid gray;
-    margin-bottom: 60px;
-    margin-right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  border-bottom: 2px solid gray;
+  margin-bottom: 60px;
+  margin-right: 10px;
 }
 
 .join_form textarea {
-    background: transparent;
-    color: white;
-    width: 100%;
-    height: 100px;
+  background: transparent;
+  color: white;
+  width: 100%;
+  height: 100px;
+}
+
+.join .join_team .join_form form button {
+  color: white;
+  background-color: #d4a437;
+  padding: 10px 42px;
+  border-radius: 5px;
+  border: transparent;
+  margin-top: 15px;
 }
 
 /* Joins ends */
 
-
 /* Media quries */
 
+@media (max-width: 1440px) {
+  h2 {
+    font-size: 28px;
+  }
 
-@media(max-width:1440px) {
+  p {
+    font-size: 14px;
+  }
 
-    h2 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .intro .ceo {
-        max-width: 500px;
-        padding-left: 15px;
-    }
-    .professional .main_team .team_text {
-        width: unset;
-        padding-left: 20px;
-    }
-    .professional .row .team_text {
-        padding-left: 15px;
-        padding-bottom: 15px;
-    }
-    .join .join_team .join_form input {
-        max-width: 200px;
-    }
-    .form_image{
-        max-width: 364px;
-    }
-    .footer_line .list3 li {
-        max-width: 310px;
-      }
-
+  .intro .ceo {
+    max-width: 500px;
+    padding-left: 15px;
+    width: unset;
+  }
+  .intro .ceoimage {
+    width: unset;
+  }
+  .professional .main_team .team_text {
+    width: unset;
+    padding-left: 20px;
+  }
+  .professional .row .team_text {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .join .join_team .join_form input {
+    max-width: 200px;
+  }
+  .form_image {
+    max-width: 364px;
+  }
+  .footer_line .list3 li {
+    max-width: 310px;
+  }
 }
-@media(max-width:991px){
-    .intro{
-        flex-direction: column;
-    }
-    .intro .ceo {
-        max-width: 100%;
-        padding-left: unset;
-    }
-    .professional .main_team .team_text {
-        width: 100%;
-        max-width: 155px;
-        padding-left: 5px;
-        padding-bottom: 0;
-    }
-    .form_image {
-        max-width: 340px;
-    }
-    .professional .row .team_text {
-        padding-left: 5px;
-        padding-bottom: 0;
-    }
-    .join .join_team .join_form input {
-        max-width: 130px;
-}
-.footer_line .list3 li {
-    max-width: 244px;
+@media (max-width: 1024px) {
+  nav ul li a {
+    letter-spacing: 4px;
+  }
+  header nav .list ul li {
+    margin-right: 35px;
+    padding-top: 3px;
+  }
+  .intro .ceoimage {
+    max-width: unset;
+    padding-bottom: 25px;
   }
 }
 
-@media(max-width:768px){
-    h2{
-        font-size: 24px;
-    }
-    .clear {
-        display: block;
-    }
-    
-    .nav-mobile {
-        display: block;
-    }
-
-    nav {
-        width: 100%;
-
-    }
-
-    nav .list ul {
-        display: none;
-    }
-    header .header_logo {
-        margin-left: unset;
-    }
-
-    header nav .list ul {
-        display: block;
-        position: absolute;
-        width: 100%;
-        background-color: black;
-        left: 0;
-        text-align: center;
-        top: 87px;
-    }
-    nav ul li {
-        float: none;
-        margin-left: unset;
-
-    }
-
-    #nav-toggle {
-        position: absolute;
-        right: 14px;
-        top: 32px;
-        cursor: pointer;
-        padding: 10px 35px 16px 0px;
-    }
-
-    #nav-toggle span,
-    #nav-toggle span:before,
-    #nav-toggle span:after {
-        cursor: pointer;
-        border-radius: 1px;
-        height: 5px;
-        width: 35px;
-        background: white;
-        position: absolute;
-        display: block;
-        content: '';
-        transition: all 300ms ease-in-out;
-    }
-
-    #nav-toggle span:before {
-        top: -10px;
-    }
-
-    #nav-toggle span:after {
-        bottom: -10px;
-    }
-
-    #nav-toggle.active span {
-        background-color: transparent;
-    }
-
-    #nav-toggle.active span:before,
-    #nav-toggle.active span:after {
-        top: 0;
-    }
-
-    #nav-toggle.active span:before {
-        transform: rotate(45deg);
-    }
-
-    #nav-toggle.active span:after {
-        transform: rotate(-45deg);
-    }
-    header nav .list ul li{
-        margin-right: unset;
-    }
-    .intro .ceo {
-        text-align: center;
-    }
-    .professional .main_team .image1 {
-        padding-right: unset;
-        margin-bottom: 15px;
-    }
-    .professional .main_team .team_text {
-        width: 100%;
-        max-width: unset;
-        text-align: center;
-    }
-    .professional .main_team{
-        flex-direction: column;
-    }
-    .row{
-        text-align: center;
-        margin: 0 auto;
-    }
-    .join_form {
-        flex-direction: column;
-    }
-    form{
-        margin: 0 auto;
-    }
-    .join_form textarea {
-        max-width: 269px;
-        margin-bottom: 20px;
-      }
-      .form_image{
-        margin: 0 auto;
-      }
-      .footer_line {
-        flex-direction: column;
-        margin:  0 auto;
-        text-align: center;
-      }
-      .list3{
-        margin: 0 auto;
-      }
+@media (max-width: 991px) {
+  h2 {
+    font-size: 21px;
+  }
+  header nav .list ul li {
+    margin-right: 26px;
+    padding-top: 3px;
+  }
+  nav ul li a {
+    letter-spacing: 1px;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .intro .ceo {
+    max-width: 100%;
+    text-align: center;
+    padding-left: unset;
+  }
+  .professional .main_team .team_text {
+    width: 100%;
+    max-width: 155px;
+    padding-left: 5px;
+    padding-bottom: 0;
+  }
+  .form_image {
+    max-width: 340px;
+  }
+  .professional .row .team_text {
+    padding-left: 5px;
+    padding-bottom: 0;
+  }
+  .join .join_team .join_form input {
+    max-width: 130px;
+  }
+  .footer_line .list3 li {
+    max-width: 244px;
+  }
+  footer {
+    background-color: black;
+    padding: 45px 0;
+  }
+  .footer_line li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
-@media(max-width:425px){
-h2{
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+  .clear {
+    display: block;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav .list ul {
+    display: none;
+  }
+  header .header_logo {
+    margin-left: unset;
+  }
+
+  header nav .list ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    text-align: center;
+    top: 87px;
+  }
+  nav ul li {
+    float: none;
+    margin-left: unset;
+  }
+
+  #nav-toggle {
+    position: absolute;
+    right: 14px;
+    top: 32px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+
+  #nav-toggle span:before {
+    top: -10px;
+  }
+
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+
+  #nav-toggle.active span:before,
+  #nav-toggle.active span:after {
+    top: 0;
+  }
+
+  #nav-toggle.active span:before {
+    transform: rotate(45deg);
+  }
+
+  #nav-toggle.active span:after {
+    transform: rotate(-45deg);
+  }
+  header nav .list ul li {
+    margin-right: unset;
+  }
+  .intro .ceo {
+    text-align: center;
+  }
+  .professional .main_team .image1 {
+    padding-right: unset;
+    max-width: 400px;
+    margin: 14px auto;
+  }
+  .professional h2 {
+    padding: 28px 0;
+  }
+  .professional .main_team .team_text {
+    width: 100%;
+    max-width: unset;
+    text-align: center;
+  }
+  .professional .main_team {
+    flex-direction: column;
+  }
+  .row {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .join_form {
+    flex-direction: column;
+  }
+  form {
+    text-align: center;
+
+    margin: 0 auto;
+  }
+  .join_form textarea {
+    max-width: 269px;
+    margin-bottom: 20px;
+  }
+  .form_image {
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .footer_line {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .list3 {
+    margin: 0 auto;
+  }
+  footer .footer_line .footer_logo img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  h2 {
     font-size: 22px;
+  }
 }
-}
-@media(max-width:375px){
-    h2{
-        font-size: 20px;
-    }
-    form {
-        text-align: center;
-    }
-    .join .join_team .join_form input {
-        max-width: 215px;
-        margin-bottom: 25px;
-    }
-    .join_form textarea {
-        max-width: 229px;
-        height: 180px;
-      }
+@media (max-width: 375px) {
+  h2 {
+    font-size: 20px;
+  }
+  form {
+    text-align: center;
+  }
+  .join .join_team .join_form input {
+    max-width: 215px;
+    margin-bottom: 25px;
+  }
+  .join_form textarea {
+    max-width: 229px;
+    height: 180px;
+  }
 }
