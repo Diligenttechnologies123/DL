@@ -1,116 +1,177 @@
 h3 {
-    font-size: 49px;
+  font-size: 49px;
 }
 
 h4 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 /* Dedicated  */
 
 .dedicated {
-    background-image: url('./../images/about/bg.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 83px;
+  background-image: url("./../images/about/bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 83px;
 }
 
 .dedicated .dedicated_image {
-    max-width: 427px;
-    margin: 0 auto;
-    padding-top: 172px;
-    padding-bottom: 49px;
+  max-width: 427px;
+  margin: 0 auto;
+  padding-top: 172px;
+  padding-bottom: 49px;
 }
 
 .dedicated h1 {
-    text-align: center;
-    max-width: 1185px;
-    color: white;
-    font-weight: 700;
-    margin: 0 auto;
-    padding-bottom: 49px;
+  text-align: center;
+  max-width: 1185px;
+  color: white;
+  font-weight: 700;
+  margin: 0 auto;
+  padding-bottom: 49px;
 }
 
 .dedicated .build {
-    backdrop-filter: blur(85px);
-    padding-bottom: 51px;
-    border-radius: 35px;
-    display: flex;
+  backdrop-filter: blur(85px);
+  padding-bottom: 51px;
+  border-radius: 35px;
+  display: flex;
 }
 
-
 .build ul li {
-    color: white;
-    padding-left: 70px;
-    padding-top: 45px;
+  color: white;
+  padding-left: 70px;
+  padding-top: 45px;
 }
 
 .build ul li i {
-    color: #D4A437;
-    padding-right: 10px;
+  color: #d4a437;
+  padding-right: 10px;
 }
-
 
 /* CLient */
 .clinet {
-    padding-top: 81px;
-    padding-top: 97px;
+  padding-top: 81px;
+  padding-top: 97px;
 }
 
 .clinet h2 {
-    font-weight: 700;
-    margin: 0 auto;
-    padding-bottom: 38px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding-bottom: 38px;
 }
 
 .counter {
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 }
 
 .counter .counter1 {
-    padding-left: 190px;
-    padding-right: 190px;
-    border: 10px solid red;
+  padding-left: 190px;
+  padding-right: 190px;
+  border: 10px solid red;
 }
 .counter_text {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    padding-bottom: 97px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-bottom: 97px;
 }
 
 /* Client */
 /* Business */
 .business {
-    background-image: url('./../images/about/bgg.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("./../images/about/bgg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .business h1 {
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    padding-top: 82px;
-    padding-bottom: 27px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding-top: 82px;
+  padding-bottom: 27px;
 }
 
 .business .business_button {
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 55px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 55px;
 }
 
 .business_button a {
-    display: inline-block;
-    color: white;
-    background: #D4A437;
-    font-size: 32px;
-    padding: 17px 75px;
-    border-radius: 15px;
+  display: inline-block;
+  color: white;
+  background: #d4a437;
+  font-size: 32px;
+  padding: 17px 75px;
+  border-radius: 15px;
 }
 
 /* Business */
+
+/* circle bar starts */
+.circle-bar {
+  text-align: center;
+  margin: 20px 0px 60px 0px;
+}
+.circle-bar .our-clients h3 {
+  padding: 66px 0px 33px 0px;
+}
+.progressbar {
+  display: inline-block;
+  width: 317px;
+  margin: 0px 9px;
+}
+
+.circle {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.circle-bar .progressbar p {
+  padding-top: 30px;
+  color: #d4a437;
+  text-align: center;
+
+  font-size: 32px;
+}
+
+.circle canvas {
+  vertical-align: middle;
+}
+
+.circle div {
+  position: absolute;
+  top: 108px;
+
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 49px;
+  color: #d4a437;
+}
+canvas {
+  height: 250px !important;
+  width: 250px !important;
+}
+
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+}
+
+/* circle bar ends */
