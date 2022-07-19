@@ -42,7 +42,7 @@ h1 {
 h2 {
   font-size: 32px;
 }
-h3{
+h3 {
   font-size: 25px;
 }
 
@@ -53,7 +53,6 @@ p {
 .p1 {
   font-size: 14px;
 }
-
 
 h1 span,
 h2 span,
@@ -172,9 +171,9 @@ nav ul li a:hover {
 }
 .banner_text .text_1 {
   max-width: 335px;
-    background-color: black;
-    color: white;
-    margin-top: 11px;
+  background-color: black;
+  color: white;
+  margin-top: 11px;
 }
 .banner_text .text_1 h2 {
   padding-left: 7px;
@@ -202,12 +201,10 @@ nav ul li a:hover {
   padding-top: 3px;
 }
 .banner_text .text_4 {
- 
   max-width: 552px;
   background-color: black;
   color: white;
   padding-bottom: 2px;
-
 }
 .banner_text .text_4 h2 {
   padding-left: 6px;
@@ -224,7 +221,7 @@ nav ul li a:hover {
   max-width: 85px;
   position: absolute;
   top: 338px;
-    right: 302px;
+  right: 302px;
 }
 .banner_images .gear .smile {
   max-width: 48px;
@@ -243,7 +240,6 @@ nav ul li a:hover {
   position: absolute;
   top: 165px;
   right: 259px;
-
 }
 .banner_images .gear .clockwise {
   max-width: 70px;
@@ -254,10 +250,9 @@ nav ul li a:hover {
 .banner_images .gear .anticlock {
   max-width: 61px;
   position: absolute;
-  
+
   top: 382px;
   right: 289px;
-
 }
 
 .banner_images .dashboard .screen {
@@ -272,13 +267,12 @@ nav ul li a:hover {
   position: absolute;
   top: 180px;
   right: 614px;
-
 }
 .banner_images .dashboard .dots {
   max-width: 131px;
   position: absolute;
   top: 289px;
-    right: 426px;
+  right: 426px;
 }
 .banner_images .dashboard .mail {
   max-width: 38px;
@@ -291,7 +285,6 @@ nav ul li a:hover {
   position: absolute;
   top: 337px;
   right: 473px;
-
 }
 .banner_images .dashboard .profile {
   max-width: 38px;
@@ -302,10 +295,9 @@ nav ul li a:hover {
 .banner_images .dashboard .signals {
   max-width: 38px;
   position: absolute;
- 
+
   top: 383px;
   right: 393px;
-
 }
 .banner_images .dashboard .stats {
   max-width: 221px;
@@ -316,25 +308,22 @@ nav ul li a:hover {
 .banner_images .dashboard .circle {
   max-width: 66px;
   position: absolute;
-  
+
   top: 473px;
   right: 361px;
-
 }
 .banner_images .dashboard .statsp {
   max-width: 27px;
   position: absolute;
-  
+
   top: 493px;
   right: 381px;
-
 }
 .banner_images .dashboard .www {
   max-width: 172px;
   position: absolute;
   top: 356px;
-    right: 548px;
-
+  right: 548px;
 }
 .banner_images .dashboard .mailblock {
   max-width: 128px;
@@ -346,14 +335,13 @@ nav ul li a:hover {
   max-width: 203px;
   position: absolute;
   top: 201px;
-    right: 607px;
+  right: 607px;
 }
 .banner_images .dashboard .view {
   max-width: 61px;
   position: absolute;
   top: 243px;
-    right: 735px;
-
+  right: 735px;
 }
 .banner_images .dashboard .magnifier {
   max-width: 134px;
@@ -403,13 +391,13 @@ nav ul li a:hover {
 }
 .technology .tech_left h1 {
   color: white;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 181px;
-    padding-bottom: 15px;
-    font-weight: 700;
-    padding-right: 50px;
-    letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 181px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  padding-right: 50px;
+  letter-spacing: 1px;
 }
 .tech_left .p2 {
   text-align: center;
@@ -417,9 +405,8 @@ nav ul li a:hover {
   width: 100%;
   max-width: 722px;
   color: white;
-  
-  padding-bottom: 19px;
 
+  padding-bottom: 19px;
 }
 .tech .tech_right img {
   height: 100vh;
@@ -488,14 +475,17 @@ nav ul li a:hover {
 
 /* solution starts */
 .solution {
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   background-color: black;
+}
+.solution-svg {
+  padding-top: 50px;
 }
 .problem_solution {
   display: flex;
 }
-.solution .problem h2 {
+/* .solution .problem h2 {
   font-weight: 700;
   width: 100%;
   max-width: 248px;
@@ -539,7 +529,6 @@ nav ul li a:hover {
   left: 179px;
 }
 .solutions_left .path2 p {
-
   font-weight: 700;
   position: absolute;
 
@@ -553,7 +542,6 @@ nav ul li a:hover {
   left: 147px;
 }
 .solutions_left .path3 p {
-
   font-weight: 700;
   position: absolute;
   top: 48px;
@@ -566,7 +554,6 @@ nav ul li a:hover {
   left: 167px;
 }
 .solutions_left .path4 p {
-
   font-weight: 700;
   position: absolute;
   top: 34px;
@@ -578,7 +565,6 @@ nav ul li a:hover {
   bottom: 141px;
 }
 .solutions_left .path5 p {
-
   font-weight: 700;
   position: absolute;
   top: 43px;
@@ -590,7 +576,6 @@ nav ul li a:hover {
   bottom: 0;
 }
 .solutions_left .path6 p {
-
   font-weight: 700;
   position: absolute;
   top: 43px;
@@ -631,7 +616,6 @@ nav ul li a:hover {
   right: 314px;
 }
 .solutions_right .path7 p {
-
   font-weight: 700;
   position: absolute;
   top: 30px;
@@ -643,7 +627,6 @@ nav ul li a:hover {
   right: 178px;
 }
 .solutions_right .path8 p {
-
   font-weight: 700;
   position: absolute;
   top: 66px;
@@ -655,7 +638,6 @@ nav ul li a:hover {
   right: 147px;
 }
 .solutions_right .path9 p {
-
   font-weight: 700;
   position: absolute;
 
@@ -668,7 +650,6 @@ nav ul li a:hover {
   right: 168px;
 }
 .solutions_right .path10 p {
-
   font-weight: 700;
   position: absolute;
   top: 30px;
@@ -680,7 +661,6 @@ nav ul li a:hover {
   right: 176px;
 }
 .solutions_right .path11 p {
-
   font-weight: 700;
   position: absolute;
   top: 43px;
@@ -692,13 +672,12 @@ nav ul li a:hover {
   right: 323px;
 }
 .solutions_right .path12 p {
-
   font-weight: 700;
   position: absolute;
 
   top: 47px;
   right: 67px;
-}
+} */
 /* solution ends */
 
 /* Services starts */
@@ -883,8 +862,6 @@ nav ul li a:hover {
 }
 /* services ends */
 
-
-
 /* <!-- Together starts --> */
 .together {
   background-image: url(./../images/together.png);
@@ -950,31 +927,31 @@ nav ul li a:hover {
 .upper_images .indus_image1 {
   padding-right: 59px;
 }
-.upper_images .indus_image1 img:hover{
+.upper_images .indus_image1 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .upper_images .indus_image2 {
   padding-right: 59px;
 }
-.upper_images .indus_image2 img:hover{
+.upper_images .indus_image2 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .upper_images .indus_image3 {
   padding-right: 59px;
 }
-.upper_images .indus_image3 img:hover{
+.upper_images .indus_image3 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .upper_images .indus_image4 {
   padding-right: 59px;
 }
-.upper_images .indus_image4 img:hover{
+.upper_images .indus_image4 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .industry .lower_images {
   display: flex;
@@ -986,30 +963,30 @@ nav ul li a:hover {
 .lower_images .indus_image6 {
   padding-right: 59px;
 }
-.upper_images .indus_image6 img:hover{
+.upper_images .indus_image6 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .lower_images .indus_image7 {
   padding-right: 59px;
 }
-.upper_images .indus_image7 img:hover{
+.upper_images .indus_image7 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .lower_images .indus_image8 {
   padding-right: 59px;
 }
-.upper_images .indus_image8 img:hover{
+.upper_images .indus_image8 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .lower_images .indus_image9 {
   padding-right: 59px;
 }
-.upper_images .indus_image9 img:hover{
+.upper_images .indus_image9 img:hover {
   color: white;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 /*   <!-- industry ends --> */
 
@@ -1064,7 +1041,7 @@ nav ul li a:hover {
   padding-bottom: 92px;
 }
 .help {
-  background-image: url('./../images/bg.png');
+  background-image: url("./../images/bg.png");
   background-color: #2a2a2a;
   padding-bottom: 43px;
 }
@@ -1088,34 +1065,32 @@ nav ul li a:hover {
 /* Clients ends */
 
 /* footer */
-footer{
+footer {
   background-color: black;
   padding: 91px 0;
 }
-.footer_line{
+.footer_line {
   display: flex;
   justify-content: space-between;
 }
-.footer_logo{
+.footer_logo {
   padding-top: 36px;
 }
-.footer_line .list1 li{
+.footer_line .list1 li {
   padding-top: 36px;
 }
-.footer_line .list2 li{
+.footer_line .list2 li {
   padding-top: 36px;
 }
-.footer_line li a{
+.footer_line li a {
   color: white;
   font-size: 18px;
   font-weight: 700;
 }
 
-.footer_line .list3 li{
+.footer_line .list3 li {
   padding-top: 36px;
   max-width: 500px;
 }
-
-
 
 /* footer */

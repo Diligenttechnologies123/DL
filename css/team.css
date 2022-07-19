@@ -358,9 +358,8 @@
   .join_form {
     flex-direction: column;
   }
-  form {
+  .join_form form {
     text-align: center;
-
     margin: 0 auto;
   }
   .join_form textarea {
