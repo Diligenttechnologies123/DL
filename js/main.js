@@ -31,6 +31,14 @@ $(document).ready(function(){
     });
 })
 
+//change the active class
+$(document).ready(function(){
+  $('.section-bullets li a').click(function(){
+    $('.section-bullets li a.active').removeClass('active');
+    $(this).addClass('active');
+  })
+});
+
 
 
 

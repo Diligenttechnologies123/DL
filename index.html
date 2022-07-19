@@ -19,7 +19,7 @@
 <body>
   <!-- header starts here -->
 
-  <header>
+  <header id="header">
     <div class="container">
     <nav>
       <div class="header_logo">
@@ -44,128 +44,286 @@
 
   <!-- header ends here -->
 
+  <ul class="section-bullets">
+    <li><a href="#header" class="active"></a></li>
+    <li><a href="#section2"></a></li>
+    <li><a href="#section5"></a></li>
+    <li><a href="#section3"></a></li>
+    <li><a href="#section4"></a></li>
+    <li><a href="#section6"></a></li>
+  </ul>
+
   <!-- Banner section starts-->
-  <section class="banner" id="section1">
-      <div class="banner_main">
-        <div class="banner_text">
-          <h1>
-            Dedicated
-            <span>D<span class="e">e</span>v<span class="e">e</span>lopm<span class="e">e</span>nt</span>
-            Center
-          </h1>
-          <div class="text_1">
-            <h2>Long-term strategy</h2>
+  <section class="bannerSection" id="bannerSection">
+    <div class="container">
+      <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-last order-sm-last order-md-first order-lg-first">
+          <div class="banner_text">
+            <h1>
+              Dedicated
+              <span>D<span class="e">e</span>v<span class="e">e</span>lopm<span class="e">e</span>nt</span>
+              Center
+            </h1>
+            <div class="text_1">
+              <h2>Long-term strategy</h2>
+            </div>
+            <div class="text_2">
+              <h2>Complex projects</h2>
+            </div>
+            <div class="text_3">
+              <h2>Team augmentation per your request</h2>
+            </div>
+            <div class="text_4">
+              <h2>Expertise tailored to your needs</h2>
+            </div>
           </div>
-          <div class="text_2">
-            <h2>Complex projects</h2>
-          </div>
-          <div class="text_3">
-            <h2>Team augmentation per your request</h2>
-          </div>
-          <div class="text_4">
-            <h2>Expertise tailored to your needs</h2>
-          </div>
+
         </div>
-        <div class="banner_images">
-          <div class="gear">
-            <div class="gear1">
-              <img src="./images/gear1.webp" alt="gear1" />
-            </div>
-            <div class="gear2">
-              <img src="./images/gear2.webp" alt="gear2" />
-            </div>
-            <div class="smile">
-              <img src="./images/smile.webp" alt="smile" />
-            </div>
-            <div class="heart">
-              <img src="./images/heart.webp" alt="heart" />
-            </div>
-            <div class="dotscircle">
-              <img src="./images/dottedcircle.webp" alt="dotscircle" />
-            </div>
-            <div class="clockwise">
-              <img src="./images/clockwise.webp" alt="clockwise" />
-            </div>
-            <div class="anticlock">
-              <img src="./images/anticlockwise.webp" alt="anticlock" />
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="img-wrap-outer">
+            <div class="img-wrap-inner">
+              <div class="screen">
+                <img src="/images/herosection1.svg"  class="img-responsive" />
+              </div>
+              <!-- <div class="gear1">
+                <img src="./images/gear1.webp" class="img-responsive w-25" alt="gear1" />
+              </div> -->
+
             </div>
           </div>
-          <div class="dashboard">
-            <div class="screen">
-              <img src="./images/screen.webp" alt="screen" />
+          <!-- <div class="banner_main">
+            <div class="banner_images">
+              <div class="gear">
+                <div class="gear1">
+                  <img src="./images/gear1.webp" alt="gear1" />
+                </div>
+                <div class="gear2">
+                  <img src="./images/gear2.webp" alt="gear2" />
+                </div>
+                <div class="smile">
+                  <img src="./images/smile.webp" alt="smile" />
+                </div>
+                <div class="heart">
+                  <img src="./images/heart.webp" alt="heart" />
+                </div>
+                <div class="dotscircle">
+                  <img src="./images/dottedcircle.webp" alt="dotscircle" />
+                </div>
+                <div class="clockwise">
+                  <img src="./images/clockwise.webp" alt="clockwise" />
+                </div>
+                <div class="anticlock">
+                  <img src="./images/anticlockwise.webp" alt="anticlock" />
+                </div>
+              </div>
+              <div class="dashboard">
+                <div class="screen">
+                  <img src="./images/screen.webp" alt="screen" />
+                </div>
+                <div class="yellowblock">
+                  <img src="./images/yellowpinkblock.webp" alt="yellowpinkblock" />
+                </div>
+                <div class="dots">
+                  <img src="./images/dots.webp" alt="dots" />
+                </div>
+                <div class="mail">
+                  <img src="./images/mail.webp" alt="mail" />
+                </div>
+                <div class="setting">
+                  <img src="./images/setting.webp" alt="stteing" />
+                </div>
+                <div class="profile">
+                  <img src="./images/profile.webp" alt="profile" />
+                </div>
+                <div class="signals">
+                  <img src="./images/signal.webp" alt="signal" />
+                </div>
+                <div class="stats">
+                  <img src="./images/yellowprofileblock.webp" alt="yellowprofileblock" />
+                </div>
+                <div class="circle">
+                  <img src="./images/yellowcirle.webp" alt="yellowcirle" />
+                </div>
+                <div class="statsp">
+                  <img src="./images/yellowprofile.webp" alt="yellowprofile" />
+                </div>
+                <div class="www">
+                  <img src="./images/www.webp" alt="www" />
+                </div>
+                <div class="mailblock">
+                  <img src="./images/mailblock.webp" alt="mailblock" />
+                </div>
+                <div class="block">
+                  <img src="./images/block.webp" alt="block" />
+                </div>
+                <div class="view">
+                  <img src="./images/view.webp" alt="view" />
+                </div>
+                <div class="magnifier">
+                  <img src="./images/magnifier.webp" alt="magnifier" />
+                </div>
+              </div>
             </div>
-            <div class="yellowblock">
-              <img src="./images/yellowpinkblock.webp" alt="yellowpinkblock" />
-            </div>
-            <div class="dots">
-              <img src="./images/dots.webp" alt="dots" />
-            </div>
-            <div class="mail">
-              <img src="./images/mail.webp" alt="mail" />
-            </div>
-            <div class="setting">
-              <img src="./images/setting.webp" alt="stteing" />
-            </div>
-            <div class="profile">
-              <img src="./images/profile.webp" alt="profile" />
-            </div>
-            <div class="signals">
-              <img src="./images/signal.webp" alt="signal" />
-            </div>
-            <div class="stats">
-              <img src="./images/yellowprofileblock.webp" alt="yellowprofileblock" />
-            </div>
-            <div class="circle">
-              <img src="./images/yellowcirle.webp" alt="yellowcirle" />
-            </div>
-            <div class="statsp">
-              <img src="./images/yellowprofile.webp" alt="yellowprofile" />
-            </div>
-            <div class="www">
-              <img src="./images/www.webp" alt="www" />
-            </div>
-            <div class="mailblock">
-              <img src="./images/mailblock.webp" alt="mailblock" />
-            </div>
-            <div class="block">
-              <img src="./images/block.webp" alt="block" />
-            </div>
-            <div class="view">
-              <img src="./images/view.webp" alt="view" />
-            </div>
-            <div class="magnifier">
-              <img src="./images/magnifier.webp" alt="magnifier" />
-            </div>
-          </div>
+          </div> -->
+        </div>
+
         </div>
       </div>
+    </div>
   </section>
+
+
+
+
+
+  <!-- <section class="banner" id="section1">
+      <div class="banner_main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-last order-sm-last order-md-first order-lg-first">
+              <div class="banner_text">
+                <h1>
+                  Dedicated
+                  <span>D<span class="e">e</span>v<span class="e">e</span>lopm<span class="e">e</span>nt</span>
+                  Center
+                </h1>
+                <div class="text_1">
+                  <h2>Long-term strategy</h2>
+                </div>
+                <div class="text_2">
+                  <h2>Complex projects</h2>
+                </div>
+                <div class="text_3">
+                  <h2>Team augmentation per your request</h2>
+                </div>
+                <div class="text_4">
+                  <h2>Expertise tailored to your needs</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="banner_images">
+                <div class="gear">
+                  <div class="gear1">
+                    <img src="./images/gear1.webp" alt="gear1" />
+                  </div>
+                  <div class="gear2">
+                    <img src="./images/gear2.webp" alt="gear2" />
+                  </div>
+                  <div class="smile">
+                    <img src="./images/smile.webp" alt="smile" />
+                  </div>
+                  <div class="heart">
+                    <img src="./images/heart.webp" alt="heart" />
+                  </div>
+                  <div class="dotscircle">
+                    <img src="./images/dottedcircle.webp" alt="dotscircle" />
+                  </div>
+                  <div class="clockwise">
+                    <img src="./images/clockwise.webp" alt="clockwise" />
+                  </div>
+                  <div class="anticlock">
+                    <img src="./images/anticlockwise.webp" alt="anticlock" />
+                  </div>
+                </div>
+                <div class="dashboard">
+                  <div class="screen">
+                    <img src="./images/screen.webp" alt="screen" />
+                  </div>
+                  <div class="yellowblock">
+                    <img src="./images/yellowpinkblock.webp" alt="yellowpinkblock" />
+                  </div>
+                  <div class="dots">
+                    <img src="./images/dots.webp" alt="dots" />
+                  </div>
+                  <div class="mail">
+                    <img src="./images/mail.webp" alt="mail" />
+                  </div>
+                  <div class="setting">
+                    <img src="./images/setting.webp" alt="stteing" />
+                  </div>
+                  <div class="profile">
+                    <img src="./images/profile.webp" alt="profile" />
+                  </div>
+                  <div class="signals">
+                    <img src="./images/signal.webp" alt="signal" />
+                  </div>
+                  <div class="stats">
+                    <img src="./images/yellowprofileblock.webp" alt="yellowprofileblock" />
+                  </div>
+                  <div class="circle">
+                    <img src="./images/yellowcirle.webp" alt="yellowcirle" />
+                  </div>
+                  <div class="statsp">
+                    <img src="./images/yellowprofile.webp" alt="yellowprofile" />
+                  </div>
+                  <div class="www">
+                    <img src="./images/www.webp" alt="www" />
+                  </div>
+                  <div class="mailblock">
+                    <img src="./images/mailblock.webp" alt="mailblock" />
+                  </div>
+                  <div class="block">
+                    <img src="./images/block.webp" alt="block" />
+                  </div>
+                  <div class="view">
+                    <img src="./images/view.webp" alt="view" />
+                  </div>
+                  <div class="magnifier">
+                    <img src="./images/magnifier.webp" alt="magnifier" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        
+
+
+
+
+
+      </div>
+  </section> -->
 
   <!-- Banner section ends -->
 
   <!-- Work section starts -->
   <section class="work" id="section2">
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
+          <div class="work_image">
+            <img src="./images/work.png" alt="work" />
+          </div>
+        </div>
 
-      <div class="work_image">
-        <img src="./images/work.png" alt="work" />
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-6 px-0">
+          <div class="work_us">
+            <h2>Why Work With Us</h2>
+            <p class="p1"><i class="fa fa-right-long"></i>Professional team</p>
+            <p class="p1">
+              <i class="fa fa-right-long"></i>No time-zone difference
+            </p>
+            <p class="p1"><i class="fa fa-right-long"></i>Reduce IT expenses</p>
+            <p class="p1">
+              <i class="fa fa-right-long"></i>Direct contact with your team
+            </p>
+            <p class="p1"><i class="fa fa-right-long"></i>3-week trial period</p>
+            <p class="p1"><i class="fa fa-right-long"></i>Mature processes</p>
+            <p class="p1"><i class="fa fa-right-long"></i>Key areas of expertise</p>
+            <p class="p1"><i class="fa fa-right-long"></i>English proficienc</p>
+            <p class="p1"><i class="fa fa-right-long"></i>Your safe staffing</p>
+            <p class="p1"><i class="fa fa-right-long"></i>Guaranteed data safety</p>
+          </div>
+        </div>
       </div>
-      <div class="work_us">
-        <h2>Why Work With Us</h2>
-        <p class="p1"><i class="fa fa-right-long"></i>Professional team</p>
-        <p class="p1">
-          <i class="fa fa-right-long"></i>No time-zone difference
-        </p>
-        <p class="p1"><i class="fa fa-right-long"></i>Reduce IT expenses</p>
-        <p class="p1">
-          <i class="fa fa-right-long"></i>Direct contact with your team
-        </p>
-        <p class="p1"><i class="fa fa-right-long"></i>3-week trial period</p>
-        <p class="p1"><i class="fa fa-right-long"></i>Mature processes</p>
-        <p class="p1"><i class="fa fa-right-long"></i>Key areas of expertise</p>
-        <p class="p1"><i class="fa fa-right-long"></i>English proficienc</p>
-        <p class="p1"><i class="fa fa-right-long"></i>Your safe staffing</p>
-        <p class="p1"><i class="fa fa-right-long"></i>Guaranteed data safety</p>
-      </div>
+    </div>
+
+      
+      
 
   </section>
 
@@ -470,7 +628,10 @@
   <section class="client">
     <h2>Official client reviews</h2>
     </div>
-    <div class="hero-slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="hero-slider">
 
 
       <div class="clients">
@@ -542,6 +703,10 @@
         </div>
       </div>
     </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="container">
 
     <div class="testimonals">
@@ -667,6 +832,11 @@
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+
 </body>
 
 </html>
