@@ -262,46 +262,51 @@ nav ul li a:hover {
   display: inline-block;
 }
 .banner_text .text_1 {
-  max-width: 335px;
-  background-color: black;
   color: white;
   margin-top: 11px;
 }
 .banner_text .text_1 h2 {
   padding-left: 7px;
   padding-bottom: 4px;
+  background-color: black;
+  display: inline-block;
+  padding-right: 20px;
 }
 .banner_text .text_2 {
-  max-width: 335px;
-  background-color: black;
   color: white;
   margin-top: 3px;
 }
 .banner_text .text_2 h2 {
   padding-left: 5px;
   padding-bottom: 4px;
+  background-color: black;
+  display: inline-block;
+  padding-right: 54px;
 }
 .banner_text .text_3 {
-  max-width: 643px;
-  background-color: black;
   color: white;
   margin-top: 1px;
+  margin-bottom: 4px;
 }
 .banner_text .text_3 h2 {
   padding-left: 6px;
   padding-bottom: 4px;
   padding-top: 3px;
+  background-color: black;
+  display: inline-block;
+  padding-right: 20px;
 }
 .banner_text .text_4 {
-  max-width: 552px;
-  background-color: black;
   color: white;
   padding-bottom: 2px;
 }
 .banner_text .text_4 h2 {
   padding-left: 6px;
+  background-color: black;
   padding-bottom: 6px;
   margin-top: -3px;
+  display: inline-block;
+  padding-right: 30px;
 }
 .banner_images .gear1 {
   max-width: 125px;
@@ -442,14 +447,23 @@ nav ul li a:hover {
   right: 574px;
 }
 
+.img-wrap-inner .screen {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
 /* Banner ends */
 
 /* Work strats */
 .work {
-  display: flex;
+  /* display: flex; */
   background-color: black;
 }
-.work .work_us h2 {
+.work-with-us {
+  display: flex;
+  align-items: center;
+}
+.work-with-us .work .work_us h2 {
   color: white;
   font-weight: 700;
   padding-top: 270px;
@@ -457,11 +471,16 @@ nav ul li a:hover {
   letter-spacing: 1px;
   padding-bottom: 23px;
 }
+.work .text-inner {
+  padding-left: 120px;
+}
 .work p {
-  padding-left: 121px;
   color: white;
   padding-bottom: 7px;
   letter-spacing: 2px;
+}
+.work .text-inner h2 {
+  color: white;
 }
 
 .work p i {
@@ -476,6 +495,7 @@ nav ul li a:hover {
 .technology {
   background-color: black;
   display: flex;
+  align-items: center;
 }
 .tech_left {
   padding-left: 137px;
@@ -485,7 +505,7 @@ nav ul li a:hover {
   color: white;
   text-align: center;
   margin: 0 auto;
-  padding-top: 181px;
+  /* padding-top: 181px; */
   padding-bottom: 15px;
   font-weight: 700;
   padding-right: 50px;
@@ -568,7 +588,7 @@ nav ul li a:hover {
 /* solution starts */
 .solution {
   /* position: relative; */
-  height: 100vh;
+  /* height: 100vh; */
   background-color: black;
 }
 .solution-svg {
@@ -577,6 +597,14 @@ nav ul li a:hover {
 .problem_solution {
   display: flex;
 }
+
+/* .displayNone {
+  display: none;
+}
+.displayBlock {
+  display: block;
+} */
+
 /* .solution .problem h2 {
   font-weight: 700;
   width: 100%;
@@ -773,9 +801,31 @@ nav ul li a:hover {
 /* solution ends */
 
 /* Services starts */
+.img-wrap-inner {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.img-desc {
+  position: absolute;
+  background-color: rgb(255 255 255 / 25%);
+  backdrop-filter: blur(5px);
+  left: 0px;
+  bottom: 0px;
+  padding: 12px 15px;
+}
+
+.img-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.desc-text {
+  font-size: 14px;
+}
 .services {
   background-color: black;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .services h2 {
   font-weight: 700;
@@ -805,16 +855,18 @@ nav ul li a:hover {
   border-bottom-right-radius: 43px;
 }
 .services_images01 .service_text .p3 {
-  font-size: 9px;
+  font-size: 16px;
   padding-top: 7px;
   padding-left: 29px;
   font-weight: 700;
+  color: white;
 }
 .services_images01 .service_text .p4 {
-  font-size: 8px;
+  font-size: 14px;
   padding-bottom: 24px;
   padding-top: 8px;
   padding-left: 28px;
+  color: white;
 }
 .services .services_images01 .service_image1 {
   max-width: 547px;
@@ -831,14 +883,14 @@ nav ul li a:hover {
   border-bottom-right-radius: 43px;
 }
 .services_images01 .service_text1 .p3 {
-  font-size: 9px;
+  font-size: 16px;
   padding-top: 7px;
   padding-left: 29px;
   font-weight: 700;
   color: white;
 }
 .services_images01 .service_text1 .p4 {
-  font-size: 8px;
+  font-size: 14px;
   padding-bottom: 24px;
   padding-top: 8px;
   padding-left: 28px;
@@ -861,16 +913,18 @@ nav ul li a:hover {
   border-bottom-right-radius: 43px;
 }
 .services_images01 .service_text2 .p3 {
-  font-size: 9px;
+  font-size: 16px;
   padding-top: 7px;
   padding-left: 29px;
   font-weight: 700;
+  color: white;
 }
 .services_images01 .service_text2 .p4 {
-  font-size: 8px;
+  font-size: 14px;
   padding-bottom: 24px;
   padding-top: 8px;
   padding-left: 28px;
+  color: white;
 }
 .services .services_images02 .service_image3 {
   max-width: 535px;
@@ -886,16 +940,18 @@ nav ul li a:hover {
   border-bottom-right-radius: 43px;
 }
 .services_images02 .service_text3 .p3 {
-  font-size: 9px;
+  font-size: 16px;
   padding-top: 7px;
   padding-left: 29px;
   font-weight: 700;
+  color: white;
 }
 .services_images02 .service_text3 .p4 {
-  font-size: 8px;
+  font-size: 14px;
   padding-bottom: 24px;
   padding-top: 8px;
   padding-left: 28px;
+  color: white;
 }
 .services .services_images02 .service_image4 {
   max-width: 556px;
@@ -912,14 +968,14 @@ nav ul li a:hover {
   border-bottom-right-radius: 43px;
 }
 .services_images02 .service_text4 .p3 {
-  font-size: 9px;
+  font-size: 16px;
   padding-top: 7px;
   padding-left: 29px;
   font-weight: 700;
   color: white;
 }
 .services_images02 .service_text4 .p4 {
-  font-size: 8px;
+  font-size: 14px;
   padding-bottom: 24px;
   padding-top: 8px;
   padding-left: 28px;
@@ -941,16 +997,18 @@ nav ul li a:hover {
   border-bottom-right-radius: 43px;
 }
 .services_images02 .service_text5 .p3 {
-  font-size: 9px;
+  font-size: 16px;
   padding-top: 7px;
   padding-left: 29px;
   font-weight: 700;
+  color: white;
 }
 .services_images02 .service_text5 .p4 {
-  font-size: 8px;
+  font-size: 14px;
   padding-bottom: 24px;
   padding-top: 8px;
   padding-left: 28px;
+  color: white;
 }
 /* services ends */
 
@@ -1186,3 +1244,222 @@ footer {
 }
 
 /* footer */
+
+/* ====media queries====== */
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  header nav ul li a {
+    letter-spacing: 2px;
+  }
+  .img-wrap-inner .screen {
+    max-width: 537px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 28px;
+  }
+  .services_images01 .service_text .p4 {
+    font-size: 13px;
+    padding-bottom: 6px;
+    padding-top: unset;
+    padding-left: 1px;
+  }
+  .services_images01 .service_text1 .p4 {
+    font-size: 13px;
+    padding-bottom: 8px;
+    padding-top: 3px;
+    padding-left: 7px;
+    color: white;
+  }
+  .services_images01 .service_text1 .p3 {
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 11px;
+    font-weight: 700;
+    color: white;
+  }
+  .services_images01 .service_text .p3 {
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 12px;
+  }
+  .services_images01 .service_text2 .p4 {
+    font-size: 14px;
+    padding-bottom: 7px;
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+  .services_images01 .service_text2 .p3 {
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 6px;
+    font-weight: 700;
+    color: white;
+  }
+  .services_images02 .service_text3 .p4 {
+    font-size: 13px;
+    padding-bottom: 4px;
+    padding-top: 8px;
+    padding-left: 8px;
+    color: white;
+  }
+  .services_images02 .service_text4 .p3 {
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 14px;
+    font-weight: 700;
+    color: white;
+  }
+  .services_images02 .service_text4 .p4 {
+    font-size: 13px;
+    padding-bottom: 4px;
+    padding-top: 8px;
+    padding-left: 7px;
+  }
+  .services_images02 .service_text5 .p4 {
+    font-size: 13px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 9px;
+    color: white;
+  }
+  .services_images02 .service_text5 .p3 {
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 12px;
+  }
+  .img-desc {
+    height: 85px;
+    overflow: hidden;
+  }
+  .together .p1 {
+    padding-left: 111px;
+    max-width: 654px;
+  }
+  .together h1 {
+    padding-left: 112px;
+  }
+  .together h2 {
+    padding-left: 115px;
+    padding-top: 15px;
+  }
+  .together .heading {
+    padding-left: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 27px;
+  }
+  .work .text-inner {
+    padding-left: 60px;
+  }
+  .work p i {
+    font-size: 23px;
+    padding-right: 19px;
+    color: #d4a437;
+  }
+  .tech_left {
+    padding-left: 89px;
+    padding-right: 44px;
+  }
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 22px;
+  }
+  header nav .list ul li {
+    margin-right: 9px;
+    padding-top: 3px;
+  }
+  .work .text-inner {
+    padding-left: 50px;
+  }
+  header nav ul li a {
+    letter-spacing: 3px;
+  }
+  .work p i {
+    font-size: 16px;
+    padding-right: 19px;
+    color: #d4a437;
+  }
+  .technology .tech_left h1 {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    /* padding-top: 181px; */
+    padding-bottom: 5px;
+    font-weight: 700;
+    padding-right: 39px;
+    letter-spacing: 0px;
+  }
+  .tech_left {
+    padding-left: 31px;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerSection {
+    padding: 52px 0px 50px 0px;
+  }
+  .bannerSection .banner_text {
+    text-align: center;
+  }
+  .banner_text .text_1 h2 {
+    padding-right: 8px;
+  }
+  .banner_text .text_2 h2 {
+    padding-left: 14px;
+    padding-bottom: 4px;
+    background-color: black;
+    display: inline-block;
+    padding-right: 21px;
+  }
+  .banner_text .text_4 h2 {
+    padding-left: 22px;
+    background-color: black;
+    padding-bottom: 6px;
+    margin-top: -3px;
+    display: inline-block;
+    padding-right: 30px;
+  }
+  .work-with-us {
+    flex-direction: column;
+  }
+  .work-with-us .work_image {
+    margin-bottom: 25px;
+  }
+  .technology {
+    flex-direction: column-reverse;
+    padding: 30px 0px;
+  }
+  .tech_left {
+    padding-left: 31px;
+    padding-right: 35px;
+    padding-top: 20px;
+  }
+  .together .p1 {
+    padding-left: 30px;
+    max-width: 386px;
+  }
+  .together h1 {
+    padding-left: 30px;
+  }
+  .together h2 {
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+  .together .heading {
+    padding-left: 30px;
+  }
+}

@@ -36,7 +36,16 @@ $(document).ready(function(){
   $('.section-bullets li a').click(function(){
     $('.section-bullets li a.active').removeClass('active');
     $(this).addClass('active');
-  })
+  });
+
+  // $(window).on('scroll', function() {
+  //   if($(this).scrollTop() > 3137){
+  //     $('.solution-svg img').removeClass('displayNone');
+  //     $('.solution-svg img').addClass('displayBlock');
+  //   };
+//});
+
+
 });
 
 
