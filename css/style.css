@@ -131,11 +131,14 @@ nav ul li a {
   font-weight: 900;
   color: white;
 }
+
 nav ul li a:hover {
   color: black;
   background-color: #c2ab6c;
-  height: 15px;
-  width: 100%;
+  padding: 25px 0px;
+  background: #c2ab6c;
+  border-bottom: 10px solid white;
+  border-top: 12px solid white;
 }
 
 /* heder css ends */
@@ -621,7 +624,6 @@ nav ul li a:hover {
 }
 .services {
   background-color: black;
-  /* height: 100vh; */
 }
 .services h2 {
   font-weight: 700;
@@ -1193,7 +1195,7 @@ footer {
 }
 @media (max-width: 1024px) {
   h2 {
-    font-size: 27px;
+    font-size: 22px;
   }
   .align-middle {
     font-size: 15px;
@@ -1221,7 +1223,7 @@ footer {
 
 @media (max-width: 991px) {
   h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   header nav .list ul li {
@@ -1233,10 +1235,10 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
-  nav ul li a {
-    letter-spacing: 1px;
+  header nav ul li a {
+    letter-spacing: 1px !important;
   }
+
   .work p i {
     font-size: 16px;
     padding-right: 19px;
@@ -1271,9 +1273,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .list .navHide {
+  /* .list .navHide {
     display: none;
-  }
+  } */
   .services {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1294,9 +1296,9 @@ footer {
     width: 100%;
   }
 
-  nav .list ul {
+  /* nav .list ul {
     display: none;
-  }
+  } */
   header .header_logo {
     margin-left: unset;
   }
@@ -1308,11 +1310,14 @@ footer {
     background-color: black;
     left: 0;
     text-align: center;
+    max-width: unset;
     top: 87px;
+    z-index: 1000;
   }
   nav ul li {
     float: none;
     margin-left: unset;
+    padding: 12px 0px;
   }
 
   #nav-toggle {
@@ -1428,5 +1433,35 @@ footer {
   }
   footer .footer_line .footer_logo img {
     max-width: 250px;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 22px;
+  }
+  .banner_text .text_3 h2 {
+    padding-left: unset;
+    padding-bottom: 4px;
+    padding-top: unset;
+
+    padding-right: unset;
+  }
+  .banner_text .text_2 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+  .banner_text .text_4 h2 {
+    padding-left: unset;
+    background-color: black;
+    padding-bottom: 6px;
+    margin-top: -3px;
+    display: inline-block;
+    padding-right: 8px;
   }
 }

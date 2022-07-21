@@ -98,6 +98,8 @@ function myFunction(x) {
 
   $(document).ready(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
+    $('.navHide').hide();
+    
     $('nav ul li a:not(:only-child)').click(function(e) {
       $(this).siblings('.nav-dropdown').toggle();
       // Close one dropdown when selecting another
