@@ -96,10 +96,55 @@ function myFunction(x) {
 
 
 
+
+// function for background image change state in together page
+  $('#analyze-state').hover(function(){
+    $('#section6').css('background-image', 'url("../images/launch-state.png")');
+  });
+
+  $('#choose-state').hover(function() {
+    $('#section6').css('background-image', 'url("../images/together.png")');
+  });
+  $('#interview-state').hover(function() {
+    $('#section6').css('background-image', 'url("../images/interview-state.png")');
+  });
+  $('#launch-state').hover(function() {
+    $('#section6').css('background-image', 'url("../images/launch-state.png")');
+  });
+  $('#scale-state').hover(function() {
+    $('#section6').css('background-image', 'url("../images/scale-state.png")');
+  });
+  
+  $('a').on('mouseleave', function(){
+    $('.together').removeClass("hover");
+  });
+// function ends
+
+// $(document).ready(function() {
+
+//   $('nav .list ul li').click(function(e) {
+//     e.preventDefault();
+//     $('nav .list ul li').removeClass('#active');
+//     $(this).addClass('#active');
+//   });
+// });
+
+var activeNavItem = $('.nav-item');
+
+activeNavItem.click(function(){
+  activeNavItem.removeClass('active');
+  $(this).addClass('active');  
+});
+
+
+
+
+
+
+
   $(document).ready(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
-    $('.navHide').hide();
-    
+  
     $('nav ul li a:not(:only-child)').click(function(e) {
       $(this).siblings('.nav-dropdown').toggle();
       // Close one dropdown when selecting another
