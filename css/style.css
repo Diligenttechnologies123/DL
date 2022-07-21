@@ -589,13 +589,9 @@ nav ul li a:hover {
 
 /* solution starts */
 .solution {
-  /* position: relative; */
-  /* height: 100vh; */
   background-color: black;
 }
-/* .solution-svg {
-  padding-top: 50px;
-} */
+
 .problem_solution {
   display: flex;
 }
