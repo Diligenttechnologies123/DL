@@ -133,14 +133,44 @@ var activeNavItem = $('.nav-item');
 
 activeNavItem.click(function(){
   activeNavItem.removeClass('active');
+  
   $(this).addClass('active');  
 });
 
 
 
 
-
-
+$('nav ul li a').hover(
+  function(){ 
+    $("#home").addClass('inactive').removeClass('active');
+  },
+  function(){ 
+    $("#home.inactive").addClass('active').removeClass('inactive'); 
+  },
+  function(){ 
+    $("#services").addClass('inactive').removeClass('active');
+  },
+  function(){ 
+    $("#services.inactive").addClass('active').removeClass('inactive'); 
+  },
+  function(){ 
+    $("#our-team").addClass('inactive').removeClass('active');
+  },
+  function(){ 
+    $("#our-team.inactive").addClass('active').removeClass('inactive'); 
+  },
+  function(){ 
+    $("#about-us").addClass('inactive').removeClass('active');
+  },
+  function(){ 
+    $("#about-us.inactive").addClass('active').removeClass('inactive'); 
+  },function(){ 
+    $("#contact-us").addClass('inactive').removeClass('active');
+  },
+  function(){ 
+    $("#contact-us.inactive").addClass('active').removeClass('inactive'); 
+  },
+);
 
   $(document).ready(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
