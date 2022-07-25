@@ -83,7 +83,7 @@
 .professional .row .image001 {
   max-width: 331px;
   position: relative;
-  margin-bottom: 31px;
+  margin: 0 auto;
 }
 
 .professional .row .team_text {

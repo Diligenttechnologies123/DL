@@ -133,21 +133,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: black;
-  background-color: #c2ab6c;
-  padding: 25px 0px;
-  background: #c2ab6c;
-  border-bottom: 10px solid white;
-  border-top: 12px solid white;
+  color: #c2ab6c;
 }
 .nav-item.active a {
-  color: black;
+  color: white;
   background-color: #c2ab6c;
   padding: 25px 0px;
   background: #c2ab6c;
   border-bottom: 10px solid white;
   border-top: 12px solid white;
 }
+
+/* toggle css */
 
 /* heder css ends */
 
@@ -1102,6 +1099,15 @@ footer {
 .footer_line .list1 li {
   padding-top: 36px;
 }
+.footer_line .list1 li a {
+  position: relative;
+}
+.footer_line .list2 li a {
+  position: relative;
+}
+.footer_line .list3 li a {
+  position: relative;
+}
 .footer_line .list2 li {
   padding-top: 36px;
 }
@@ -1109,6 +1115,57 @@ footer {
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+.footer_line .list1 li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d4a437;
+  visibility: hidden;
+  transform: scaleX(0);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  top: 27px;
+}
+.footer_line .list1 li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.footer_line .list2 li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d4a437;
+  visibility: hidden;
+  transform: scaleX(0);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  top: 27px;
+}
+.footer_line .list2 li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.footer_line .list3 li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d4a437;
+  visibility: hidden;
+  transform: scaleX(0);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  top: 27px;
+}
+.footer_line .list3 li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .footer_line .list3 li {
@@ -1311,9 +1368,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* .list .navHide {
+  .nav-item.active a {
     display: none;
-  } */
+  }
+
   .services {
     padding-top: 10px;
     padding-bottom: 50px;

@@ -137,40 +137,46 @@ activeNavItem.click(function(){
   $(this).addClass('active');  
 });
 
+//  ON SCROOOLLL ACTIVE BUTTON CHNAGE
 
+// $(window).scroll(function() {
+//   var windscroll = $(window).scrollTop();
+//   if (windscroll >= 100) {
+//     $('section').each(function(i) {
+//       // The number at the end of the next line is how pany pixels you from the top you want it to activate.
+//       if ($(this).position().top <= windscroll - 0) {
+//         $('.section-bullets li .active').removeClass('active');
+//         $('.section-bullets ul  li').eq(i).addClass('active');
+//       }
+//     });
 
+//   } else {
 
-$('nav ul li a').hover(
-  function(){ 
-    $("#home").addClass('inactive').removeClass('active');
-  },
-  function(){ 
-    $("#home.inactive").addClass('active').removeClass('inactive'); 
-  },
-  function(){ 
-    $("#services").addClass('inactive').removeClass('active');
-  },
-  function(){ 
-    $("#services.inactive").addClass('active').removeClass('inactive'); 
-  },
-  function(){ 
-    $("#our-team").addClass('inactive').removeClass('active');
-  },
-  function(){ 
-    $("#our-team.inactive").addClass('active').removeClass('inactive'); 
-  },
-  function(){ 
-    $("#about-us").addClass('inactive').removeClass('active');
-  },
-  function(){ 
-    $("#about-us.inactive").addClass('active').removeClass('inactive'); 
-  },function(){ 
-    $("#contact-us").addClass('inactive').removeClass('active');
-  },
-  function(){ 
-    $("#contact-us.inactive").addClass('active').removeClass('inactive'); 
-  },
-);
+//     $('.section-bullets li .active').removeClass('active');
+//     $('.section-bullets li:first').addClass('active');
+//   }
+
+//   }).scroll();
+
+// $(function() {
+//   $('a.bullets-list').bind('click', function(event) {
+//       var $anchor = $(this);
+//       $('html, body').stop().animate({
+//           scrollTop: $($anchor.attr('href')).offset().top
+//       }, 1500, 'easeInOutExpo');
+//       event.preventDefault();
+//   });
+// });
+
+// $('nav ul li ').hover(
+//   function(){ 
+//     $(".nav-item").addClass('inactive').removeClass('active');
+//   },
+//   function(){ 
+//     $(".nav-item.inactive").addClass('active').removeClass('inactive'); 
+//   },
+  
+// );
 
   $(document).ready(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
