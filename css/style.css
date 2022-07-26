@@ -95,34 +95,16 @@ header {
   width: 100%;
 }
 
-header nav {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
+header .navbar {
+  padding: unset;
 }
 
 header .header_logo img {
   width: 100%;
 }
-nav .list ul {
-  display: block;
-}
 
-header nav .list ul {
-  max-width: 750px;
-  display: flex;
-  justify-content: space-between;
-}
-
-header nav .list ul li {
-  margin-right: 50px;
-  padding-top: 3px;
-}
-header nav .list ul li:last-child {
-  margin-right: 0;
+header .navbar ul li {
+  padding: 0px 25px;
 }
 
 nav ul li a {
@@ -142,6 +124,27 @@ nav ul li a:hover {
   background: #c2ab6c;
   border-bottom: 10px solid white;
   border-top: 12px solid white;
+}
+.navbar-collapse {
+  flex-grow: unset;
+}
+ul.navbar-nav {
+  align-items: center;
+}
+nav.navbar.navbar-expand-lg.justify-content-end {
+  justify-content: space-between !important;
+}
+.navbar-toggler-icon {
+  display: block;
+  width: 33px;
+  height: 2px;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-color: white;
+  margin-bottom: 6px;
+  padding-top: 2px;
+  margin-top: 8px;
 }
 
 /* toggle css */
@@ -1199,6 +1202,9 @@ footer {
   h1 {
     font-size: 28px;
   }
+  header .navbar ul li a {
+    letter-spacing: 0px;
+  }
   .services_images01 .service_text .p4 {
     font-size: 13px;
     padding-bottom: 6px;
@@ -1295,13 +1301,10 @@ footer {
   .align-middle {
     font-size: 15px;
   }
-  nav ul li a {
-    letter-spacing: 4px;
+  header .navbar ul li {
+    padding: 0px 17px;
   }
-  header nav .list ul li {
-    margin-right: 35px;
-    padding-top: 3px;
-  }
+
   .work .text-inner {
     padding-left: 60px;
   }
@@ -1320,11 +1323,20 @@ footer {
   h2 {
     font-size: 18px;
   }
-
-  header nav .list ul li {
-    margin-right: 20px;
-    padding-top: 3px;
+  .section-bullets {
+    display: none;
   }
+  header .navbar {
+    padding: 16px 0px;
+  }
+  ul.navbar-nav {
+    align-items: center;
+    height: 100vh;
+  }
+  header .navbar ul li {
+    padding: 11px 17px;
+  }
+
   .work .text-inner {
     padding-left: 50px;
     padding-top: 50px;
@@ -1332,6 +1344,13 @@ footer {
   }
   header nav ul li a {
     letter-spacing: 1px !important;
+  }
+  .nav-item.active a {
+    color: #d4a437;
+    padding: unset;
+    background: unset;
+    border-bottom: unset;
+    border-top: unset;
   }
 
   .work p i {
@@ -1369,7 +1388,7 @@ footer {
 
 @media (max-width: 768px) {
   .nav-item.active a {
-    display: none;
+    color: #d4a437;
   }
 
   .services {
@@ -1392,9 +1411,6 @@ footer {
     width: 100%;
   }
 
-  /* nav .list ul {
-    display: none;
-  } */
   header .header_logo {
     margin-left: unset;
   }

@@ -4,12 +4,8 @@
   padding-bottom: 32px;
 }
 .nav-item.active a {
-  color: black;
-  background-color: #c2ab6c;
-  padding: 25px 0px;
-  background: #c2ab6c;
-  border-bottom: 10px solid white;
-  border-top: 12px solid white;
+  color: white;
+  transition: 0.3s linear;
 }
 .form1 {
   margin: 0 auto;

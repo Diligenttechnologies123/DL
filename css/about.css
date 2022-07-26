@@ -6,12 +6,7 @@ h4 {
   font-size: 25px;
 }
 .nav-item.active a {
-  color: black;
-  background-color: #c2ab6c;
-  padding: 25px 0px;
-  background: #c2ab6c;
-  border-bottom: 10px solid white;
-  border-top: 12px solid white;
+  color: white;
 }
 
 /* Dedicated  */
