@@ -1,742 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/slick.css" />
-  <link rel="stylesheet" href="css/fonts.css" />
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css" />
-
-</head>
-
-<body>
+  <body>
+     <!-- ===header starts from here ==== -->
     <header class="header" id="header">
-        <div class="container">
-
-        
+      <div class="container">
         <nav class="navbar navbar-expand-lg justify-content-end">
-            <a class="navbar-brand" href="#"><img src="images/logo.webp" alt="logo" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"> </span>
-              <span class="navbar-toggler-icon"> </span
-            >
-                
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-              
-                <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#section4">SERVICES</a></li>
-                <li class="nav-item"><a class="nav-link" href="team.html">OUR TEAM</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT US</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT US</a></li>
-              </ul>
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.webp" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"> </span>
+            <span class="navbar-toggler-icon"> </span>
+          </button>
 
-            </div>
-          </nav>
-        </div>
-    </header><!-- HEADER -->
-  <!-- header starts here -->
-
-  <!-- <header id="header"> -->
-    <!-- <nav class="navbar navbar-dark   navbar-expand-md">
-      <a class="navbar-brand" href="#"><img src="images/logo.webp" alt="logo" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-
-          <li  class="nav-item"><a  href="#section4">SERVICES</a></li>
-          <li  class="nav-item"><a  href="team.html">OUR TEAM</a></li>
-          <li  class="nav-item"><a  href="about.html">ABOUT US</a></li>
-          <li   class="nav-item"><a  href="contact.html">CONTACT US</a></li>
-        </ul>
-      </div>
-    </nav> -->
-     
-    
-    
-    <!-- <div class="container">
-    <nav>
-      <div class="header_logo">
-        <a href="./index.html"> <img src="images/logo.webp" alt="logo" /></a>
-      </div>
-      <div class="nav-mobile">
-        <a id="nav-toggle" href="#"><span> </span></a>
-      </div>
-      <div class="list" id="navbar-toggler">
-        <ul class="" id="navbar-nav">
-          <li  class="nav-item active"><a href="index.html">HOME</a></li>
-          <li  class="nav-item"><a  href="#section4">SERVICES</a></li>
-          <li  class="nav-item"><a  href="team.html">OUR TEAM</a></li>
-          <li  class="nav-item"><a  href="about.html">ABOUT US</a></li>
-          <li   class="nav-item"><a  href="contact.html">CONTACT US</a></li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </nav>
-  </div>
-  </header> -->
-
-  <!-- header ends here -->
-
-  <ul class="section-bullets">
-    <li><a href="#header" class="active"></a></li>
-    <li><a href="#section2"></a></li>
-    <li><a href="#section5"></a></li>
-    <li><a href="#section3"></a></li>
-    <li><a href="#section4"></a></li>
-    <li><a href="#section6"></a></li>
-  </ul>
-
-  <!-- Banner section starts-->
-  <section class="bannerSection" id="bannerSection">
-    <div class="container">
-      <div class="row ">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-last order-sm-last order-md-first order-lg-first">
-          <div class="banner_text">
-            <h1>
-              Dedicated
-              <span>D<span class="e">e</span>v<span class="e">e</span>lopm<span class="e">e</span>nt</span>
-              Center
-            </h1>
-            <div class="text_1">
-              <h2>Long-term strategy</h2>
-            </div>
-            <div class="text_2">
-              <h2>Complex projects</h2>
-            </div>
-            <div class="text_3">
-              <h2>Team augmentation per your request</h2>
-            </div>
-            <div class="text_4">
-              <h2>Expertise tailored to your needs</h2>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <div class="img-wrap-outer">
-            <div class="img-wrap-inner">
-              <div class="screen">
-                <img src="images/herosection1.svg"  class="img-responsive" />
-              </div>
-              
-            </div>
-          </div>
-         
-        </div>
-
-        </div>
-      </div>
-    </div>
-  </section><!-- Banner section ends -->
-
-  <!-- Solution starts -->
-<section class="solution py-5" id="section3">
-	<div class="container">
-		<div class="solution-svg" data-aos="fade-up" data-aos-duration="2000">
-			<img src="images/solution1.svg"  alt="">
-		</div>
-	</div>
-</section>
-<!-- solution ends -->
-
-  <!-- Work section starts -->
-  <section class="work" id="section2">
-    <div class="container-fluid px-0">
-      <div class="row work-with-us">
-        <div class="col-12 col-sm-12 col-lg-6 col-xl-6">
-          <div class="work_image">
-            <img src="./images/work.png" alt="work" />
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-12 col-lg-6 col-xl-6 px-0">
-          <div class="text-inner">
-            <h2>Why Work With Us</h2>
-            <ul>
-              <li>
-                <p class="p1"><i class="fa fa-right-long"></i>Professional team</p>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="javascript:void(0)"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
               </li>
-              <li>
-                <p class="p1">
-                  <i class="fa fa-right-long"></i>No time-zone difference
-                </p>              </li>
-              <li>
-                <p class="p1"><i class="fa fa-right-long"></i>Reduce IT expenses</p>
+              <li class="nav-item">
+                <a class="nav-link" href="#section4">SERVICES</a>
               </li>
-              <li>
-                <p class="p1">
-                  <i class="fa fa-right-long"></i>Direct contact with your team
-                </p>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">OUR TEAM</a>
               </li>
-              <li>
-                <p class="p1"><i class="fa fa-right-long"></i>3-week trial period</p>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">ABOUT US</a>
               </li>
-              <li>
-                <p class="p1"><i class="fa fa-right-long"></i>Mature processes</p>
-              </li>
-              <li>
-                  
-            <p class="p1"><i class="fa fa-right-long"></i>Key areas of expertise</p>
-              </li>
-              <li>
-                <p class="p1"><i class="fa fa-right-long"></i>English proficienc</p>
-              </li>
-              <li>
-                <p class="p1"><i class="fa fa-right-long"></i>Your safe staffing</p>
-              </li>
-              <li>
-                <p class="p1"><i class="fa fa-right-long"></i>Guaranteed data safety</p>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">CONTACT US</a>
               </li>
             </ul>
           </div>
-
-
-<!-- 
-          <div class="work_us">
-            <h2>Why Work With Us</h2>
-             -->
-           
-           
-            
-            
-          
-            
-           
-            
-          </div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
+    <!-- HEADER ends here -->
 
+
+ <!-- banner starts -->
       
-      
+        
+    <ul class="section-bullets">
+    <li class="list"><a href="#header" class="active"></a></li>
+    <li class="list"><a href="#section2"></a></li>
+    <li class="list"><a href="#section5"></a></li>
+    <li class="list"><a href="#section3"></a></li>
+    <li class="list"><a href="#section4"></a></li>
+    <li class="list"><a href="#section6"></a></li>
+  </ul>
 
-  </section>
+    <!-- Banner section starts-->
 
-  <!-- Work section ends -->
-<!-- /* Technologies starts */ -->
-<section class="technology" id="section5">
-  <div class="tech_left">
-    <h1>Our Technologies</h1>
-    <p class="p2">
-      Web, Enterprise, Mobile development, Software as a service (SaaS) and
-      Cloud computing. We work with the most popular and advanced technologies
-    </p>
+     <section class="bannerSection" id="bannerSection">
 
-    <div class="languages">
-      <div class="left_lang">
-        <div class="lang1">
-          <img src="./images/php.webp" alt="php">
+        <div class="container">
+            <div class="row ">
+                <div
+                    class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-last order-sm-last order-md-first order-lg-first">
+                    <div class="banner_text">
+                        <h1>
+                            Dedicated
+                            <span>D<span class="e">e</span>v<span class="e">e</span>lopm<span
+                                    class="e">e</span>nt</span>
+                            Center
+                        </h1>
+                        <div class="text_1">
+                            <h2>Long-term strategy</h2>
+                        </div>
+                        <div class="text_2">
+                            <h2>Complex projects</h2>
+                        </div>
+                        <div class="text_3">
+                            <h2>Team augmentation per your request</h2>
+                        </div>
+                        <div class="text_4">
+                            <h2>Expertise tailored to your needs</h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="img-wrap-outer">
+                        <div class="img-wrap-inner">
+                            <div class="screen">
+                                <img src="images/herosection1.svg" class="img-responsive" />
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        <div class="lang2">
-          <img src="./images/html.webp" alt="html">
+        
+    </section> 
+
+    <!-- Solution starts -->
+     <section class="solution py-5" id="section3">
+        <div class="container">
+            <div class="solution-svg" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/solution1.svg" alt="">
+            </div>
         </div>
-        <div class="lang3">
-          <img src="./images/react.png" alt="react">
-        </div>
-        <div class="lang4">
-          <img src="./images/java.webp" alt="java">
-        </div>
-        <div class="lang5">
-          <img src="images/dotnet.webp" alt="dotnet">
-        </div>
-      </div>
+    </section>
+    <!-- solution ends -->
 
-      <div class="right_lang">
-        <div class="lang6">
-          <img src="./images/wordpress.webp" alt="wordpress">
-        </div>
-        <div class="lang7">
-          <img src="./images/laravel.webp" alt="laravel">
-        </div>
-        <div class="lang8">
-          <img src="./images/bootstrap.webp" alt="bootstrap">
-        </div>
-        <div class="lang9">
-          <img src="./images/express.webp" alt="express">
-        </div>
-        <div class="lang10">
-          <img src="./images/codeigniter.webp" alt="codeigniter">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="tech_image">
-    <img src="./images/technology.png" alt="technology" />
-  </div>
-</section>
+    <!-- Work section starts -->
+ <section class="work" id="section2">
+        <div class="container-fluid px-0">
+            <div class="row work-with-us">
+                <div class="col-12 col-sm-12 col-lg-6 col-xl-6">
+                    <div class="work_image">
+                        <img src="./images/work.png" alt="work" />
+                    </div>
+                </div>
 
+                <div class="col-12 col-sm-12 col-lg-6 col-xl-6 px-0">
+                    <div class="text-inner">
+                        <h2>Why Work With Us</h2>
+                        <ul>
+                            <li>
+                                <p class="p1"><i class="fa fa-right-long"></i>Professional team</p>
+                            </li>
+                            <li>
+                                <p class="p1">
+                                    <i class="fa fa-right-long"></i>No time-zone difference
+                                </p>
+                            </li>
+                            <li>
+                                <p class="p1"><i class="fa fa-right-long"></i>Reduce IT expenses</p>
+                            </li>
+                            <li>
+                                <p class="p1">
+                                    <i class="fa fa-right-long"></i>Direct contact with your team
+                                </p>
+                            </li>
+                            <li>
+                                <p class="p1"><i class="fa fa-right-long"></i>3-week trial period</p>
+                            </li>
+                            <li>
+                                <p class="p1"><i class="fa fa-right-long"></i>Mature processes</p>
+                            </li>
+                            <li>
 
-<!-- /* Technologies ends  -->
-
-
-
-
-  <!-- Services starts  -->
-  	<section class="services py-md-5" id="section4">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-xl-12">
-					  <div class="sectionTitle">
-						<h2>Our Services</h2>
-					  </div>
-				  </div>
-			  </div><!-- Row Ends -->
-
-			  <div class="row">
-				  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-					  <div class="img-wrap-outer">
-						  <div class="img-wrap-inner">
-							  <img src="./images/consulting2.jpg" class="img-responsive" alt="" />
-							  <div class="img-desc">
-								  <label class="img-title">IT CONSULTING</label>
-								  <p class="desc-text">Need help understanding what works best for your project or how to implement it efficiently? Get a consultation at UNL Solutions.</p>
-							  </div>
-						  </div>
-					  </div>
-					  
-
-				  </div><!-- col 4 -->
-				  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-					  <div class="img-wrap-outer">
-						  <div class="img-wrap-inner">
-							  <img src="./images/consulting2.jpg" class="img-responsive" alt="" />
-							  <div class="img-desc">
-								  <label class="img-title">CUSTOM SOFTWARE</label>
-								  <p class="desc-text">We know 20+ most popular languages and frameworks. We work 
-									in 10+ industries. With UNL, your project is backed by professionals.</p>
-							  </div>
-						  </div>
-					  </div>
-					  
-
-				  </div>
-				  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-					  <div class="img-wrap-outer">
-						  <div class="img-wrap-inner">
-							  <img src="./images/consulting2.jpg" class="img-responsive" alt="" />
-							  <div class="img-desc">
-								  <label class="img-title">MOBILE APP DEVELOPMENT</label>
-								  <p class="desc-text">Stay at the forefront of mobile trends with the best of class 
-									mobile apps delivered on time, on budget, and on spec.</p>
-							  </div>
-						  </div>
-					  </div>
-					  
-
-				  </div>
-				  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-				  <div class="img-wrap-outer">
-					  <div class="img-wrap-inner">
-						  <img src="./images/consulting2.jpg" class="img-responsive" alt="" />
-						  <div class="img-desc">
-							  <label class="img-title">DEDICATED TEAM</label>
-							  <p class="desc-text">Pick the skills you need and get your own dedicated team. Manage 
-								their work and see results delivered in no time</p>
-						  </div>
-					  </div>
-				  </div>
-				  
-
-			  </div>
-			 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-					  <div class="img-wrap-outer">
-						  <div class="img-wrap-inner">
-							  <img src="./images/consulting2.jpg" class="img-responsive" alt="" />
-							  <div class="img-desc">
-								  <label class="img-title">IT STAFF AUGMENTATION</label>
-								  <p class="desc-text">Do you have a last-minute need to scale up your IT team? Are you 
-									looking for rare expertise to rescue a burning project? We help you 
-									to bring on board IT talents right</p>
-							  </div>
-						  </div>
-					  </div>
-					  
-
-				  </div>
-				  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-					  <div class="img-wrap-outer">
-						  <div class="img-wrap-inner">
-							  <img src="./images/consulting2.jpg" class="img-responsive" alt="" />
-							  <div class="img-desc">
-								  <label class="img-title">QUALITY ASSURANCE</label>
-								  <p class="desc-text">Dedicated QA teams liaised with your development. We ensure 
-									the quality and stable performance of all your software solutions.</p>
-							  </div>
-						  </div>
-					  </div>
-					  
-
-				  </div>
+                                <p class="p1"><i class="fa fa-right-long"></i>Key areas of expertise</p>
+                            </li>
+                            <li>
+                                <p class="p1"><i class="fa fa-right-long"></i>English proficienc</p>
+                            </li>
+                            <li>
+                                <p class="p1"><i class="fa fa-right-long"></i>Your safe staffing</p>
+                            </li>
+                            <li>
+                                <p class="p1"><i class="fa fa-right-long"></i>Guaranteed data safety</p>
+                            </li>
+                        </ul>
+                    </div>
 
 
-			</section>
-			  
-
-  
-
-  <!-- Together starts -->
-  <section class="together" id="section6">
-    <h1>
-      How we work together
-    </h1>
-    <p class="p1">Adopting best practices we’ve worked out a flexible model aimed to effectively solve your
-      IT challenges. Now we're confident to say – we can handle them all.</p>
-    <h2 class="heading" >
-     <a href="#" id="analyze-state" class="li-hover-state" >Analyse</a> 
-    </h2>
-    <h2 class="heading" >
-      <a href="#" id="choose-state" class="li-hover-state" >Interview</a> 
-    </h2>
-    <h2 class="heading" >
-      <a href="#" id="interview-state" class="li-hover-state" >Choose</a> 
-    </h2>
-    <h2 class="heading" >
-      <a href="#" id="launch-state" class="li-hover-state" >Launch</a> 
-    </h2>
-    <h2 class="heading" >
-      <a href="#" id="scale-state" class="li-hover-state">Scale</a> 
-    </h2>
-  </section>
 
 
-  <!-- Together ends -->
-
-  <!-- industry starts -->
-  <section class="industry">
-    <div class="container">
-   
-	  <div class="row">
-		<div class="col-xl-12">
-			<div class="sectionTitle">
-			  <h2>Our industries</h2>
-			  <p class="p2">Information technologies, E-commerce, Education, Healthcare, Entertainment, Financial services or any
-				other domain.
-				We are capable of providing solutions for your particular business. Meet our team.</p>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-12 col-sm">
-			<div class="indus_image1">
-				<img src="./images/industry1.png" alt="industry1">
-				<div class="hover-desc-text" >
-					<p class="align-middle">Production</p>
-				</div>
-			  </div>
-		</div>
-
-		<div class="col-12 col-md">
-			<div class="indus_image1">
-				<img src="./images/industry2.png" alt="industry2">
-				<div class="hover-desc-text">
-					<p class="align-middle">Culture </p>
-				</div>
-			  </div>
-			  
-		</div>
-
-		<div class="col-12 col-md">
-			<div class="indus_image1">
-				<img src="./images/industry3.png" alt="industry3">
-				<div class="hover-desc-text">
-					<p class="align-middle">E-commerce</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-12 col-md">
-			<div class="indus_image1">
-				<img src="./images/industry7.png" alt="industry7">
-				<div class="hover-desc-text">
-					<p class="align-middle">Banking sector</p>
-				</div>
-			</div>
-		</div>
-	
-	</div>
-	<div class="row">
-		
-			<div class="col-12 col-md">
-				<div class="indus_image1">
-					<img src="./images/industry4.png" alt="industry4">
-					<div class="hover-desc-text">
-						<p class="align-middle">Health care </p>
-					</div>
-				</div>
-			</div>
-		
-		<div class="col-12 col-md">
-			<div class="indus_image1">
-				<img src="./images/industry6.png" alt="industry6">
-				<div class="hover-desc-text">
-					<p class="align-middle">Security </p>
-				</div>
-			</div>
-		</div>
-
-		
-
-		<div class="col-12 col-md">
-			<div class="indus_image1">
-				<img src="./images/industry9.png" alt="industry9">
-				<div class="hover-desc-text">
-					<p class="align-middle">Retail</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-md">
-			<div class="indus_image1">
-				<img src="./images/industry10.png" alt="industry10">
-				<div class="hover-desc-text">
-					<p class="align-middle">Networking </p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-
-   
-  </div>
-  </section>
-
-  <!-- industry ends -->
-  <!-- clients starts -->
-  <section class="client">
-    <h2>Official client reviews</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="hero-slider">
 
 
-      <div class="clients">
-        <div class="client1">
-          <img src="./images/micro1.png" alt="google">
+
+                </div>
+            </div>
         </div>
-        <div class="client1">
-          <img src="./images/yahoo.png" alt="microsoft">
         </div>
-        <div class="client1">
-          <img src="./images/android.png" alt="yahoo">
+
+
+
+
+    </section>
+
+    <!-- Work section ends -->
+    <!-- /* Technologies starts */ -->
+    <section class="technology " id="section5">
+        <div class="tech_left">
+            <h1>Our Technologies</h1>
+            <p class="p2">
+                Web, Enterprise, Mobile development, Software as a service (SaaS) and
+                Cloud computing. We work with the most popular and advanced technologies
+            </p>
+
+            <div class="languages">
+                <div class="left_lang">
+                    <div class="lang1">
+                        <img src="./images/php.webp" alt="php">
+                    </div>
+                    <div class="lang2">
+                        <img src="./images/html.webp" alt="html">
+                    </div>
+                    <div class="lang3">
+                        <img src="./images/react.png" alt="react">
+                    </div>
+                    <div class="lang4">
+                        <img src="./images/java.webp" alt="java">
+                    </div>
+                    <div class="lang5">
+                        <img src="images/dotnet.webp" alt="dotnet">
+                    </div>
+                </div>
+
+                <div class="right_lang">
+                    <div class="lang6">
+                        <img src="./images/wordpress.webp" alt="wordpress">
+                    </div>
+                    <div class="lang7">
+                        <img src="./images/laravel.webp" alt="laravel">
+                    </div>
+                    <div class="lang8">
+                        <img src="./images/bootstrap.webp" alt="bootstrap">
+                    </div>
+                    <div class="lang9">
+                        <img src="./images/express.webp" alt="express">
+                    </div>
+                    <div class="lang10">
+                        <img src="./images/codeigniter.webp" alt="codeigniter">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="client1">
-          <img src="./images/micro1.png" alt="andriod">
+        <div class="tech_image">
+            <img src="./images/technology.png" alt="technology" />
         </div>
-        <div class="client1">
-          <img src="./images/yahoo.png" alt="gmail">
+    </section>
+
+    <!-- /* Technologies ends  -->
+
+    <!-- Services starts  -->
+     <section class="services py-md-5" id="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="sectionTitle">
+                        <h2>Our Services</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="img-wrap-outer">
+                        <div class="img-wrap-inner">
+                            <img src="./images/consulting2.jpg" class="img-responsive" alt="" />
+                            <div class="img-desc">
+                                <label class="img-title">IT CONSULTING</label>
+                                <p class="desc-text">Need help understanding what works best for your project or how to
+                                    implement it efficiently? Get a consultation at UNL Solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="img-wrap-outer">
+                        <div class="img-wrap-inner">
+                            <img src="./images/custome-software.png" class="img-responsive" alt="" />
+                            <div class="img-desc">
+                                <label class="img-title">CUSTOM SOFTWARE</label>
+                                <p class="desc-text">We know 20+ most popular languages and frameworks. We work
+                                    in 10+ industries. With UNL, your project is backed by professionals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="img-wrap-outer">
+                        <div class="img-wrap-inner">
+                            <img src="./images/mobile-development.png" class="img-responsive" alt="" />
+                            <div class="img-desc">
+                                <label class="img-title">MOBILE APP DEVELOPMENT</label>
+                                <p class="desc-text">Stay at the forefront of mobile trends with the best of class
+                                    mobile apps delivered on time, on budget, and on spec.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="img-wrap-outer">
+                        <div class="img-wrap-inner">
+                            <img src="./images/team.png" class="img-responsive" alt="" />
+                            <div class="img-desc">
+                                <label class="img-title">DEDICATED TEAM</label>
+                                <p class="desc-text">Pick the skills you need and get your own dedicated team. Manage
+                                    their work and see results delivered in no time</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="img-wrap-outer">
+                        <div class="img-wrap-inner">
+                            <img src="./images/staff.png" class="img-responsive" alt="" />
+                            <div class="img-desc">
+                                <label class="img-title">IT STAFF AUGMENTATION</label>
+                                <p class="desc-text">Do you have a last-minute need to scale up your IT team? Are you
+                                    looking for rare expertise to rescue a burning project? We help you
+                                    to bring on board IT talents right</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="img-wrap-outer">
+                        <div class="img-wrap-inner">
+                            <img src="./images/quality-assurance.png" class="img-responsive" alt="" />
+                            <div class="img-desc">
+                                <label class="img-title">QUALITY ASSURANCE</label>
+                                <p class="desc-text">Dedicated QA teams liaised with your development. We ensure
+                                    the quality and stable performance of all your software solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
         </div>
-      </div>
-      <div class="clients">
-        <div class="client1">
-          <img src="./images/micro1.png" alt="google">
+    </section>
+
+    <!-- Together starts -->
+    <section class="together" id="section6">
+        <h1>
+            How we work together
+        </h1>
+        <p class="p1">Adopting best practices we’ve worked out a flexible model aimed to effectively solve your
+            IT challenges. Now we're confident to say – we can handle them all.</p>
+        <h2 class="heading">
+            <a href="javascript:void(0)" id="analyze-state" class="li-hover-state">Analyse</a>
+        </h2>
+        <h2 class="heading">
+            <a href="javascript:void(0)" id="interview-state" class="li-hover-state">Interview</a>
+        </h2>
+        <h2 class="heading">
+            <a href="javascript:void(0)" id="choose-state" class="li-hover-state">Choose</a>
+        </h2>
+        <h2 class="heading">
+            <a href="javascript:void(0)" id="launch-state" class="li-hover-state">Launch</a>
+        </h2>
+        <h2 class="heading">
+            <a href="javascript:void(0)" id="scale-state" class="li-hover-state">Scale</a>
+        </h2>
+    </section> 
+
+    <!-- Together ends -->
+
+    <!-- industry starts -->
+    <section class="industry" id="section7">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="sectionTitle">
+                        <h2>Our industries</h2>
+                        <p class="p2">Information technologies, E-commerce, Education, Healthcare, Entertainment,
+                            Financial services or any
+                            other domain.
+                            We are capable of providing solutions for your particular business. Meet our team.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm">
+                    <div class="indus_image1">
+                        <img src="./images/industry1.png" alt="industry1">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">Production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="indus_image1">
+                        <img src="./images/industry2.png" alt="industry2">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">Culture </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="indus_image1">
+                        <img src="./images/industry3.png" alt="industry3">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">E-commerce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="indus_image1">
+                        <img src="./images/industry7.png" alt="industry7">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">Banking sector</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-12 col-md">
+                    <div class="indus_image1">
+                        <img src="./images/industry4.png" alt="industry4">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">Health care </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="indus_image1">
+                        <img src="./images/industry6.png" alt="industry6">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">Security </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md">
+                    <div class="indus_image1">
+                        <img src="./images/industry9.png" alt="industry9">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">Retail</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="indus_image1">
+                        <img src="./images/industry10.png" alt="industry10">
+                        <div class="hover-desc-text">
+                            <p class="align-middle">Networking </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
-        <div class="client1">
-          <img src="./images/yahoo.png" alt="microsoft">
+    </section>
+
+    <!-- industry ends -->
+    <!-- clients starts -->
+     <section class="client " id="section8">
+        <h2>Official client reviews</h2>
         </div>
-        <div class="client1">
-          <img src="./images/android.png" alt="yahoo">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-slider">
+
+
+                        <div class="clients">
+                            <div class="client1">
+                                <img src="./images/micro1.png" alt="google">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/yahoo.png" alt="microsoft">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/android.png" alt="yahoo">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/micro1.png" alt="andriod">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/yahoo.png" alt="gmail">
+                            </div>
+                        </div>
+                        <div class="clients">
+                            <div class="client1">
+                                <img src="./images/micro1.png" alt="google">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/yahoo.png" alt="microsoft">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/android.png" alt="yahoo">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/micro1.png" alt="andriod">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/micro1.png" alt="gmail">
+                            </div>
+                        </div>
+                        <div class="clients">
+                            <div class="client1">
+                                <img src="./images/yahoo.png" alt="google">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/android.png" alt="microsoft">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/micro1.png" alt="yahoo">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/yahoo.png" alt="andriod">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/android.png" alt="gmail">
+                            </div>
+                        </div>
+                        <div class="clients">
+                            <div class="client1">
+                                <img src="./images/android.png" alt="google">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/yahoo.png" alt="microsoft">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/android.png" alt="yahoo">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/micro1.png" alt="andriod">
+                            </div>
+                            <div class="client1">
+                                <img src="./images/yahoo.png" alt="gmail">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="client1">
-          <img src="./images/micro1.png" alt="andriod">
+
+        <div class="container">
+
+
+            <div class="testimonals ">
+                <h2 class="clienthead">Clients and testimonials</h2>
+                <p class="p2">Our clients accept neither mediocre services nor solutions done by half. They stay with us
+                    for years
+                    as they can reckon on
+                    our professionalism. We are proud to meet their expectations.</p>
+            </div>
+            <div class="hero-slider">
+                <div class="reviews">
+                    <div class="reviews_image">
+                        <img src="./images/reviews.png" alt="reviews">
+                    </div>
+
+                    <div class="reviews_text">
+                        <p class="p3">Chad Gilbert</p>
+                        <p class="p6">CEO, Corevist </p>
+                        <p class="p7"> <span class="quote-left"><i class="fa fa-quote-left"
+                                    aria-hidden="true"></i></span> Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita
+                            kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea
+                            takimata sanctus
+                            est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit <span class="quote-right"> <i class="fa fa-quote-right"
+                                    aria-hidden="true"></i></span> </p>
+                    </div>
+                </div>
+
+                <div class="reviews sec">
+                    <div class="reviews_image">
+                        <img src="./images/reviews.png" alt="reviews">
+                    </div>
+
+                    <div class="reviews_text">
+                        <p class="p3">Chad Gilbert</p>
+                        <p class="p6">CEO, Corevist </p>
+                        <p class="p7"> <span class="quote-left"><i class="fa fa-quote-left"
+                          aria-hidden="true"></i></span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt
+                            ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita
+                            kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea
+                            takimata sanctus
+                            est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit<span class="quote-right"> <i class="fa fa-quote-right"
+                              aria-hidden="true"></i></span></p>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <div class="reviews_image">
+                        <img src="./images/reviews.png" alt="reviews">
+                    </div>
+
+                    <div class="reviews_text">
+                        <p class="p3">Chad Gilbert</p>
+                        <p class="p6">CEO, Corevist </p>
+                        <p class="p7"><span class="quote-left"><i class="fa fa-quote-left"
+                          aria-hidden="true"></i></span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt
+                            ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita
+                            kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea
+                            takimata sanctus
+                            est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit<span class="quote-right"> <i class="fa fa-quote-right"
+                              aria-hidden="true"></i></span></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="client1">
-          <img src="./images/micro1.png" alt="gmail">
+        <div class="help">
+            <h2 class="helphead">Find out how we can help your business grow</h2>
+            <div class="help_button">
+                <a href="#">GET FREE CONSULTATION</a>
+            </div>
         </div>
-      </div>
-      <div class="clients">
-        <div class="client1">
-          <img src="./images/yahoo.png" alt="google">
+    </section>
+
+    <!-- clients ends -->
+
+    <!-- footer start -->
+     <footer>
+        <div class="container">
+            <div class="footer_line">
+                <div class="footer_logo">
+                    <img src="./images/logo.webp" alt="logo">
+                </div>
+                <div class="list1">
+                    <ul>
+                        <li><a class="bottom-hover" href="#">Technologies</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our team</a></li>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <ul>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="list3">
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Business Bay, Flat 3-I, 2nd Floor, Street 44,
+                                Sector F DHA Phase 1, Islamabad, 46000,
+                                Pakistan</a></li>
+                        <li><a href="#">info@diligenttechnologies.co</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="client1">
-          <img src="./images/android.png" alt="microsoft">
-        </div>
-        <div class="client1">
-          <img src="./images/micro1.png" alt="yahoo">
-        </div>
-        <div class="client1">
-          <img src="./images/yahoo.png" alt="andriod">
-        </div>
-        <div class="client1">
-          <img src="./images/android.png" alt="gmail">
-        </div>
-      </div>
-      <div class="clients">
-        <div class="client1">
-          <img src="./images/android.png" alt="google">
-        </div>
-        <div class="client1">
-          <img src="./images/yahoo.png" alt="microsoft">
-        </div>
-        <div class="client1">
-          <img src="./images/android.png" alt="yahoo">
-        </div>
-        <div class="client1">
-          <img src="./images/micro1.png" alt="andriod">
-        </div>
-        <div class="client1">
-          <img src="./images/yahoo.png" alt="gmail">
-        </div>
-      </div>
-    </div>
-        </div>
-      </div>
-    </div>
+    </footer> 
+
+    <!-- footer ends -->
+
+    <script src="js/Jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
-    <div class="container">
-		
 
-    <div class="testimonals">
-      <h2 class="clienthead">Clients and testimonials</h2>
-      <p class="p2">Our clients accept neither mediocre services nor solutions done by half. They stay with us for years
-        as they can reckon on
-        our professionalism. We are proud to meet their expectations.</p>
-    </div>
-    <div class="hero-slider">
-      <div class="reviews">
-        <div class="reviews_image">
-          <img src="./images/reviews.png" alt="reviews">
-        </div>
-
-        <div class="reviews_text">
-          <p class="p3">Chad Gilbert</p>
-          <p class="p6">CEO, Corevist </p>
-          <p class="p7">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-            ut labore et dolore
-            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-            kasd
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus
-            est Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-
-      <div class="reviews">
-        <div class="reviews_image">
-          <img src="./images/reviews.png" alt="reviews">
-        </div>
-
-        <div class="reviews_text">
-          <p class="p3">Chad Gilbert</p>
-          <p class="p6">CEO, Corevist </p>
-          <p class="p7">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-            ut labore et dolore
-            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-            kasd
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus
-            est Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-
-      <div class="reviews">
-        <div class="reviews_image">
-          <img src="./images/reviews.png" alt="reviews">
-        </div>
-
-        <div class="reviews_text">
-          <p class="p3">Chad Gilbert</p>
-          <p class="p6">CEO, Corevist </p>
-          <p class="p7">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-            ut labore et dolore
-            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-            kasd
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus
-            est Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="help">
-      <h2 class="helphead">Find out how we can help your business grow</h2>
-      <div class="help_button">
-        <a href="#">GET FREE CONSULTATION</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- clients ends -->
-
-  <!-- footer start -->
-  <footer>
-    <div class="container">
-      <div class="footer_line">
-        <div class="footer_logo">
-          <img src="./images/logo.webp" alt="logo">
-        </div>
-        <div class="list1">
-          <ul>
-            <li><a class="bottom-hover" href="#">Technologies</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our team</a></li>
-          </ul>
-        </div>
-        <div class="list2">
-          <ul>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-          </ul>
-        </div>
-        <div class="list3">
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Business Bay, Flat 3-I, 2nd Floor, Street 44, 
-              Sector F DHA Phase 1, Islamabad, 46000, 
-              Pakistan</a></li>
-            <li><a href="#">info@diligenttechnologies.co</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- footer ends -->
-
-  <script src="js/Jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   <script>
-    AOS.init();
+    let section = document.querySelectorAll('section');
+        let lists = document.querySelectorAll('.list');
+        function activeLink(li) {
+            lists.forEach((item) => item.classList.remove('active'));
+            li.classList.add('active');
+        }
+        lists.forEach((item) =>
+            item.addEventListener('click', function(){
+                activeLink(this);
+            }));
+
+        window.onscroll = () => {
+            section.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    const target = document.querySelector(`[href='#${id}']`).parentElement;
+                    activeLink(target);
+                }
+            })
+        };
   </script>
-
-
-
-
-</body>
-
+  </body>
 </html>

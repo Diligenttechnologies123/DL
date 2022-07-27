@@ -36,7 +36,9 @@ h4 {
 }
 
 .dedicated .build {
-  backdrop-filter: blur(85px);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   padding-bottom: 51px;
   border-radius: 35px;
 
@@ -44,11 +46,13 @@ h4 {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .build ul li {
+  max-width: 318px;
   color: white;
-  padding-left: 70px;
-  padding-top: 45px;
+  padding-left: 59px;
+  padding-top: 46px;
+  width: 100%;
+  display: inline-block;
 }
 
 .build ul li i {
@@ -125,7 +129,9 @@ h4 {
   margin: 20px 0px 60px 0px;
 }
 .circle-bar .our-clients h3 {
-  padding: 66px 0px 33px 0px;
+  padding: 43px 0px 33px 0px;
+  font-size: 32px;
+  font-weight: 700;
 }
 .progressbar {
   display: inline-block;
@@ -155,7 +161,7 @@ h4 {
 
 .circle div {
   position: absolute;
-  top: 108px;
+  top: 80px;
 
   width: 100%;
   text-align: center;
@@ -164,8 +170,8 @@ h4 {
   color: #d4a437;
 }
 canvas {
-  height: 250px !important;
-  width: 250px !important;
+  height: 206px !important;
+  width: 206px !important;
 }
 
 .circle strong i {
@@ -276,5 +282,35 @@ canvas {
   .build ul li {
     padding-left: 20px;
     font-size: 14px;
+  }
+  canvas {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .progressbar {
+    display: inline-block;
+    width: 300px;
+    margin: 0px px 9px;
+  }
+  .circle div {
+    position: absolute;
+    top: 56px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-size: 29px;
+  }
+  .business h1 {
+    padding-top: 64px;
+    padding: 27px 10px;
+  }
+  .business_button a {
+    display: inline-block;
+    color: white;
+    background: #d4a437;
+    font-size: 16px;
+    padding: 18px 67px;
+    border-radius: 9px;
   }
 }

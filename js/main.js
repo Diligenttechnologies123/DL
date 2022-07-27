@@ -61,7 +61,7 @@ function myFunction(x) {
 
     slidesToScroll: 1,
     arrows: false,
-    dots: true,
+    dots: false,
     vertical: true,
     verticalSwiping: true,
     responsive: [
@@ -94,20 +94,20 @@ function myFunction(x) {
         
   });
 
-
+ 
 
 
 // function for background image change state in together page
   $('#analyze-state').hover(function(){
-    $('#section6').css('background-image', 'url("../images/launch-state.png")');
-  });
-
-  $('#choose-state').hover(function() {
-    $('#section6').css('background-image', 'url("../images/together.png")');
+    $('#section6').css('background-image', 'url("../images/work-main-state.png")');
   });
   $('#interview-state').hover(function() {
     $('#section6').css('background-image', 'url("../images/interview-state.png")');
   });
+  $('#choose-state').hover(function() {
+    $('#section6').css('background-image', 'url("../images/choose-state.png")');
+  });
+  
   $('#launch-state').hover(function() {
     $('#section6').css('background-image', 'url("../images/launch-state.png")');
   });
