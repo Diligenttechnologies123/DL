@@ -99,20 +99,20 @@ function myFunction(x) {
 
 // function for background image change state in together page
   $('#analyze-state').hover(function(){
-    $('#section6').css('background-image', 'url("../images/work-main-state.png")');
+    $('#section6').css('background-image', 'url("images/work-main-state.png")');
   });
   $('#interview-state').hover(function() {
-    $('#section6').css('background-image', 'url("../images/interview-state.png")');
+    $('#section6').css('background-image', 'url("images/interview-state.png")');
   });
   $('#choose-state').hover(function() {
-    $('#section6').css('background-image', 'url("../images/choose-state.png")');
+    $('#section6').css('background-image', 'url("images/choose-state.png")');
   });
   
   $('#launch-state').hover(function() {
-    $('#section6').css('background-image', 'url("../images/launch-state.png")');
+    $('#section6').css('background-image', 'url("images/launch-state.png")');
   });
   $('#scale-state').hover(function() {
-    $('#section6').css('background-image', 'url("../images/scale-state.png")');
+    $('#section6').css('background-image', 'url("images/scale-state.png")');
   });
   
   $('a').on('mouseleave', function(){
