@@ -94,6 +94,7 @@ a:hover {
 header {
   background: black;
   width: 100%;
+  padding: 25px 0;
 }
 
 header .navbar {
@@ -113,18 +114,32 @@ nav ul li a {
   font-size: 14px;
   font-weight: 900;
   color: white;
+  display: block;
+  position: relative;
+  transition: 0.3s all ease;
 }
-
 nav ul li a:hover {
   color: #c2ab6c;
 }
-.nav-item.active a {
-  color: white;
+nav ul li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: transparent;
+  transition: 0.3s all ease;
+}
+nav ul li a:hover::after,
+nav ul li.active a:after{
   background-color: #c2ab6c;
-  padding: 25px 0px;
-  background: #c2ab6c;
-  border-bottom: 10px solid white;
-  border-top: 12px solid white;
+  width: 100%;
+}
+nav ul li.active a {
+  color: white;
 }
 .navbar-collapse {
   flex-grow: unset;
@@ -203,12 +218,11 @@ nav.navbar.navbar-expand-lg.justify-content-end {
   position: fixed;
   right: 50px;
   top: 50%;
+  transform: translateY(-50%);
   display: block;
   width: 5px;
-  height: 215px;
   list-style: none;
   list-style-type: none;
-  margin: -107px 0px 0px 0px;
   padding: 0px 0px;
   z-index: 1;
 
@@ -237,20 +251,24 @@ nav.navbar.navbar-expand-lg.justify-content-end {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  transition: 0.2s all ease;
 }
 
 .section-bullets li a.active {
   background-color: #d4a437;
   height: 38px;
   margin-bottom: 5px;
-  transition: 0.3s;
 }
 .bannerSection {
-  padding: 175px 0px 350px 0px;
+  padding: 25px 0;
   background-image: url("./../images/backgroundimage.png");
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
+  min-height: calc(100vh - 93px);
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .banner_main {
@@ -613,9 +631,14 @@ nav.navbar.navbar-expand-lg.justify-content-end {
 /* solution starts */
 .solution {
   background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-.solution-svg.aos-init.aos-animate {
-  max-width: 1300px;
+.solution .solution-svg {
+  max-width: 80.7455%;
+  width: 100%;
   margin: 26px auto;
 }
 
@@ -635,8 +658,8 @@ nav.navbar.navbar-expand-lg.justify-content-end {
   backdrop-filter: blur(5px);
   left: 0px;
   bottom: 0px;
-  padding: 12px 15px;
-  min-height: 120px;
+  padding: 5px 15px;
+  min-height: 102px;
 }
 
 .img-title {
@@ -936,6 +959,13 @@ nav.navbar.navbar-expand-lg.justify-content-end {
 .indus_image1:hover .hover-desc-text {
   visibility: visible;
   opacity: 1;
+}
+.industry .indus_image1 > img{
+  filter: grayscale(80%);
+  transition: 0.3s all ease;
+}
+.industry .indus_image1:hover > img{
+  filter: grayscale(40%);
 }
 
 .hover-desc-text {
@@ -1241,6 +1271,9 @@ footer {
   header nav ul li a {
     letter-spacing: 2px;
   }
+  .solution .solution-svg {
+    max-width: 90%;
+  }
   .img-wrap-inner .screen {
     max-width: 537px;
     margin: 0 auto;
@@ -1412,7 +1445,15 @@ footer {
     border-bottom: unset;
     border-top: unset;
   }
-
+  .solution {
+    min-height: 100%;
+  }
+  .solution .solution-svg {
+    max-width: 100%;
+  }
+  .work-with-us > .col-12{
+    padding: 0;
+  }
   .work p i {
     font-size: 16px;
     padding-right: 19px;
@@ -1542,6 +1583,7 @@ footer {
     margin-right: unset;
   }
   .bannerSection {
+    min-height: 100%;
     padding: 52px 0px 50px 0px;
   }
   .bannerSection .banner_text {
@@ -1620,6 +1662,9 @@ footer {
     color: white;
     padding-bottom: 13px;
   }
+  .together {
+    background-position: 81% center;
+}
 }
 @media (max-width: 480px) {
   h2 {
