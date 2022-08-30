@@ -311,6 +311,78 @@
 
 /* ends */
 
+/* rangeSlider starts here */
+.form-range .irs-from, .form-range .irs-to,
+.form-range .irs-min, .form-range .irs-max {
+  display: none;
+}
+.form-range .irs-handle {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #929292;
+  top: 20px;
+}
+.form-range .irs-handle i {
+  display: none;
+  visibility: hidden;
+}
+.form-range .irs-handle:before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #d4a437;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-range .irs-line {
+  height: 14px;
+  border-radius: 7px;
+}
+.form-range .irs-bar {
+  height: 14px;
+  background-color: #d4a437;
+  border-radius: 7px 0 0 7px;
+}
+.form-range .irs-single {
+  background-color: #d4a437;
+  color: #fff;
+  border-radius: 0;
+  min-width: 101px;
+  padding: 7px 15px;
+  letter-spacing: 0.25px;
+  font-size: 10px;
+  text-transform: uppercase;
+  top: -23px;
+  cursor: pointer;
+  text-align: center;
+}
+.form-range .irs-single:before {
+  border: 11px solid transparent;
+  border-top-color: #d4a437;
+  bottom: -22px;
+  margin-left: -10px;
+}
+.form-range .irs-single[data-value]:after {
+  content: attr(data-value);
+  width: 100%;
+  height: 100%;
+  background-color: #d4a437;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* rangeSlider ends here */
+
 @media (max-width: 1440px) {
   h1 {
     font-size: 50px;
