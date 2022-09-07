@@ -207,7 +207,6 @@ header .navbar-toggler-icon {
   transition: 0.3s all ease;
   opacity: 1;
   margin: 0;
-  transform-origin: 0;
 }
 header .navbar-toggler-icon + .navbar-toggler-icon{
   margin-top: 6px;
@@ -217,13 +216,11 @@ header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(2){
   transition-delay: 0.3s;
 }
 header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(1){
-  transform: rotate(-40deg);
-  transform-origin: 26px 5px;
+  transform: rotate(-41deg) translate(-3px, 8px);
   transition-delay: 0.3s;
 }
 header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(3){
-  transform: rotate(40deg);
-  transform-origin: 26px -3px;
+  transform: rotate(40deg) translate(-3px, -8px);
   transition-delay: 0.3s;
 }
 
