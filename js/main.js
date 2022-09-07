@@ -314,4 +314,45 @@ $(document).ready(function(){
       $("#industry_bg_image").css("opacity", '1'); 
     }
   );
+
+  if($(window).width() < 992){
+    $("header .nav-link").click(function() {
+      closeNav();
+    });
+  }
+  
 });
+
+let windowScrollY;
+
+function toggleNav() {
+  if($(window).width() < 992){
+    if($(".navbar-collapse").hasClass("show")){
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.top = '';
+      window.scrollTo(0, windowScrollY);
+      $(".header_nav_overlay").removeClass("show");
+    }
+    else{
+      $(".header_nav_overlay").addClass("show");
+      windowScrollY = window.pageYOffset; //Get a windows Position
+      console.log("windowScrollY at open", windowScrollY);
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+      document.body.style.top = '-' + windowScrollY + 'px';
+    }
+  }
+  
+}
+
+function closeNav() {
+  document.body.style.position = '';
+  document.body.style.width = '';
+  document.body.style.top = '';
+  window.scrollTo(0, windowScrollY);
+  $("header .navbar-collapse, .header_nav_overlay").removeClass("show");
+  $(".navbar-toggler").addClass("collapsed");
+}
+
+

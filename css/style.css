@@ -11,6 +11,9 @@
   --primary_color: #D4A437;
 }
 
+html{
+  scroll-behavior: initial;
+}
 body {
   margin: 0;
   padding: 0;
@@ -84,7 +87,12 @@ a:hover {
 button, button:focus{
   outline: none;
 }
-
+.main_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
 .container {
   max-width: 1640px;
   width: 92%;
@@ -186,17 +194,36 @@ header ul.navbar-nav {
 header nav.navbar.navbar-expand-lg.justify-content-end {
   justify-content: space-between !important;
 }
+header .navbar-toggler{
+  padding: 0;
+}
+header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(2){
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(1){
+  transform: rotate(-40deg);
+  transform-origin: 26px 5px;
+  transition-delay: 0.3s;
+}
+header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(3){
+  transform: rotate(40deg);
+  transform-origin: 26px -3px;
+  transition-delay: 0.3s;
+}
 header .navbar-toggler-icon {
   display: block;
-  width: 33px;
-  height: 2px;
-  content: "";
-  background: no-repeat center center;
+  width: 30px;
+  height: 1px;
   background-size: 100% 100%;
   background-color: white;
-  margin-bottom: 6px;
   padding-top: 2px;
-  margin-top: 8px;
+  transition: 0.3s all ease;
+  opacity: 1;
+  margin: 0;
+}
+header .navbar-toggler-icon + .navbar-toggler-icon{
+  margin-top: 6px;
 }
 
 /* toggle css */
@@ -1087,6 +1114,7 @@ header .navbar-toggler-icon {
 footer {
   background-color: var(--primary_bg);
   padding: 91px 0;
+  margin-top: auto;
 }
 .footer_line {
   display: flex;
@@ -1249,14 +1277,12 @@ footer .footer_links li.active a:after{
     font-size: 27px;
     line-height: 38px;
 }
+.img-wrap-inner .screen {
+  max-width: 480px;
+}
 .sec_heading {
   font-size: 42px;
   line-height: 59px;
-}
-.card_sec .work_with_us .card_content ul li {
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 16px;
 }
 header .navbar ul li {
   padding: 0px 10px;
@@ -1367,6 +1393,10 @@ footer .footer_links li > * {
   .container {
     width: 93%;
   }
+  .card_sec .work_with_us .card_content ul li {
+    font-size: 16px;
+    line-height: 22px;
+  }
   .card_sec .single:nth-child(odd) .card_shape:after {
     border-top: 30px solid transparent;
     border-right: 33px solid var(--primary_bg);
@@ -1410,6 +1440,61 @@ footer .footer_links li > * {
   .section-bullets {
     right: 15px;
 }
+header {
+  padding: 5px 0;
+  min-height: 50px;
+}
+header .navbar-collapse {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  background: var(--primary_bg);
+  max-width: 320px;
+  width: calc(100% - 100px);
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: 0.3s all ease;
+}
+.header_nav_overlay {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: calc(100% - 320px);
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.3s all ease;
+  z-index: 1;
+  transform: translateX(100%);
+}
+.header_nav_overlay.show {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+header .collapse:not(.show) {
+  display: block;
+}
+header .collapse.show {
+  transform: translateX(0);
+}
+header ul.navbar-nav {
+  align-items: flex-start;
+  padding-top: 20px;
+}
+header .navbar ul li {
+  padding: 0;
+  width: 100%;
+}
+header .navbar-nav .nav-link{
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+header nav ul li a:after {
+  left: 0;
+  right: 100%;
+}
+header nav ul li a:hover:after {
+  right: 0;
+}
   .bannerSection {
     padding: 25px 0 50px;
     min-height: 100%;
@@ -1425,11 +1510,18 @@ footer .footer_links li > * {
 .card_sec > .single {
   flex-direction: column-reverse !important;
 }
+.card_sec .card_content .inner {
+  max-width: 100%;
+}
 .card_sec .card_shape:after {
   content: none;
 }
 .card_sec .our_technologies .card_content .inner > p {
   font-size: 16px;
+}
+.card_sec .our_technologies .card_content ul {
+  grid-template-columns: repeat(2, 250px);
+  justify-content: center;
 }
 .solution .solution-svg {
   max-width: 100%;
@@ -1504,6 +1596,10 @@ footer .footer_links li > * {
 .industries .industry_box:not(.about_section) .box_content {
   text-align: left;
 }
+.industries .industry_box:not(.about_section) .box_content p {
+  max-height: 100% !important;
+  opacity: 1;
+}
 footer .inner .ft_item {
   padding: 0;
   width: 100%;
@@ -1544,7 +1640,6 @@ footer .footer_links li > * {
 }
 .card_sec .our_technologies .card_content ul {
   grid-template-columns: repeat(1, 250px);
-  justify-content: center;
 }
 .card_sec .card_content {
   padding: 40px 15px;
