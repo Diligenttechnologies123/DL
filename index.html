@@ -30,13 +30,14 @@
             ><img src="images/logo.webp" alt="logo"
           /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler collapsed"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onclick="toggleNav()"
           >
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"> </span>
@@ -66,6 +67,7 @@
       </div>
     </header>
     <div class="header_padding" id="headerTemp"></div>
+    <div class="header_nav_overlay" onclick="closeNav()"></div>
     <!-- header ends -->
         
     <!-- navigate section pagination starts -->
@@ -244,7 +246,7 @@
     <!-- experties ends -->
 
     <!-- services starts -->
-    <section class="services">
+    <section class="services" id="section4">
         <div class="container">
             <div class="top_heading">
                 <h2 class="sec_heading">Our Services</h2>
