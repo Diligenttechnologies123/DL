@@ -6,10 +6,7 @@ $(document).ready(function () {
     dots: true,
     nav: false,
   });
-})
 
-
-$(document).ready(function () {
   $('.media-slider').slick({
 
     slidesToShow: 1,
@@ -17,10 +14,7 @@ $(document).ready(function () {
     autoplay: false,
     dots: true,
   });
-})
 
-
-$(document).ready(function () {
   $('.award-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -29,7 +23,45 @@ $(document).ready(function () {
     prevArrow: '<span class="prev-arrow3" ><i class="fal fa-chevron-left"></i></span>',
     nextArrow: '<span class="next-arrow3" ><i class="fal fa-chevron-right"></i></span>'
   });
+
+  $('.testimonials-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2
+      //   }
+      // },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1
+      //   }
+      // }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+    ]
+  });
 })
+
 
 //change the active class
 // $(document).ready(function () {
@@ -203,10 +235,83 @@ $(document).ready(function () { // DOM ready
 
 
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+// var slider = document.getElementById("myRange");
+// var output = document.getElementById("demo");
+// output.innerHTML = slider.value;
 
-slider.oninput = function () {
-  output.innerHTML = this.value;
+// slider.oninput = function () {
+//   output.innerHTML = this.value;
+// }
+
+$(document).ready(function () {
+  let headerHeight = $("#header").outerHeight();
+  $(".header_padding").css('height', headerHeight + 'px')
+
+  
+});
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 5);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('#header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
 }
+
+$(document).ready(function(){
+  
+  $(".industries .hoverImageChange").hover(
+    function(){
+    $ (".bg_images .bg_img").css('opacity', '0');
+      let bgImage = $(this).attr("data-img")
+      $(bgImage).css("opacity", '1'); 
+    }, 
+    function(){
+      $ (".bg_images .bg_img").css('opacity', '0');
+      $("#industry_bg_image").css("opacity", '1'); 
+    }
+  );
+  
+  $(".work_together .hoverImageChange").hover(
+    function(){
+    $ (".bg_images .bg_img").css('opacity', '0');
+      let bgImage = $(this).attr("data-img")
+      $(bgImage).css("opacity", '1'); 
+    }, 
+    function(){
+      $ (".bg_images .bg_img").css('opacity', '0');
+      $("#industry_bg_image").css("opacity", '1'); 
+    }
+  );
+});
