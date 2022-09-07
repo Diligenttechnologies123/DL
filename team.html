@@ -15,6 +15,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/style-new.css">
 </head>
 
 <body>
@@ -239,8 +240,7 @@
           <form>
             <ul class="form-style-1">
               <li>
-                <input type="text" name="field1" class="field-divided" placeholder="First name" /> <input type="text"
-                  name="field2" class="field-divided" placeholder="Last name" />
+                <input type="text" name="field1" class="field-divided" placeholder="Full Name" /> 
               </li>
               <li>
 
@@ -255,9 +255,12 @@
               </li>
               </li>
               <li>
+                <input  type="file" id="formFile">
+              </li>
+              <li>
 
                 <textarea name="field7" id="field7" class="field-long field-textarea"
-                  placeholder="Apart from your experience, we'd really love to get an idea of YOU"></textarea>
+                  placeholder="Apart from your experience, we'd really love to get an idea of you"></textarea>
               </li>
             </ul>
             <button>submit</button>
@@ -271,43 +274,39 @@
     </div>
   </section>
   <!-- Join Team ends -->
-  <!-- footer start -->
-  <footer>
-    <div class="container">
-      <div class="footer_line">
-        <div class="footer_logo">
-          <img src="./images/logo.webp" alt="logo">
+ 
+      <!-- footer start -->
+      <footer>
+        <div class="container">
+            <div class="inner">
+                <div class="footer_logo ft_item">
+                    <a href="javascript:;"><img src="./images/logo.webp" alt="logo"></a>
+                </div>
+                <ul class="footer_links ft_item">
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our team</a></li>
+                </ul>
+                <ul class="footer_links ft_item">
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+                <ul class="footer_links ft_item">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><p>Business Bay, Flat 3-I, 2nd Floor, Street 44,
+                            Sector F DHA Phase 1, Islamabad, 46000,
+                            Pakistan</p></li>
+                    <li><a href="#">info@diligenttechnologies.co</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="list1">
-          <ul>
-            <li><a href="#">Technologies</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our team</a></li>
-          </ul>
-        </div>
-        <div class="list2">
-          <ul>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-          </ul>
-        </div>
-        <div class="list3">
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Business Bay, Flat 3-I, 2nd Floor, Street 44,
-                Sector F DHA Phase 1, Islamabad, 46000,
-                Pakistan</a></li>
-            <li><a href="#">info@diligenttechnologies.co</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer> 
+    <!-- footer ends -->
 
-  <!-- footer ends -->
+
   <script src="js/Jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
