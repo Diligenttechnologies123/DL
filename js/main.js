@@ -208,30 +208,30 @@ activeNavItem.click(function () {
 
 // );
 
-$(document).ready(function () { // DOM ready
-  // If a link has a dropdown, add sub menu toggle.
+// $(document).ready(function () { // DOM ready
+//   // If a link has a dropdown, add sub menu toggle.
 
-  $('nav ul li a:not(:only-child)').click(function (e) {
-    $(this).siblings('.nav-dropdown').toggle();
-    // Close one dropdown when selecting another
-    $('.nav-dropdown').not($(this).siblings()).hide();
-    e.stopPropagation();
-  });
-  // Clicking away from dropdown will remove the dropdown class
-  $('html').click(function () {
-    $('.nav-dropdown').hide();
-  });
-  // Toggle open and close nav styles on click
-  $('#nav-toggle').click(function () {
-    $('nav ul').slideToggle();
-  });
-  // Hamburger to X toggle
-  $('#nav-toggle').on('click', function () {
-    this.classList.toggle('active');
-  });
-}); // end DOM ready
-//   })
-(jQuery);
+//   $('nav ul li a:not(:only-child)').click(function (e) {
+//     $(this).siblings('.nav-dropdown').toggle();
+//     // Close one dropdown when selecting another
+//     $('.nav-dropdown').not($(this).siblings()).hide();
+//     e.stopPropagation();
+//   });
+//   // Clicking away from dropdown will remove the dropdown class
+//   $('html').click(function () {
+//     $('.nav-dropdown').hide();
+//   });
+//   // Toggle open and close nav styles on click
+//   $('#nav-toggle').click(function () {
+//     $('nav ul').slideToggle();
+//   });
+//   // Hamburger to X toggle
+//   $('#nav-toggle').on('click', function () {
+//     this.classList.toggle('active');
+//   });
+// }); // end DOM ready
+// //   })
+// (jQuery);
 
 
 
@@ -242,13 +242,6 @@ $(document).ready(function () { // DOM ready
 // slider.oninput = function () {
 //   output.innerHTML = this.value;
 // }
-
-let headerHeight = $("#header").outerHeight();
-
-$(window).resize(function(event){
-  $(".header_padding").css('height', headerHeight + 'px')
-});
-
 
 // Hide Header on on scroll down
 var didScroll;
@@ -291,23 +284,33 @@ function hasScrolled() {
 
 $(document).ready(function(){
 
-  let lastScrollTopVal;
-  let scrollHeightVal;
+  let headerHeight = $("#header").outerHeight();
+  $(".header_padding").css('height', headerHeight + 'px')
+  $(window).resize(function(event){
+    $(".header_padding").css('height', headerHeight + 'px')
+  });
+
+  let scrollHeightVal, lastScrollTopVal, scrollElementVal;
+  
   $(".section-bullets .list-item").click(function() {
-    console.log("lastScrollTopVal", lastScrollTopVal);
-    console.log("scrollHeightVal", scrollHeightVal);
-    let scrollElement = $(this).attr("data-target");
-    if(scrollHeightVal > lastScrollTopVal){
-      console.log("test if");
-      scrollHeightVal = $(scrollElement).offset().top;
-    }
-    else{
-      console.log("test else");
-      scrollHeightVal = $(scrollElement).offset().top + (-headerHeight);
-    }
+    scrollElementVal = $(this).attr("data-target");
+    scrollHeightVal = $(scrollElementVal).offset().top + (-headerHeight);
+    // if(scrollHeightVal < lastScrollTopVal){
+    //   $('html, body').animate({
+    //     scrollTop: scrollHeightVal
+    //   }, 1000);
+    // }
+    // else{
+    //   $('html, body').animate({
+    //     scrollTop: $(scrollElementVal).offset().top 
+    //   }, 1000);
+    // }
+
+    // temporary
     $('html, body').animate({
-      scrollTop: scrollHeightVal
+      scrollTop: $(scrollElementVal).offset().top 
     }, 1000);
+
     lastScrollTopVal = scrollHeightVal
     console.log("lastScrollTopVal ===========", lastScrollTopVal);
 
