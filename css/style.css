@@ -276,7 +276,7 @@ header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(3){
   list-style: none;
   list-style-type: none;
   padding: 0px 0px;
-  z-index: 1;
+  z-index: 9;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1385,15 +1385,20 @@ footer .footer_links li > * {
 }
 }
 
+@media (max-width: 1366px), (max-height: 900px) {
+  .img-wrap-inner .screen {
+    max-width: 340px;
+}
+}
 @media (max-width: 1440px) {
   h1 {
     font-size: 40px;
   }
   header {
-    padding: 8px 0;
+    padding: 10px 0;
 }
 .bannerSection {
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 60px);
 }
   .banner_text .banner_subheading h2 {
     font-size: 22px;
