@@ -305,13 +305,17 @@ $(document).ready(function(){
   
   $(".work_together .hoverImageChange").hover(
     function(){
-    $ (".bg_images .bg_img").css('opacity', '0');
-      let bgImage = $(this).attr("data-img")
-      $(bgImage).css("opacity", '1'); 
+    $ (".wt_images .wt_img").css('opacity', '0');
+    $ (".work_together .hoverImageChange").removeClass('hvr');
+    $ (this).addClass('hvr');
+      let wtImage = $(this).attr("data-img")
+      $(wtImage).css("opacity", '1'); 
     }, 
     function(){
-      $ (".bg_images .bg_img").css('opacity', '0');
-      $("#industry_bg_image").css("opacity", '1'); 
+      $ (".wt_images .wt_img").css('opacity', '0');
+      $ (".work_together .hoverImageChange").removeClass('hvr');
+      $ (".work_together .hoverImageChange.first").addClass('hvr');
+      $("#analyse_image").css("opacity", '1'); 
     }
   );
 

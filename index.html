@@ -529,24 +529,28 @@
                     <div class="left_text">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)" id="analyze-state" class="li-hover-state">Analyse</a>
+                                <a class="hoverImageChange hvr first" data-img="#analyse_image" href="javascript:void(0)" id="analyze-state">Analyse</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" id="interview-state" class="li-hover-state">Choose</a>
+                                <a class="hoverImageChange" data-img="#choose_image" href="javascript:void(0)" id="interview-state">Choose</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" id="choose-state" class="li-hover-state">Interview</a>
+                                <a class="hoverImageChange" data-img="#interview_image" href="javascript:void(0)" id="choose-state">Interview</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" id="launch-state" class="li-hover-state">Lunch</a>
+                                <a class="hoverImageChange" data-img="#launch_image" href="javascript:void(0)" id="launch-state">Lunch</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" id="scale-state" class="li-hover-state">Scale</a>
+                                <a class="hoverImageChange" data-img="#scale_image" href="javascript:void(0)" id="scale-state">Scale</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="right_img">
-                        <img id="img_1" src="./images-new/work.png" alt="Work Image">
+                    <div class="right_img wt_images">
+                        <img class="wt_img" id="analyse_image" style="opacity: 1;" src="./images-new/analyse.svg" alt="Work Image">
+                        <img class="wt_img" id="choose_image" src="./images-new/choose.svg" alt="Work Image">
+                        <img class="wt_img" id="interview_image" src="./images-new/interview.svg" alt="Work Image">
+                        <img class="wt_img" id="launch_image" src="./images-new/launch.svg" alt="Work Image">
+                        <img class="wt_img" id="scale_image" src="./images-new/scale.svg" alt="Work Image">
                     </div>
                 </div>
             </div>
@@ -633,6 +637,12 @@
         //     })
         // };
         $(document).ready(function () {
+
+            $(function() {
+                $.scrollify({
+                    section : ".scrollify_sec",
+                });
+            });
 
             var sectionIds = $('a.list-item');
             $(window).scroll(function () {

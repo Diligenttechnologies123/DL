@@ -26,21 +26,22 @@
 
   <body>
     <section class="main_wrapper">
-    <!-- header starts here -->
+    <!-- header starts -->
     <header class="header" id="header">
       <div class="container">
         <nav class="navbar navbar-expand-lg justify-content-end">
-          <a class="navbar-brand" href="javascript:void(0)"
+          <a class="navbar-brand" href="#"
             ><img src="images/logo.webp" alt="logo"
           /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler collapsed"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onclick="toggleNav()"
           >
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"> </span>
@@ -49,13 +50,11 @@
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"
-                  >HOME <span class="sr-only">(current)</span></a
-                >
+              <li class="nav-item active">
+                <a class="nav-link" href="javascript:void(0)">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#section4">SERVICES</a>
+                <a class="nav-link" href="#section4">SERVICES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="team.html">OUR TEAM</a>
@@ -63,7 +62,7 @@
               <li class="nav-item">
                 <a href="about.html" class="nav-link">ABOUT US</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a href="contact.html" class="nav-link">CONTACT US</a>
               </li>
             </ul>
@@ -72,9 +71,8 @@
       </div>
     </header>
     <div class="header_padding" id="headerTemp"></div>
-    <!-- HEADER -->
-
-    <!-- header ends here -->
+    <div class="header_nav_overlay" onclick="closeNav()"></div>
+    <!-- header ends -->
     <!-- FORM STRATS -->
     <section class="talk">
       <div class="container">
