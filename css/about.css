@@ -91,13 +91,13 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 82px 20px 80px 20px;
 }
 
 .business h1 {
   margin: 0 auto;
   text-align: center;
   color: white;
-  padding-top: 82px;
   padding-bottom: 27px;
   position: relative;
   z-index: 11;
@@ -106,7 +106,6 @@ h4 {
 .business .business_button {
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 55px;
   position: relative;
   z-index: 11;
 }
@@ -125,10 +124,11 @@ h4 {
 /* circle bar starts */
 .circle-bar {
   text-align: center;
-  margin: 20px 0px 60px 0px;
+  padding-top: 63px;
+  padding-bottom: 63px;
 }
 .circle-bar .our-clients h3 {
-  padding: 43px 0px 33px 0px;
+  padding-bottom: 33px;
   font-size: 32px;
   font-weight: 700;
 }
@@ -186,31 +186,43 @@ canvas {
 }
 
 /* circle bar ends */
-
+@media (max-width:1366px){
+    .business h1{
+      font-size: 30px;
+    }
+    .business_button a{
+      font-size: 22px;
+      padding: 10px 35px;
+      border-radius: 5px;
+    }
+}
 @media (max-width: 1024px) {
+  .dedicated{
+    padding-top: 100px;
+  }
   .build ul li {
     padding-left: 40px;
   }
 }
 @media (max-width: 991px) {
   h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
   .dedicated .build {
     justify-content: flex-start;
   }
   .circle div {
-    top: 78px;
-
-    font-size: 36px;
+    top: 62px;
+    font-size: 34px;
   }
 
   canvas {
-    height: 190px !important;
-    width: 190px !important;
+    height: 170px !important;
+    width: 170px !important;
   }
   .circle-bar .progressbar p {
     font-size: 28px;
+    padding-top: 10px;
   }
   .business_button a {
     font-size: 24px;
@@ -222,94 +234,37 @@ canvas {
     padding-bottom: 49px;
   }
 }
-@media (max-width: 768px) {
-  .dedicated .build {
-    display: block;
-  }
-}
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   h1 {
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 40px;
-  }
-  .business h1 {
-    padding-top: 64px;
-  }
-  .business_button a {
-    display: inline-block;
-    color: white;
-    background: #d4a437;
-    font-size: 22px;
-    padding: 18px 67px;
-    border-radius: 16px;
-  }
-  .build ul li {
-    padding-left: 20px;
-  }
-  .dedicated .dedicated_image {
-    max-width: 268px;
-    margin: 0 auto;
-    padding-top: 112px;
-    padding-bottom: 49px;
-  }
-
-  .circle-bar .our-clients h3 {
-    padding: 39px 0px 33px 0px;
-  }
-  .circle div {
-    position: absolute;
-    top: 80px;
-
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 30px;
-    color: #d4a437;
-  }
-  canvas {
-    height: 190px !important;
-    width: 190px !important;
-  }
-  .circle-bar .progressbar p {
     font-size: 24px;
   }
-}
-
-@media (max-width: 375px) {
-  .build ul li {
-    padding-left: 20px;
-    font-size: 14px;
+  .dedicated {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  canvas {
-    height: 150px !important;
-    width: 150px !important;
+  .circle-bar{
+    padding: 50px 0px;
   }
-  .progressbar {
-    display: inline-block;
-    width: 300px;
-    margin: 0px px 9px;
+  .dedicated h1{
+    padding-bottom: 30px;
   }
-  .circle div {
-    position: absolute;
-    top: 56px;
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
+  .business{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .business h1{
+    font-size: 26px;
+  }
+  .business_button a{
+    padding: 8px 20px;
     font-size: 18px;
-    font-size: 29px;
   }
-  .business h1 {
-    padding-top: 64px;
-    padding: 27px 10px;
+}
+@media (max-width: 480px){
+  .circle-bar .our-clients h3 {
+    padding-bottom: 20px;
   }
-  .business_button a {
-    display: inline-block;
-    color: white;
-    background: #d4a437;
-    font-size: 16px;
-    padding: 18px 67px;
-    border-radius: 9px;
+.circle-bar .progressbar p {
+    font-size: 20px;
   }
 }
