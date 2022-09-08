@@ -243,12 +243,12 @@ $(document).ready(function () { // DOM ready
 //   output.innerHTML = this.value;
 // }
 
-$(document).ready(function () {
-  let headerHeight = $("#header").outerHeight();
-  $(".header_padding").css('height', headerHeight + 'px')
+let headerHeight = $("#header").outerHeight();
 
-  
+$(window).resize(function(event){
+  $(".header_padding").css('height', headerHeight + 'px')
 });
+
 
 // Hide Header on on scroll down
 var didScroll;
@@ -290,6 +290,28 @@ function hasScrolled() {
 }
 
 $(document).ready(function(){
+
+  let lastScrollTopVal;
+  let scrollHeightVal;
+  $(".section-bullets .list-item").click(function() {
+    console.log("lastScrollTopVal", lastScrollTopVal);
+    console.log("scrollHeightVal", scrollHeightVal);
+    let scrollElement = $(this).attr("data-target");
+    if(scrollHeightVal > lastScrollTopVal){
+      console.log("test if");
+      scrollHeightVal = $(scrollElement).offset().top;
+    }
+    else{
+      console.log("test else");
+      scrollHeightVal = $(scrollElement).offset().top + (-headerHeight);
+    }
+    $('html, body').animate({
+      scrollTop: scrollHeightVal
+    }, 1000);
+    lastScrollTopVal = scrollHeightVal
+    console.log("lastScrollTopVal ===========", lastScrollTopVal);
+
+  });
   
   $(".industries .hoverImageChange").hover(
     function(){
