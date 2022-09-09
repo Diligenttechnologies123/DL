@@ -199,11 +199,11 @@ activeNavItem.click(function () {
 // });
 
 // $('nav ul li ').hover(
-//   function(){ 
+//   function(){
 //     $(".nav-item").addClass('inactive').removeClass('active');
 //   },
-//   function(){ 
-//     $(".nav-item.inactive").addClass('active').removeClass('inactive'); 
+//   function(){
+//     $(".nav-item.inactive").addClass('active').removeClass('inactive');
 //   },
 
 // );
@@ -262,11 +262,11 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
+
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
-    
+
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
@@ -278,20 +278,21 @@ function hasScrolled() {
             $('#header').removeClass('nav-up').addClass('nav-down');
         }
     }
-    
+
     lastScrollTop = st;
 }
 
 $(document).ready(function(){
 
   let headerHeight = $("#header").outerHeight();
-  $(".header_padding").css('height', headerHeight + 'px')
+  $(".header_padding").css('min-height', headerHeight + 'px')
   $(window).resize(function(event){
-    $(".header_padding").css('height', headerHeight + 'px')
+    headerHeight = $("#header").outerHeight();
+    $(".header_padding").css('min-height', headerHeight + 'px')
   });
 
   let scrollHeightVal, lastScrollTopVal, scrollElementVal;
-  
+
   $(".section-bullets .list-item").click(function() {
     scrollElementVal = $(this).attr("data-target");
     scrollHeightVal = $(scrollElementVal).offset().top + (-headerHeight);
@@ -302,45 +303,45 @@ $(document).ready(function(){
     // }
     // else{
     //   $('html, body').animate({
-    //     scrollTop: $(scrollElementVal).offset().top 
+    //     scrollTop: $(scrollElementVal).offset().top
     //   }, 1000);
     // }
 
     // temporary
     $('html, body').animate({
-      scrollTop: $(scrollElementVal).offset().top 
+      scrollTop: $(scrollElementVal).offset().top
     }, 1000);
 
     lastScrollTopVal = scrollHeightVal
     console.log("lastScrollTopVal ===========", lastScrollTopVal);
 
   });
-  
+
   $(".industries .hoverImageChange").hover(
     function(){
     $ (".bg_images .bg_img").css('opacity', '0');
       let bgImage = $(this).attr("data-img")
-      $(bgImage).css("opacity", '1'); 
-    }, 
+      $(bgImage).css("opacity", '1');
+    },
     function(){
       $ (".bg_images .bg_img").css('opacity', '0');
-      $("#industry_bg_image").css("opacity", '1'); 
+      $("#industry_bg_image").css("opacity", '1');
     }
   );
-  
+
   $(".work_together .hoverImageChange").hover(
     function(){
     $ (".wt_images .wt_img").css('opacity', '0');
     $ (".work_together .hoverImageChange").removeClass('hvr');
     $ (this).addClass('hvr');
       let wtImage = $(this).attr("data-img")
-      $(wtImage).css("opacity", '1'); 
-    }, 
+      $(wtImage).css("opacity", '1');
+    },
     function(){
       $ (".wt_images .wt_img").css('opacity', '0');
       $ (".work_together .hoverImageChange").removeClass('hvr');
       $ (".work_together .hoverImageChange.first").addClass('hvr');
-      $("#analyse_image").css("opacity", '1'); 
+      $("#analyse_image").css("opacity", '1');
     }
   );
 
@@ -349,7 +350,7 @@ $(document).ready(function(){
       closeNav();
     });
   }
-  
+
 });
 
 let windowScrollY;
@@ -372,7 +373,7 @@ function toggleNav() {
       document.body.style.top = '-' + windowScrollY + 'px';
     }
   }
-  
+
 }
 
 function closeNav() {
@@ -383,5 +384,3 @@ function closeNav() {
   $("header .navbar-collapse, .header_nav_overlay").removeClass("show");
   $(".navbar-toggler").addClass("collapsed");
 }
-
-
