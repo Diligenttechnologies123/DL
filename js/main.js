@@ -291,26 +291,29 @@ $(document).ready(function(){
     $(".header_padding").css('min-height', headerHeight + 'px')
   });
 
-  let scrollHeightVal, lastScrollTopVal, scrollElementVal;
 
+  let scrollHeightVal, lastScrollTopVal, scrollElementVal;
   $(".section-bullets .list-item").click(function() {
     scrollElementVal = $(this).attr("data-target");
     scrollHeightVal = $(scrollElementVal).offset().top + (-headerHeight);
-    // if(scrollHeightVal < lastScrollTopVal){
-    //   $('html, body').animate({
-    //     scrollTop: scrollHeightVal
-    //   }, 1000);
-    // }
-    // else{
-    //   $('html, body').animate({
-    //     scrollTop: $(scrollElementVal).offset().top
-    //   }, 1000);
-    // }
+    // console.log("lastScrollTopVal", lastScrollTopVal );
+    // console.log("scrollHeightVal", scrollHeightVal);
+    // console.log("headerHeight", headerHeight);
+    if(scrollHeightVal < lastScrollTopVal){
+      $('html, body').animate({
+        scrollTop: scrollHeightVal
+      }, 1000);
+    }
+    else{
+      $('html, body').animate({
+        scrollTop: $(scrollElementVal).offset().top
+      }, 1000);
+    }
 
     // temporary
-    $('html, body').animate({
-      scrollTop: $(scrollElementVal).offset().top
-    }, 1000);
+    // $('html, body').animate({
+    //   scrollTop: $(scrollElementVal).offset().top
+    // }, 1000);
 
     lastScrollTopVal = scrollHeightVal
     console.log("lastScrollTopVal ===========", lastScrollTopVal);
@@ -351,7 +354,33 @@ $(document).ready(function(){
     });
   }
 
+  getActiveNavElement();
 });
+
+function setNavElActive(element){
+    localStorage.setItem("activeElement", JSON.stringify(element));
+}
+
+function getActiveNavElement(){
+
+    let scrollHeightVal, lastScrollTopVal, scrollElementVal;
+
+    let activeElement = JSON.parse(localStorage.getItem("activeElement"));
+
+    $("header .navbar-nav .nav-item").each(function (){
+        if($(this).children().attr("data-attr") == activeElement){
+            console.log("activeElement", activeElement);
+            $("header .navbar-nav .nav-item").removeClass("active");
+            $(this).addClass("active");
+            if(activeElement == "services"){
+                $('html, body').animate({
+                  scrollTop: $('#' + activeElement).offset().top
+                }, 1000);
+            }
+            return;
+        }
+    });
+}
 
 let windowScrollY;
 

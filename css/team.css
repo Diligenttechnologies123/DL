@@ -108,7 +108,7 @@
 }
 .quote_sec h1::after{
   bottom: 0;
-  right: -30px;
+  right: 0;
 }
 /* quote_sec ends */
 

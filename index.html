@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="icon" href="images-new/cropped-diligent-logo-32x32.png" sizes="32x32" />
+    <link rel="icon" href="images-new/cropped-diligent-logo-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/cropped-diligent-logo-180x180.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/fonts.css" />
@@ -18,7 +21,6 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-new.css" />
   </head>
 
   <body>
@@ -45,23 +47,23 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#headerTemp">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section4">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">OUR TEAM</a>
-              </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">CONTACT US</a>
-              </li>
-            </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" data-attr="home" onclick="setNavElActive('home')" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="services" onclick="setNavElActive('services')" href="index.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="our-team" onclick="setNavElActive('our-team')" href="team.html">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="about" onclick="setNavElActive('about')" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="contact" onclick="setNavElActive('contact')" href="contact.html">CONTACT US</a>
+                </li>
+              </ul>
           </div>
         </nav>
       </div>
@@ -69,7 +71,7 @@
     <div class="header_padding" id="headerTemp"></div>
     <div class="header_nav_overlay" onclick="closeNav()"></div>
     <!-- header ends -->
-        
+
     <!-- navigate section pagination starts -->
     <ul class="section-bullets">
         <li class="list"><a class="list-item active" data-target="#bannerSection" href="javascript:void(0)"></a></li>
@@ -126,8 +128,8 @@
 
             </div>
         </div>
-        
-    </section> 
+
+    </section>
     <!-- banner ends -->
 
     <section class="card_sec">
@@ -151,7 +153,7 @@
                             <li>3-week trial period</li>
                             <li>Mature processes</li>
                             <li>Key areas of expertise</li>
-                            <li>English proficienc</li>
+                            <li>English proficiency</li>
                             <li>Your safe staffing</li>
                             <li>Guaranteed data safety</li>
                         </ul>
@@ -172,19 +174,19 @@
                 <div class="card_content">
                     <div class="inner text-center">
                         <h3 class="sec_heading">Our Technologies</h3>
-                        <p>Web, Enterprise, Mobile development, Software as a service (SaaS) and 
+                        <p>Web, Enterprise, Mobile development, Software as a service (SaaS) and
                             Cloud computing. We work with the most popular and advanced technologies</p>
                         <ul>
-                            <li><img src="images-new/php.png" alt="php-image"></li>
-                            <li><img src="images-new/wordpress.png" alt="wordpress-image"></li>
                             <li><img src="images-new/html-css.png" alt="html-css-image"></li>
-                            <li><img src="images-new/laravel.png" alt="laravel-image"></li>
-                            <li><img src="images-new/react.png" alt="react-image"></li>
                             <li><img src="images-new/bootstrap.png" alt="bootstrap-image"></li>
-                            <li><img src="images-new/java.png" alt="java-image"></li>
+                            <li><img src="images-new/react.png" alt="react-image"></li>
                             <li><img src="images-new/express.png" alt="express-image"></li>
-                            <li><img src="images-new/dotnet.png" alt="dotnet-image"></li>
+                            <li><img src="images-new/wordpress.png" alt="wordpress-image"></li>
                             <li><img src="images-new/codeigniter.png" alt="codeigniter-image"></li>
+                            <li><img src="images-new/laravel.png" alt="laravel-image"></li>
+                            <li><img src="images-new/php.png" alt="php-image"></li>
+                            <li><img src="images-new/java.png" alt="java-image"></li>
+                            <li><img src="images-new/dotnet.png" alt="dotnet-image"></li>
                         </ul>
                     </div>
                 </div>
@@ -198,7 +200,7 @@
     <section class="solution py-5" id="solution">
         <div class="container">
             <div class="solution-svg" data-aos="fade-up" data-aos-duration="2000">
-                <img src="images/solution1.svg" alt="">
+                <img class="w-100" src="images/solution1.svg" alt="">
             </div>
         </div>
     </section>
@@ -210,39 +212,39 @@
             <h2 class="sec_heading">Experties</h2>
             <div class="parent_experties">
                 <div class="inner_img">
-                    <img src="./images-new/G1.png" alt="">
-                    <div class="hexaoverlay"><p>Digital Commerence</p></div>
+                    <img src="./images-new/ecommerce.svg" alt="">
+                    <div class="hexaoverlay"><p>E-Commerence</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G2.png" alt="">
-                    <div class="hexaoverlay"><p>Business Application</p></div>
+                    <img src="./images-new/business-applications.svg" alt="">
+                    <div class="hexaoverlay"><p>Business Applications</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G3.png" alt="">
+                    <img src="./images-new/data-management-and-analytics.svg" alt="">
                     <div class="hexaoverlay"><p>Data Management & Analytics</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G4.png" alt="">
+                    <img src="./images-new/business-process-outsourcing.svg" alt="">
                     <div class="hexaoverlay"><p>Business Process Outsourcing</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G5.png" alt="">
+                    <img src="./images-new/cloud-services.svg" alt="">
                     <div class="hexaoverlay"><p>Cloud Services</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G6.png" alt="">
+                    <img src="./images-new/application-development.svg" alt="">
                     <div class="hexaoverlay"><p>Application Development</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G7.png" alt="">
+                    <img src="./images-new/security.svg" alt="">
                     <div class="hexaoverlay"><p>Security</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G8.png" alt="">
+                    <img src="./images-new/quality-assurance.svg" alt="">
                     <div class="hexaoverlay"><p>Quality Assurance</p></div>
                 </div>
                 <div class="inner_img">
-                    <img src="./images-new/G9.png" alt="">
+                    <img src="./images-new/user-experience.svg" alt="">
                     <div class="hexaoverlay"><p>User Experience</p></div>
                 </div>
             </div>
@@ -257,68 +259,60 @@
                 <h2 class="sec_heading">Our Services</h2>
                 <p>Our services are defined by quality and commitment</p>
             </div>
-    
+
             <div class="inner_main">
-                <div class="cad_sections">
+                <div class="card_single">
+                    <a class="cta_link" href="contact.html"></a>
                     <div class="it_img">
                         <img src="./images-new/it.png" alt="IT IMage">
                     </div>
-                    <h3>IT CONSULTANT</h3>
-                    <p>Need help understanding what works
-                        best for your project or how to implement
-                        it efficiently? Get a consultation at
-                        UNL Solutions</p>
+                    <h3>IT CONSULTANCY</h3>
+                    <p>Your digital strategy should be informed by the data and insights you have. Let us help you implement your digital strategy and create additional value for your customers. Schedule a meeting today!</p>
                 </div>
-    
-                <div class="cad_sections">
+
+                <div class="card_single">
+                    <a class="cta_link" href="javascript:void(0)"></a>
                     <div class="mobile_img">
                         <img src="./images-new/it.png" alt="Mobile IMage">
                     </div>
                     <h3>Mobile App Development</h3>
-                    <p>Stay at the forefront of mobile trends
-                        with the best of class mobile apps
-                        delivered on time, on budget, and
-                        on spec software solutions.</p>
+                    <p>Need a mobile app for your business? Get the best of class software solutions delivered on time, on budget, and with great features.</p>
                 </div>
-    
-                <div class="cad_sections">
+
+                <div class="card_single">
+                    <a class="cta_link" href="javascript:void(0)"></a>
                     <div class="quality_img">
                         <img src="./images-new/it.png" alt="Quality IMage">
                     </div>
                     <h3>Quality Assurance</h3>
-                    <p>Dedicated QA teams liaised with your
-                        development. We ensure the quality and
-                        stable performance of all your
-                        software solutions.</p>
+                    <p>We stand by our work and ensure that all products are delivered to the highest standards. Our experts are trained on QA & testing like regression testing, unit testing, and accessibility testing.</p>
                 </div>
-    
-                <div class="cad_sections">
+
+                <div class="card_single">
+                    <a class="cta_link" href="javascript:void(0)"></a>
                     <div class="quality_img">
                         <img src="./images-new/it.png" alt="Quality IMage">
                     </div>
                     <h3>CUSTOM SOFTWARE</h3>
-                    <p>We know 20+ most popular languages and frameworks. We work 
-                        in 10+ industries. With UNL, your project is backed by professionals.</p>
+                    <p>Our team is technology-agnostic and has experience with 30+ technologies and tools. We are passionate about building scalable solutions for our clients’ needs. Our focus is on iteration and innovation, so we stay up to date with latest technologies.</p>
                 </div>
-    
-                <div class="cad_sections">
+
+                <div class="card_single">
+                    <a class="cta_link" href="javascript:void(0)"></a>
                     <div class="quality_img">
                         <img src="./images-new/it.png" alt="Quality IMage">
                     </div>
                     <h3>DEDICATED TEAM</h3>
-                    <p>Pick the skills you need and get your own dedicated team. Manage 
-                        their work and see results delivered in no time. It's easy to plan 
-                        your IT strategy when you are on top of everything.</p>
+                    <p>Get a team of your own with our dedication and manage their work, get it delivered in no time, and see the results live.</p>
                 </div>
-    
-                <div class="cad_sections">
+
+                <div class="card_single">
+                    <a class="cta_link" href="javascript:void(0)"></a>
                     <div class="quality_img">
                         <img src="./images-new/it.png" alt="Quality IMage">
                     </div>
                     <h3>IT STAFF AUGMENTATION</h3>
-                    <p>Do you have a last-minute need to scale up your IT team? Are you 
-                        looking for rare expertise to rescue a burning project? We help you 
-                        to bring on board IT talents right when needed for as long as needed.</p>
+                    <p>Urgently required by your project? Our expert IT people will be available 24/7 to help you perform critical functions that would otherwise come at an unaffordable cost.</p>
                 </div>
             </div>
         </div>
@@ -328,26 +322,25 @@
     <!-- industries starts -->
     <section class="industries" id="industries">
         <div class="bg_images">
-            <img class="bg_img" id="industry_bg_image" src="images-new/industries-bg.jpg" alt="" style="opacity: 1;">
-            <img class="bg_img" id="production_bg_image" src="images-new/production.jpg" alt="">
-            <img class="bg_img" id="networking_bg_image" src="images-new/networking.jpg" alt="">
-            <img class="bg_img" id="education_bg_image" src="images-new/education.jpg" alt="">
-            <img class="bg_img" id="ecommerce_bg_image" src="images-new/ecommerce.jpg" alt="">
-            <img class="bg_img" id="banking_bg_image" src="images-new/banking.jpg" alt="">
+            <img class="bg_img" id="industry_bg_image"    src="images-new/industries-bg.jpg" alt="" style="opacity: 1;">
+            <img class="bg_img" id="production_bg_image"  src="images-new/production.jpg"    alt="">
+            <img class="bg_img" id="real_estate_bg_image" src="images-new/real-estate.jpg"   alt="">
+            <img class="bg_img" id="education_bg_image"   src="images-new/education.jpg"     alt="">
+            <img class="bg_img" id="ecommerce_bg_image"   src="images-new/ecommerce.jpg"     alt="">
+            <img class="bg_img" id="health_bg_image"      src="images-new/health.jpg"        alt="">
         </div>
         <div class="row no-gutters">
             <div class="col-xl-4 col-md-6 col-sm-12">
                 <div class="industry_box about_section">
                     <h3>industries</h3>
-                    <p>Having deep experience in these and 
-                        many other industries helped us delivering high end soluitions rapidly.</p>
+                    <p>Having deep experience in these industries helped us deliver high end soluitions rapidly.</p>
                     <a class="cta" href="javascript">
                         View All
                         <span class="btn_icon">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
                             C678.5,137.1,671.1,144.5,662,144.5z"></path> </g> <g> <g> <path class="st0" d="M558,250.8L558,250.8c-6.2-6.7-5.8-17.1,0.8-23.3l94-87.3c7-6.5,7-17.6,0-24.1l-94-87.4
                             c-6.7-6.2-7-16.6-0.8-23.3l0,0c6.2-6.7,16.6-7,23.3-0.8l119.9,111.5c7,6.5,7,17.6,0,24.1L581.3,251.6
-                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g> 
+                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g>
                             </svg>
                         </span>
                     </a>
@@ -357,28 +350,12 @@
                 <div class="industry_box hoverImageChange" data-img="#production_bg_image">
                     <div class="box_content">
                         <h4 class="industry_name">Production</h4>
-                        <p class="industry_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure voluptatum id, aliquid explicabo ex laboriosam, ad fugiat, vero delectus porro?</p>
+                        <p class="industry_detail">Our team of experts has extensive experience developing solutions that meet the unique needs of production environment, including hardware & software related solutions.</p>
                         <span class="arrow_icon">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
                             C678.5,137.1,671.1,144.5,662,144.5z"></path> </g> <g> <g> <path class="st0" d="M558,250.8L558,250.8c-6.2-6.7-5.8-17.1,0.8-23.3l94-87.3c7-6.5,7-17.6,0-24.1l-94-87.4
                             c-6.7-6.2-7-16.6-0.8-23.3l0,0c6.2-6.7,16.6-7,23.3-0.8l119.9,111.5c7,6.5,7,17.6,0,24.1L581.3,251.6
-                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g> 
-                            </svg>
-                        </span>
-                    </div>
-                    <a class="industry_box_link" href="javascript:void(0)"></a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <div class="industry_box hoverImageChange" data-img="#networking_bg_image">
-                    <div class="box_content">
-                        <h4 class="industry_name">Networking</h4>
-                        <p class="industry_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure voluptatum id, aliquid explicabo ex laboriosam, ad fugiat, vero delectus porro?</p>
-                        <span class="arrow_icon">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
-                            C678.5,137.1,671.1,144.5,662,144.5z"></path> </g> <g> <g> <path class="st0" d="M558,250.8L558,250.8c-6.2-6.7-5.8-17.1,0.8-23.3l94-87.3c7-6.5,7-17.6,0-24.1l-94-87.4
-                            c-6.7-6.2-7-16.6-0.8-23.3l0,0c6.2-6.7,16.6-7,23.3-0.8l119.9,111.5c7,6.5,7,17.6,0,24.1L581.3,251.6
-                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g> 
+                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g>
                             </svg>
                         </span>
                     </div>
@@ -388,13 +365,13 @@
             <div class="col-xl-4 col-md-6 col-sm-12">
                 <div class="industry_box hoverImageChange" data-img="#ecommerce_bg_image">
                     <div class="box_content">
-                        <h4 class="industry_name">E-commerce</h4>
-                        <p class="industry_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure voluptatum id, aliquid explicabo ex laboriosam, ad fugiat, vero delectus porro?</p>
+                        <h4 class="industry_name">E-Commerce</h4>
+                        <p class="industry_detail">We create custom web applications for each of your needs, including shopify and woocomerce. We have a team of highly experienced developers who will work with you to create a solution customized to fit your needs.</p>
                         <span class="arrow_icon">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
                             C678.5,137.1,671.1,144.5,662,144.5z"></path> </g> <g> <g> <path class="st0" d="M558,250.8L558,250.8c-6.2-6.7-5.8-17.1,0.8-23.3l94-87.3c7-6.5,7-17.6,0-24.1l-94-87.4
                             c-6.7-6.2-7-16.6-0.8-23.3l0,0c6.2-6.7,16.6-7,23.3-0.8l119.9,111.5c7,6.5,7,17.6,0,24.1L581.3,251.6
-                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g> 
+                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g>
                             </svg>
                         </span>
                     </div>
@@ -405,12 +382,12 @@
                 <div class="industry_box hoverImageChange" data-img="#education_bg_image">
                     <div class="box_content">
                         <h4 class="industry_name">Education</h4>
-                        <p class="industry_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure voluptatum id, aliquid explicabo ex laboriosam, ad fugiat, vero delectus porro?</p>
+                        <p class="industry_detail">After co-vid most education institutes have shifted to online solutions having LMS and portals. On the other hand, some start with the course in the class room format and gradually move towards an online option after evaluating different options available.</p>
                         <span class="arrow_icon">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
                             C678.5,137.1,671.1,144.5,662,144.5z"></path> </g> <g> <g> <path class="st0" d="M558,250.8L558,250.8c-6.2-6.7-5.8-17.1,0.8-23.3l94-87.3c7-6.5,7-17.6,0-24.1l-94-87.4
                             c-6.7-6.2-7-16.6-0.8-23.3l0,0c6.2-6.7,16.6-7,23.3-0.8l119.9,111.5c7,6.5,7,17.6,0,24.1L581.3,251.6
-                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g> 
+                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g>
                             </svg>
                         </span>
                     </div>
@@ -418,15 +395,31 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12">
-                <div class="industry_box hoverImageChange" data-img="#banking_bg_image">
+                <div class="industry_box hoverImageChange" data-img="#real_estate_bg_image">
                     <div class="box_content">
-                        <h4 class="industry_name">Banking</h4>
-                        <p class="industry_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure voluptatum id, aliquid explicabo ex laboriosam, ad fugiat, vero delectus porro?</p>
+                        <h4 class="industry_name">Real-Estate</h4>
+                        <p class="industry_detail">You deserve a website that is unique and high-quality, with content regularly updated to attract potential clients and helps you achieve your sales target. Our websites are mobile-friendly and professionally designed to meet all of your needs.</p>
                         <span class="arrow_icon">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
                             C678.5,137.1,671.1,144.5,662,144.5z"></path> </g> <g> <g> <path class="st0" d="M558,250.8L558,250.8c-6.2-6.7-5.8-17.1,0.8-23.3l94-87.3c7-6.5,7-17.6,0-24.1l-94-87.4
                             c-6.7-6.2-7-16.6-0.8-23.3l0,0c6.2-6.7,16.6-7,23.3-0.8l119.9,111.5c7,6.5,7,17.6,0,24.1L581.3,251.6
-                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g> 
+                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <a class="industry_box_link" href="javascript:void(0)"></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="industry_box hoverImageChange" data-img="#health_bg_image">
+                    <div class="box_content">
+                        <h4 class="industry_name">Health</h4>
+                        <p class="industry_detail">Your patients are looking for a place to manage their health. Our team of professional medical billing experts, backed by years of experience, can help you deliver that. We provide your patients with easy appointments, and accurately report the health records back to their insurance companies.</p>
+                        <span class="arrow_icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
+                            C678.5,137.1,671.1,144.5,662,144.5z"></path> </g> <g> <g> <path class="st0" d="M558,250.8L558,250.8c-6.2-6.7-5.8-17.1,0.8-23.3l94-87.3c7-6.5,7-17.6,0-24.1l-94-87.4
+                            c-6.7-6.2-7-16.6-0.8-23.3l0,0c6.2-6.7,16.6-7,23.3-0.8l119.9,111.5c7,6.5,7,17.6,0,24.1L581.3,251.6
+                            C574.6,257.8,564.2,257.4,558,250.8z"></path> </g> </g> </g>
                             </svg>
                         </span>
                     </div>
@@ -436,26 +429,26 @@
         </div>
     </section>
     <!-- industries ends -->
-    
+
     <!-- testimonials starts -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="inner">
                 <div class="heading_sec text-center">
                     <h2 class="sec_heading">Clients and testimonials</h2>
-                    <p class="sec_info">Our clients accept neither mediocre services nor solutions done by half. They stay with us for years as they can reckon on 
+                    <p class="sec_info">Our clients accept neither mediocre services nor solutions done by half. They stay with us for years as they can reckon on
                         our professionalism. We are proud to meet their expectations.</p>
                 </div>
                 <div class="tCards testimonials-slider custom_slider">
                     <div class="single">
                         <div class="cardContent">
-                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing 
-                                elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                labore et dolore magna aliquyam erat, sed diam 
-                                voluptua. At vero eos et accusam et justo duo 
-                                dolores et ea rebum. Stet clita kasd gubergren, no 
-                                sea takimata sanctus est Lorem ipsum dolor sit 
-                                amet. Lorem ipsum dolor sit amet, consetetur 
+                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam </p>
                             <div class="rImage"><img src="images-new/testimonial-sample-image.png" alt=""></div>
                         </div>
@@ -466,13 +459,13 @@
                     </div>
                     <div class="single">
                         <div class="cardContent">
-                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing 
-                                elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                labore et dolore magna aliquyam erat, sed diam 
-                                voluptua. At vero eos et accusam et justo duo 
-                                dolores et ea rebum. Stet clita kasd gubergren, no 
-                                sea takimata sanctus est Lorem ipsum dolor sit 
-                                amet. Lorem ipsum dolor sit amet, consetetur 
+                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam </p>
                             <div class="rImage"><img src="images-new/testimonial-sample-image.png" alt=""></div>
                         </div>
@@ -483,13 +476,13 @@
                     </div>
                     <div class="single">
                         <div class="cardContent">
-                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing 
-                                elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                labore et dolore magna aliquyam erat, sed diam 
-                                voluptua. At vero eos et accusam et justo duo 
-                                dolores et ea rebum. Stet clita kasd gubergren, no 
-                                sea takimata sanctus est Lorem ipsum dolor sit 
-                                amet. Lorem ipsum dolor sit amet, consetetur 
+                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam </p>
                             <div class="rImage"><img src="images-new/testimonial-sample-image.png" alt=""></div>
                         </div>
@@ -500,13 +493,13 @@
                     </div>
                     <div class="single">
                         <div class="cardContent">
-                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing 
-                                elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                labore et dolore magna aliquyam erat, sed diam 
-                                voluptua. At vero eos et accusam et justo duo 
-                                dolores et ea rebum. Stet clita kasd gubergren, no 
-                                sea takimata sanctus est Lorem ipsum dolor sit 
-                                amet. Lorem ipsum dolor sit amet, consetetur 
+                            <p class="rText">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam </p>
                             <div class="rImage"><img src="images-new/testimonial-sample-image.png" alt=""></div>
                         </div>
@@ -562,13 +555,13 @@
         </div>
     </section>
     <!-- work_together ends -->
-    
+
     <!-- business starts -->
     <section class="business" id="business">
         <div class="container-fluid">
             <div class="business_text">
                 <p>Find out how we can help your business grow</p>
-                <a href="#">Get Free Consulation</a>
+                <a href="contact.html">Get Free Consulation</a>
             </div>
         </div>
     </section>
@@ -603,7 +596,7 @@
                 </ul>
             </div>
         </div>
-    </footer> 
+    </footer>
     <!-- footer ends -->
 
     <script src="js/Jquery.js"></script>
@@ -611,7 +604,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    
+
 
     <script>
       AOS.init();
@@ -646,13 +639,14 @@
             var sectionIds = $('a.list-item');
             $(window).scroll(function () {
                 sectionIds.each(function () {
-                    var container, containerOffset, containerHeight, containerBottom, scrollPosition;
+                    var container, containerOffset, containerHeight, containerBottom, scrollPosition, headerHeight;
+                    headerHeight = $("#header").outerHeight();
                     container = $(this).attr('data-target');
                     containerOffset = $(container).offset().top;
                     containerHeight = $(container).outerHeight();
                     containerBottom = containerOffset + containerHeight;
                     scrollPosition = $(window).scrollTop();
-                    if (scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) {
+                    if (scrollPosition < containerBottom - (headerHeight) && scrollPosition >= containerOffset - (headerHeight)) {
                     $(this).addClass('active');
                     } else {
                     $(this).removeClass('active');

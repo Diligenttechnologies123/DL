@@ -1,3 +1,6 @@
+.talk{
+  padding-bottom: 50px;
+}
 .talk h1 {
   text-align: center;
   padding-top: 42px;
@@ -15,68 +18,33 @@
 }
 input{
   outline: none;
+  border: none;
+  width: 100%;
 }
-.form1 input {
-  border: unset;
-  border-bottom: 2px solid black;
-  max-width: 240px;
-  margin-right: 15px;
-  outline: none;
-}
-
-.form2 {
+.talk .input_wrap{
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+.talk .input_wrap input{
+  border-bottom: 2px solid black;
+}
+.form1 input {
+  max-width: 240px;
+  margin-right: 25px;
 }
 
 .form2 input {
-  border: unset;
-  border-bottom: 2px solid black;
   max-width: 589px;
 }
-
-.form3 {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.form3 input {
-  border: unset;
-  border-bottom: 2px solid black;
-  max-width: 887px;
-}
-
-.form4 {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.form4 input {
-  border: unset;
-  border-bottom: 2px solid black;
-  max-width: 887px;
-}
-
-.form5 {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.form5 input {
-  border: unset;
-  border-bottom: 2px solid black;
+.form3 input, .form4 input, .form5 input, .form7 input {
   max-width: 887px;
 }
 
 .talk .budget {
   text-align: center;
-  margin: 0 auto;
+  margin: 56px auto;
   font-weight: 700;
-  margin-bottom: 56px;
 }
 .slidecontainer {
   width: 80%;
@@ -84,40 +52,6 @@ input{
   margin-bottom: 32px;
 }
 
-.slider {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 25px;
-  background: #a09494;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
-  border-radius: 50px;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #d4a437;
-  cursor: pointer;
-  border-radius: 50px;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #d4a437;
-  cursor: pointer;
-  border-radius: 20px;
-}
 .form2,
 .form3,
 .form4,
@@ -131,34 +65,13 @@ input{
   transition: all 0.2s linear;
 }
 
-.form7 {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.form7 input {
-  border: unset;
-  border-bottom: 2px solid black;
-  max-width: 887px;
-}
-
-.form8 {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
 .form8 input {
-  border: unset;
-  border-bottom: 2px solid black;
   max-width: 400px;
 }
 
 .talk .talk_button {
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
-  margin-bottom: 29px;
 }
 
 .talk .talk_button a {
@@ -391,7 +304,7 @@ input{
     font-size: 50px;
   }
   h2 {
-    font-size: 30;
+    font-size: 30px;
   }
   .form2 input {
     max-width: 495px;
@@ -412,7 +325,7 @@ input{
     font-size: 45px;
   }
   h2 {
-    font-size: 26;
+    font-size: 26px;
   }
   .form4 input {
     max-width: 345px;
@@ -459,25 +372,8 @@ input{
   h2 {
     font-size: 22px;
   }
-  .form1 input {
+  .talk .input_wrap input{
     max-width: 100%;
-  }
-  .form2 input {
-    max-width: 100%;
-  }
-  .form3 input {
-    max-width: 100%;
-  }
-  .form4 input {
-    max-width: 100%;
-  }
-  .form5 input {
-    max-width: 100%;
-  }
-  .form7 input {
-    max-width: 100%;
-  }
-  .form8 input {
-    max-width: 100%;
+    margin-bottom: 10px;
   }
 }

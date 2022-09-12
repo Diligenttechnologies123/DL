@@ -15,7 +15,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/team.css">
-  <link rel="stylesheet" href="css/style-new.css">
 </head>
 
 <body>
@@ -42,23 +41,23 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section4">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">OUR TEAM</a>
-              </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">CONTACT US</a>
-              </li>
-            </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="home" onclick="setNavElActive('home')" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="services" onclick="setNavElActive('services')" href="index.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="our-team" onclick="setNavElActive('our-team')" href="team.html">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="about" onclick="setNavElActive('about')" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-attr="contact" onclick="setNavElActive('contact')" href="contact.html">CONTACT US</a>
+                </li>
+              </ul>
           </div>
         </nav>
       </div>
@@ -67,186 +66,10 @@
     <div class="header_nav_overlay" onclick="closeNav()"></div>
     <!-- header ends -->
 
-  <!-- Bannner starts -->
-  <!-- <section class="introduction">
-    <div class="container">
-      <div class="intro">
-        <div class="ceoimage">
-          <img src="./images/team/ceo.webp" alt="CEO">
-        </div>
-        <div class="ceo">
-          <p class="para">Chief Executive Officer (CEO)</p>
-          <p class="para1">My name is Serge Hudas. I’m one of the driving forces at UNL Solutions holding the CEO
-            position.
-            I’m opened to discuss your business needs and offer a possible solution in powering your IT
-            operations because that’s what I’ve been doing since the company's foundation.
-            <br><br>
-            Together with colleagues, we established UNL Solutions with a mission to bolster the reputation
-            of Eastern Europe as a trustful sourcing destination. The one that offers a favorable environment
-            for implementing innovative software solutions. I know first-hand how rich and truly talented its
-            tech pool is. For decades it has been one of the country's most valuable though non-official
-            assets. We aim to make it recognized globally.
-            <br><br>
-            Today, UNL Solutions is helping dozens of customers to reach better outcomes with the help of
-            quality software solutions. For me, it’s a real joy to work in such a company with a clear vision,
-            professional team, and great culture.
-            <br><br>
-            If you would like to discuss cooperation, I’m here for your business.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Banner ends -->
-
-
-  <!-- Professional starts -->
-  <!-- <section class="professional">
-    <div class="container">
-      <h2>Our Team Of Professionals</h2>
-      <div class="main_team">
-        <div class="image1">
-          <img src="./images/team/worker.webp" alt="worker">
-          <div class="team_text">
-            <p class="p2">Hanan Khan</p>
-            <p class="p3">Co-Founder </p>
-          </div>
-        </div>
-        <div class="image1">
-          <img src="./images/team/worker.webp" alt="worker">
-          <div class="team_text">
-            <p class="p2">Hanan Khan</p>
-            <p class="p3">Co-Founder </p>
-          </div>
-        </div>
-        <div class="image1">
-          <img src="./images/team/worker.webp" alt="worker">
-          <div class="team_text">
-            <p class="p2">Hanan Khan</p>
-            <p class="p3">Co-Founder </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-          <div class="image001">
-            <img src="./images/team/worker.webp" alt="worker">
-            <div class="team_text">
-              <p class="p2">Hanan Khan</p>
-              <p class="p3">Co-Founder </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Professional ends -->
-
   <!-- quote_sec starts -->
   <section class="quote_sec">
     <div class="container text-center">
-        <h1>Alone we can do so little; <br> Together we can do so much </h1>
+        <h1>Big jobs can be smaller together</h1>
     </div>
   </section>
   <!-- quote_sec ends -->
@@ -258,21 +81,21 @@
         <div class="employer_img">
           <img src="images-new/muntazir-image.jpg" alt="">
         </div>
-        <p class="employer_name">Muntazir Mahdi</p>
+        <p class="employer_name">Muntazir Mehdi</p>
         <p class="employer_desg">(CEO)</p>
       </div>
       <div class="single">
         <div class="employer_img">
           <img src="images-new/hanan-image.jpg" alt="">
         </div>
-        <p class="employer_name">Hanan Khan</p>
-        <p class="employer_desg">(CFO)</p>
+        <p class="employer_name">Hannan Khan</p>
+        <p class="employer_desg">(CIO)</p>
       </div>
       <div class="single">
         <div class="employer_img">
           <img src="images-new/imran-image.jpg" alt="">
         </div>
-        <p class="employer_name">Imran Inyat</p>
+        <p class="employer_name">Imran Inayat</p>
         <p class="employer_desg">(CTO)</p>
       </div>
       <div class="single">
@@ -431,6 +254,36 @@
               </div>
               <p class="tm_name">Mohsin Ali</p>
               <p class="tm_desg">Front-end Developer</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div class="single">
+              <div class="tm_img">
+                <img class="default_image" src="images-new/hamza-image.jpg" alt="">
+                <img class="hover_image" src="images-new/hanan-image.jpg" alt="">
+              </div>
+              <p class="tm_name">Moiz Abbas</p>
+              <p class="tm_desg">Sales Manager</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div class="single">
+              <div class="tm_img">
+                <img class="default_image" src="images-new/hamza-image.jpg" alt="">
+                <img class="hover_image" src="images-new/hanan-image.jpg" alt="">
+              </div>
+              <p class="tm_name">Moiz Abbas</p>
+              <p class="tm_desg">Sales Manager</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div class="single">
+              <div class="tm_img">
+                <img class="default_image" src="images-new/hamza-image.jpg" alt="">
+                <img class="hover_image" src="images-new/hanan-image.jpg" alt="">
+              </div>
+              <p class="tm_name">Moiz Abbas</p>
+              <p class="tm_desg">Sales Manager</p>
             </div>
           </div>
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
