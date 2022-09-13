@@ -373,9 +373,12 @@ function getActiveNavElement(){
             $("header .navbar-nav .nav-item").removeClass("active");
             $(this).addClass("active");
             if(activeElement == "services"){
-                $('html, body').animate({
-                  scrollTop: $('#' + activeElement).offset().top
-                }, 1000);
+                setTimeout(function() {
+                    $('html, body').animate({
+                      scrollTop: $('#' + activeElement).offset().top
+                    }, 1000);
+                }, 500);
+
             }
             return;
         }

@@ -2,17 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
-  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
 }
 :root{
   --primary_bg : #181515;
   --primary_color: #D4A437;
-}
-
-html{
-  scroll-behavior: initial;
 }
 body {
   margin: 0;
@@ -683,12 +678,12 @@ header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(3){
   text-align: center;
   border-radius: 20px;
   transition: 0.3s all ease;
-  transform: scale(1);
+  /* transform: scale(1); */
   position: relative;
 }
 .services .card_single:hover {
   /* background: #f2e4c3; */
-  transform: scale(1.06);
+  /* transform: scale(1.06); */
 }
 .services .card_single:last-child{
   margin-right: 0;
