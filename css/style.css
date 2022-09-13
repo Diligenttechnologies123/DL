@@ -696,6 +696,10 @@ header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(3){
   width: 100%;
   height: 100%;
 }
+.services .service_icon img{
+    color: #D4A437;
+    fill: #D4A437;
+}
 .services .card_single h3{
   font-size: 24px;
   font-weight: bold;
@@ -1757,4 +1761,13 @@ header .navbar-collapse {
 .custom_slider .slick-next {
   right: -10px;
 }
+}
+@media (max-width: 370px) {
+    h1 {
+        font-size: 25px;
+    }
+    .banner_text .banner_subheading h2 {
+        font-size: 15px;
+        line-height: 26px;
+    }
 }

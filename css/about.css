@@ -95,12 +95,13 @@ h4 {
 }
 
 .business h1 {
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  padding-bottom: 27px;
-  position: relative;
-  z-index: 11;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding-bottom: 65px;
+    position: relative;
+    z-index: 11;
 }
 
 .business .business_button {

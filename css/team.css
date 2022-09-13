@@ -183,11 +183,13 @@
   font-size: 20px;
   line-height: 27px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .our_team .tm_desg{
   margin-top: 3px;
   font-size: 16px;
   line-height: 22px;
+  text-transform: capitalize;
 }
 /* our_team ends */
 
