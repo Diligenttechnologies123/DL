@@ -1723,7 +1723,9 @@ footer .footer_logo{
   line-height: 29px;
 }
 .card_sec .our_technologies .card_content ul {
-  grid-template-columns: repeat(1, 250px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 .card_sec .card_content {
   padding: 40px 15px;
