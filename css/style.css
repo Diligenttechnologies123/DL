@@ -1566,6 +1566,7 @@ header nav ul li a:hover:after {
 }
 .solution .solution-svg {
   max-width: 100%;
+  margin: 0;
 }
 .experties h2 {
   margin-bottom: 30px;
