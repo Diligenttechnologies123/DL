@@ -145,36 +145,49 @@
 
 
     <!-- FORM ENDS -->
-        <!-- footer start -->
-        <footer>
-          <div class="container">
-              <div class="inner">
-                  <div class="footer_logo ft_item">
-                      <a href="javascript:;"><img src="./images/logo.webp" alt="logo"></a>
-                  </div>
-                  <ul class="footer_links ft_item">
-                    <li><a href="#">Technologies</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="team.html">Our team</a></li>
-                </ul>
-                <ul class="footer_links ft_item">
-                    <li><a href="contact.html">Contacts Us</a></li>
-                    <li><a href="#">Developers</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                </ul>
-                  <ul class="footer_links ft_item">
-                      <li><a href="#">Address:</a></li>
-                      <li><p>Business Bay, Flat 3-I, 2nd Floor, Street 44,
-                              Sector F DHA Phase 1, Islamabad, 46000,
-                              Pakistan</p></li>
-                      <li><a href="#">info@diligenttechnologies.co</a></li>
-                  </ul>
-              </div>
-          </div>
-      </footer>
-      <!-- footer ends -->
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="inner row">
+                <div class="col-lg-3 col-sm-6">
+                    <ul class="footer_links address ft_item">
+                        <li class="footer_logo d-flex"><a href="javascript:void(0)"><img src="./images/logo.webp" alt="logo"></a></li>
+                        <li><p class="itm">Business Bay, Flat 3-I, 2nd Floor, Street 44,
+                                Sector F DHA Phase 1, Islamabad, 46000,
+                                Pakistan</p></li>
+                        <li><a class="itm mail" href="mailto:info@diligenttechnologies.co">info@diligenttechnologies.co</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <ul class="footer_links ft_item">
+                        <li>Who we are</li>
+                        <li><a class="itm" onclick="setNavElActive('our-team')" href="team.html">Our Team</a></li>
+                        <li><a class="itm" onclick="setNavElActive('about')" href="about.html">About us</a></li>
+                        <li><a class="itm" onclick="setNavElActive('contact')" href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <ul class="footer_links ft_item">
+                        <li>Customercare</li>
+                        <li><a class="itm" href="privacy.html">Privacy Policy</a></li>
+                        <li><a class="itm" href="terms.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <ul class="footer_links ft_item">
+                        <li>Join Our Mailing List</li>
+                        <li>
+                            <form class="ftr_newsletter">
+                                <input type="text" name="" value="" placeholder="Enter valid email address">
+                                <button type="button" name="button">Subscribe Now</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
     </section>
 
     <script src="js/Jquery.js"></script>
