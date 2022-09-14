@@ -1274,7 +1274,7 @@ footer .footer_links li > *{
   line-height: 24px;
   font-weight: 400;
   color: #fff;
-  text-transform: lowercase;
+  text-transform: capitalize;
   margin-bottom: 20px;
   display: inline-block;
   transition: 0.3s all ease;
