@@ -368,7 +368,7 @@ function getActiveNavElement(){
     let activeElement = JSON.parse(localStorage.getItem("activeElement"));
 
     $("header .navbar-nav .nav-item").each(function (){
-        if($(this).children().attr("data-attr") == activeElement){
+        if(activeElement && $(this).children().attr("data-attr") == activeElement){
             console.log("activeElement", activeElement);
             $("header .navbar-nav .nav-item").removeClass("active");
             $(this).addClass("active");
