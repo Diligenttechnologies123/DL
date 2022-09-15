@@ -313,7 +313,7 @@
           Drop us a line to get the conversation going!</h2>
         <div class="join_form row flex-md-row flex-column-reverse">
           <div class="col-md-6">
-            <form>
+            <form method="POST" name = "myForm" onsubmit="return(validate())">
               <ul class="input_field_wrapper">
                 <li class="single_input">
                   <input type="text" name="field1" class="input_field" placeholder="Full Name" />
@@ -328,14 +328,14 @@
                 </li>
                 </li>
                 <li>
-                  <input type="file" class="input_field" id="formFile">
+                  <input type="file" name="field7" class="input_field" id="formFile">
                 </li>
                 <li>
-                  <textarea name="field7" id="field7" rows="3" class="input_field field-textarea"
+                  <textarea name="field7" id="field8" rows="3" class="input_field field-textarea"
                     placeholder="Apart from your experience, we'd really love to get an idea of you"></textarea>
                 </li>
               </ul>
-              <button class="join_cta">submit</button>
+              <button type="submit" class="join_cta">submit</button>
             </form>
           </div>
           <div class="col-md-6">
@@ -385,6 +385,36 @@
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+
+  <script type = "text/javascript">
+
+       // Form validation code will come here.
+
+       function validate() {
+          if( document.myForm.field1.value == "" ) {
+             alert( "Please provide your name!" );
+             return false;
+          }
+          if( document.myForm.field3.value == "" ) {
+             alert( "Please provide your Email!" );
+             return false;
+          }
+          if( document.myForm.field4.value == "" ) {
+             alert("Please enter your valid Number");
+             return false;
+          }
+          if( document.myForm.field5.value == "" ) {
+             alert( "Please enter your Desired Position!" );
+             return false;
+          }
+          if( document.myForm.field6.value == "" ) {
+             alert( "Please provide your country!" );
+             return false;
+          }
+          return( true );
+       }
+ </script>
 </body>
 
 </html>
