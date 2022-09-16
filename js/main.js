@@ -368,7 +368,7 @@ function getActiveNavElement(){
     let activeElement = JSON.parse(localStorage.getItem("activeElement"));
 
     $("header .navbar-nav .nav-item").each(function (){
-        if($(this).children().attr("data-attr") == activeElement){
+        if(activeElement && $(this).children().attr("data-attr") == activeElement){
             console.log("activeElement", activeElement);
             $("header .navbar-nav .nav-item").removeClass("active");
             $(this).addClass("active");
@@ -415,4 +415,46 @@ function closeNav() {
   window.scrollTo(0, windowScrollY);
   $("header .navbar-collapse, .header_nav_overlay").removeClass("show");
   $(".navbar-toggler").addClass("collapsed");
+}
+
+
+// form validations
+
+$(document).ready(function(){
+    // signature form validator
+
+        var footerNewsLetterValidator = $("#footerNewsLetter").validate({
+            showErrors: function(errorMap, errorList) {
+                console.log(errorList);
+                var errors = this.numberOfInvalids();
+                if(submitted){
+                    this.defaultShowErrors();
+                }
+            },
+            //
+            // rules: {
+            //     conf_check: {
+            //         required: true,
+            //     }
+            // },
+            // messages: {
+            //     conf_check: {
+            //         required: "Please confirm the above statement"
+            //     }
+            // },
+            //
+            // errorPlacement: function(error, element) {
+            //     if (element.attr("name") == "conf_check" ) {
+            //     error.insertAfter(".confirmation_check");
+            //     } else {
+            //     error.insertAfter(element);
+            //     }
+            // }
+
+        });
+});
+
+function validateAssessmentForm(formName, flag){
+    submitted = flag;
+    return $("#"+formName).valid();
 }
