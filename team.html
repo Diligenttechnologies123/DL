@@ -18,6 +18,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -313,29 +314,30 @@
           Drop us a line to get the conversation going!</h2>
         <div class="join_form row flex-md-row flex-column-reverse">
           <div class="col-md-6">
-            <form method="POST" name = "myForm" onsubmit="return(validate())">
+
+            <form class="contact_form" id="contact_form" >
               <ul class="input_field_wrapper">
                 <li class="single_input">
-                  <input type="text" name="field1" class="input_field" placeholder="Full Name" />
+                  <input type="text" name="field1" class="input_field" placeholder="Full Name" required>
                 </li>
                 <li class="grouped_input">
-                  <input type="email" name="field3" class="input_field" placeholder="Email" />
-                  <input type="tel" name="field4" class="input_field" placeholder="Phone number" />
+                  <input type="email" name="field3" class="input_field" placeholder="Email" required>
+                  <input type="tel" name="field4" class="input_field" placeholder="Phone number" required>
                 </li>
                 <li class="grouped_input">
-                  <input type="text" name="field5" class="input_field" placeholder="Desired Position" />
-                  <input type="text" name="field6" class="input_field" placeholder="Country" />
+                  <input type="text" name="field5" class="input_field" placeholder="Desired Position" required>
+                  <input type="text" name="field6" class="input_field" placeholder="Country" required>
                 </li>
                 </li>
                 <li>
-                  <input type="file" name="field7" class="input_field" id="formFile">
+                  <input type="file" name="field7" class="input_field" id="formFile" >
                 </li>
                 <li>
                   <textarea name="field7" id="field8" rows="3" class="input_field field-textarea"
                     placeholder="Apart from your experience, we'd really love to get an idea of you"></textarea>
                 </li>
               </ul>
-              <button class="join_cta">Submit</button>
+              <button class="join_cta" onclick="formConformation('contact_form', true)">Submit</button>
             </form>
           </div>
           <div class="col-md-6">
@@ -395,39 +397,17 @@
 
 
   <script src="js/Jquery.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
-
-  <script type = "text/javascript">
-
-       // Form validation code will come here.
-
-       function validate() {
-          if( document.myForm.field1.value == "" ) {
-             alert( "Please provide your name!" );
-             return false;
-          }
-          if( document.myForm.field3.value == "" ) {
-             alert( "Please provide your Email!" );
-             return false;
-          }
-          if( document.myForm.field4.value == "" ) {
-             alert("Please enter your valid Number");
-             return false;
-          }
-          if( document.myForm.field5.value == "" ) {
-             alert( "Please enter your Desired Position!" );
-             return false;
-          }
-          if( document.myForm.field6.value == "" ) {
-             alert( "Please provide your country!" );
-             return false;
-          }
-          return( true );
-       }
- </script>
+  <script>
+    function formConformation(formName, flag){
+    // submitted = flag;
+    $("#"+formName).valid();
+}
+  </script>
 </body>
 
 </html>

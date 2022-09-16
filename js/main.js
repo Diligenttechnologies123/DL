@@ -423,38 +423,38 @@ function closeNav() {
 $(document).ready(function(){
     // signature form validator
 
-        var footerNewsLetterValidator = $("#footerNewsLetter").validate({
-            showErrors: function(errorMap, errorList) {
-                console.log(errorList);
-                var errors = this.numberOfInvalids();
-                if(submitted){
-                    this.defaultShowErrors();
-                }
-            },
-            //
-            // rules: {
-            //     conf_check: {
-            //         required: true,
-            //     }
-            // },
-            // messages: {
-            //     conf_check: {
-            //         required: "Please confirm the above statement"
-            //     }
-            // },
-            //
-            // errorPlacement: function(error, element) {
-            //     if (element.attr("name") == "conf_check" ) {
-            //     error.insertAfter(".confirmation_check");
-            //     } else {
-            //     error.insertAfter(element);
-            //     }
-            // }
-
-        });
+        // var footerNewsLetterValidator = $("#footerNewsLetter").validate({
+        //     showErrors: function(errorMap, errorList) {
+        //         console.log(errorList);
+        //         var errors = this.numberOfInvalids();
+        //         if(submitted){
+        //             this.defaultShowErrors();
+        //         }
+        //     },
+        //     //
+        //     // rules: {
+        //     //     conf_check: {
+        //     //         required: true,
+        //     //     }
+        //     // },
+        //     // messages: {
+        //     //     conf_check: {
+        //     //         required: "Please confirm the above statement"
+        //     //     }
+        //     // },
+        //     //
+        //     // errorPlacement: function(error, element) {
+        //     //     if (element.attr("name") == "conf_check" ) {
+        //     //     error.insertAfter(".confirmation_check");
+        //     //     } else {
+        //     //     error.insertAfter(element);
+        //     //     }
+        //     // }
+        //
+        // });
 });
 
 function validateAssessmentForm(formName, flag){
-    submitted = flag;
-    return $("#"+formName).valid();
+    // submitted = flag;
+    $("#"+formName).valid();
 }
