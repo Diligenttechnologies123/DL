@@ -632,9 +632,9 @@
                     <ul class="footer_links ft_item">
                         <li>Join Our Mailing List</li>
                         <li>
-                            <form class="ftr_newsletter">
-                                <input type="text" name="" value="" placeholder="Enter valid email address">
-                                <button type="button" name="button">Subscribe Now</button>
+                            <form class="ftr_newsletter" id="footerNewsLetter">
+                                <input type="email" name="email" value="" placeholder="Enter valid email address" required>
+                                <button type="button" onclick="validateAssessmentForm('footerNewsLetter', true)">Subscribe Now</button>
                             </form>
                         </li>
                     </ul>
@@ -645,6 +645,7 @@
     <!-- footer ends -->
 
     <script src="js/Jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
