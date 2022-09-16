@@ -29,6 +29,12 @@ input{
 .talk .input_wrap input{
   border-bottom: 2px solid black;
 }
+.talk .contact_form input.error{
+  border-bottom-color: #c13515;
+}
+.talk .contact_form label.error{
+  display: none !important;
+}
 .form1 input {
   max-width: 240px;
   margin-right: 25px;
@@ -74,11 +80,14 @@ input{
   text-align: center;
 }
 
-.talk .talk_button a {
+.talk  button {
   font-size: 18px;
   color: white;
   padding: 4px 47px;
   background-color: #d4a437;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* modal css starts*/

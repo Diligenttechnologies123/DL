@@ -79,45 +79,50 @@
     <section class="talk">
       <div class="container">
         <h1>Let’s Talk</h1>
-        <div class="input_wrap form1">
-          <h2>
-            Hi, my name is <input type="text" id="input" /><input type="text" id="inputLastName" />
-          </h2>
-        </div>
-        <div class="input_wrap form2">
-          <h2>and I work at <input type="text" id="inputWork" /></h2>
-        </div>
-        <div class="input_wrap form3">
-          <h2>I need help with <input type="text" id="inputHelp" /></h2>
-        </div>
-        <div class="input_wrap form4">
-          <h2>
-            Personally, I feel <input type="text" id="inputFeel" /> about this
-            Project.
-          </h2>
-        </div>
-        <div class="input_wrap form5">
-          <h2>Because, I am the <input type="text" id="inputbecause" /></h2>
-        </div>
-        <h2 class="budget">Our Budget is</h2>
-        <div class="slidecontainer form-range">
-          <input type="text" data-min="10000" data-max="200000" data-from="25000" data-range="" value="" size="40" class="range_slider" readonly="">
-        </div>
 
-        <div class="input_wrap form7">
-          <h2>and this has to launch <input type="text" id="inputlaunch" /></h2>
-        </div>
-        <div class="input_wrap form8">
-          <h2>
-            My email is <input type="text" id="inputemail" /> My Phone is
-            <input type="text" id="inputphone" />
-          </h2>
-        </div>
-        <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
-          <a href="javascript:void(0)">SUBMIT</a>
-        </div>
-      </div>
+        <form class="contact_form" id="contact_form">
+            <div class="input_wrap form1">
+              <h2>
+                Hi, my name is <input type="text" name="input1" id="input1" required>
+                <input type="text" name="inputLastName" id="inputLastName" required>
+              </h2>
+            </div>
+            <div class="input_wrap form2">
+              <h2>and I work at <input type="text" name="inputWork" id="inputWork" required></h2>
+            </div>
+            <div class="input_wrap form3">
+              <h2>I need help with <input type="text" name="inputHelp" id="inputHelp" required></h2>
+            </div>
+            <div class="input_wrap form4">
+              <h2>
+                Personally, I feel <input type="text" name="inputFeel" id="inputFeel" required> about this
+                Project.
+              </h2>
+            </div>
+            <div class="input_wrap form5">
+              <h2>Because, I am the <input type="text" name="inputbecause" id="inputbecause" required></h2>
+            </div>
+            <h2 class="budget">Our Budget is</h2>
+            <div class="slidecontainer form-range">
+              <input type="text" data-min="10000" data-max="200000" data-from="25000" data-range="" value="" size="40" class="range_slider" readonly="">
+            </div>
 
+            <div class="input_wrap form7">
+              <h2>and this has to launch <input type="text" name="inputlaunch" id="inputlaunch" required></h2>
+            </div>
+            <div class="input_wrap form8">
+              <h2>
+                My email is <input type="text" name="inputemail" id="inputemail" required> My Phone is
+                <input type="text" name="inputphone" id="inputphone" required>
+              </h2>
+            </div>
+            <button type="button" onclick="formConformation('contact_form', true)">Submit</button>
+            <!-- <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
+              <a href="javascript:void(0)">SUBMIT</a>
+              
+            </div> -->
+          </div>
+        </form>
       <!-- modal  -->
       <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Open Modal</button> -->
       <div id="success_tic" class="modal fade" role="dialog">
@@ -191,6 +196,7 @@
     </section>
 
     <script src="js/Jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -302,5 +308,15 @@ _range_input.on('change', function () {
     _tool.attr('data-value', _new_value);
 })
     </script>
+
+
+    <!-- form validation  -->
+    <script>
+      function formConformation(formName, flag){
+    // submitted = flag;
+    $("#"+formName).valid();
+}
+    </script>
+
   </body>
 </html>
