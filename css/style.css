@@ -1219,6 +1219,9 @@ footer .ftr_newsletter {
     flex-direction: column;
     border-radius: 20px;
 }
+footer .ftr_newsletter label.error{
+    display: none !important;
+}
 footer .ftr_newsletter *{
     width: 100%;
     min-height: 48px;
@@ -1227,6 +1230,14 @@ footer .ftr_newsletter *{
 }
 footer .ftr_newsletter input{
     padding: 8px 15px;
+    transition: 0.3s all ease;
+}
+footer .ftr_newsletter input.error{
+    color: #c13515;
+    background-color: #f8dad1;
+}
+footer .ftr_newsletter input.error::placeholder{
+    color: #c13515;
 }
 footer .ftr_newsletter button{
     background-color: #D4A437;
