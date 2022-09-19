@@ -27,6 +27,12 @@
   width: 100%;
   margin: 0 auto;
 }
+.join .join_form .contact_form input.error{
+  border-bottom-color: #c13515 ;
+}
+.join .join_form .contact_form label.error{
+  display: none !important;
+}
 .join .join_form .form_image{
   max-width: 427px;
   width: 100%;

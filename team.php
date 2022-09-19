@@ -18,53 +18,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
     <!-- header starts -->
-    <header class="header" id="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg justify-content-end">
-          <a class="navbar-brand" href="#"
-            ><img src="images/logo.webp" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            onclick="toggleNav()"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"> </span>
-            <span class="navbar-toggler-icon"> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="home" onclick="setNavElActive('home')" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="services" onclick="setNavElActive('services')" href="index.html">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="our-team" onclick="setNavElActive('our-team')" href="team.html">OUR TEAM</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="about" onclick="setNavElActive('about')" href="about.html">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="contact" onclick="setNavElActive('contact')" href="contact.html">CONTACT US</a>
-                </li>
-              </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <?php include('header.php'); ?>
     <div class="header_padding" id="headerTemp"></div>
     <div class="header_nav_overlay" onclick="closeNav()"></div>
     <!-- header ends -->
@@ -313,29 +272,30 @@
           Drop us a line to get the conversation going!</h2>
         <div class="join_form row flex-md-row flex-column-reverse">
           <div class="col-md-6">
-            <form>
+
+            <form class="contact_form" id="contact_form" >
               <ul class="input_field_wrapper">
                 <li class="single_input">
-                  <input type="text" name="field1" class="input_field" placeholder="Full Name" />
+                  <input type="text" name="field1" class="input_field" placeholder="Full Name" required>
                 </li>
                 <li class="grouped_input">
-                  <input type="email" name="field3" class="input_field" placeholder="Email" />
-                  <input type="tel" name="field4" class="input_field" placeholder="Phone number" />
+                  <input type="email" name="field3" class="input_field" placeholder="Email" required>
+                  <input type="tel" name="field4" class="input_field" placeholder="Phone number" required>
                 </li>
                 <li class="grouped_input">
-                  <input type="text" name="field5" class="input_field" placeholder="Desired Position" />
-                  <input type="text" name="field6" class="input_field" placeholder="Country" />
+                  <input type="text" name="field5" class="input_field" placeholder="Desired Position" required>
+                  <input type="text" name="field6" class="input_field" placeholder="Country" required>
                 </li>
                 </li>
                 <li>
-                  <input type="file" class="input_field" id="formFile">
+                  <input type="file" name="field7" class="input_field" id="formFile" >
                 </li>
                 <li>
-                  <textarea name="field7" id="field7" rows="3" class="input_field field-textarea"
+                  <textarea name="field7" id="field8" rows="3" class="input_field field-textarea"
                     placeholder="Apart from your experience, we'd really love to get an idea of you"></textarea>
                 </li>
               </ul>
-              <button class="join_cta">Submit</button>
+              <button class="join_cta" onclick="formConformation('contact_form', true)">Submit</button>
             </form>
           </div>
           <div class="col-md-6">
@@ -350,54 +310,22 @@
   <!-- Join Team ends -->
 
   <!-- footer start -->
-  <footer>
-      <div class="container">
-          <div class="inner row">
-              <div class="col-lg-3 col-sm-6">
-                  <ul class="footer_links address ft_item">
-                      <li class="footer_logo d-flex"><a href="javascript:void(0)"><img src="./images/logo.webp" alt="logo"></a></li>
-                      <li><p class="itm">Business Bay, Flat 3-I, 2nd Floor, Street 44,
-                              Sector F DHA Phase 1, Islamabad, 46000,
-                              Pakistan</p></li>
-                      <li><a class="itm mail" href="mailto:info@diligenttechnologies.co">info@diligenttechnologies.co</a></li>
-                  </ul>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                  <ul class="footer_links ft_item">
-                      <li>Who we are</li>
-                      <li><a class="itm" onclick="setNavElActive('our-team')" href="team.html">Our Team</a></li>
-                      <li><a class="itm" onclick="setNavElActive('about')" href="about.html">About us</a></li>
-                      <li><a class="itm" onclick="setNavElActive('contact')" href="contact.html">Contact us</a></li>
-                  </ul>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                  <ul class="footer_links ft_item">
-                      <li>Customercare</li>
-                      <li><a class="itm" href="privacy.html">Privacy Policy</a></li>
-                      <li><a class="itm" href="terms.html">Terms of Use</a></li>
-                  </ul>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                  <ul class="footer_links ft_item">
-                      <li>Join Our Mailing List</li>
-                      <li>
-                          <form class="ftr_newsletter">
-                              <input type="text" name="" value="" placeholder="Enter valid email address">
-                              <button type="button" name="button">Subscribe Now</button>
-                          </form>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </footer>
+  <?php include('footer.php'); ?>
   <!-- footer ends -->
 
 
   <script src="js/Jquery.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script>
+    function formConformation(formName, flag){
+    // submitted = flag;
+    $("#"+formName).valid();
+}
+  </script>
 </body>
 
 </html>

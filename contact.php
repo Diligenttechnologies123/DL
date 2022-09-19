@@ -1,3 +1,5 @@
+
+<?php //include('db.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,49 +31,7 @@
   <body>
     <section class="main_wrapper">
     <!-- header starts -->
-    <header class="header" id="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg justify-content-end">
-          <a class="navbar-brand" href="#"
-            ><img src="images/logo.webp" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            onclick="toggleNav()"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"> </span>
-            <span class="navbar-toggler-icon"> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="home" onclick="setNavElActive('home')" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="services" onclick="setNavElActive('services')" href="index.html">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="our-team" onclick="setNavElActive('our-team')" href="team.html">OUR TEAM</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-attr="about" onclick="setNavElActive('about')" href="about.html">ABOUT US</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" data-attr="contact" onclick="setNavElActive('contact')" href="contact.html">CONTACT US</a>
-                </li>
-              </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <?php include('header.php'); ?>
     <div class="header_padding" id="headerTemp"></div>
     <div class="header_nav_overlay" onclick="closeNav()"></div>
     <!-- header ends -->
@@ -79,45 +39,52 @@
     <section class="talk">
       <div class="container">
         <h1>Let’s Talk</h1>
-        <div class="input_wrap form1">
-          <h2>
-            Hi, my name is <input type="text" id="input" /><input type="text" id="inputLastName" />
-          </h2>
-        </div>
-        <div class="input_wrap form2">
-          <h2>and I work at <input type="text" id="inputWork" /></h2>
-        </div>
-        <div class="input_wrap form3">
-          <h2>I need help with <input type="text" id="inputHelp" /></h2>
-        </div>
-        <div class="input_wrap form4">
-          <h2>
-            Personally, I feel <input type="text" id="inputFeel" /> about this
-            Project.
-          </h2>
-        </div>
-        <div class="input_wrap form5">
-          <h2>Because, I am the <input type="text" id="inputbecause" /></h2>
-        </div>
-        <h2 class="budget">Our Budget is</h2>
-        <div class="slidecontainer form-range">
-          <input type="text" data-min="10000" data-max="200000" data-from="25000" data-range="" value="" size="40" class="range_slider" readonly="">
-        </div>
 
-        <div class="input_wrap form7">
-          <h2>and this has to launch <input type="text" id="inputlaunch" /></h2>
-        </div>
-        <div class="input_wrap form8">
-          <h2>
-            My email is <input type="text" id="inputemail" /> My Phone is
-            <input type="text" id="inputphone" />
-          </h2>
-        </div>
-        <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
-          <a href="javascript:void(0)">SUBMIT</a>
-        </div>
-      </div>
+        <form class="contact_form" id="contact_form" action= "" method = "post">
+        
+            <div class="input_wrap form1">
+              <h2>
+                Hi, my name is <input type="text" name="input1" id="input1" required>
+                <input type="text" name="inputLastName" id="inputLastName" required>
+              </h2>
+            </div>
+            <div class="input_wrap form2">
+              <h2>and I work at <input type="text" name="inputWork" id="inputWork" required></h2>
+            </div>
+            <div class="input_wrap form3">
+              <h2>I need help with <input type="text" name="inputHelp" id="inputHelp" required></h2>
+            </div>
+            <div class="input_wrap form4">
+              <h2>
+                Personally, I feel <input type="text" name="inputFeel" id="inputFeel" required> about this
+                Project.
+              </h2>
+            </div>
+            <div class="input_wrap form5">
+              <h2>Because, I am the <input type="text" name="inputbecause" id="inputbecause" required></h2>
+            </div>
+            <h2 class="budget">Our Budget is</h2>
+            <div class="slidecontainer form-range">
+              <input type="text" data-min="10000" data-max="200000" data-from="25000" data-range="" value="" size="40" class="range_slider" readonly="">
+            </div>
 
+            <div class="input_wrap form7">
+              <h2>and this has to launch <input type="text" name="inputlaunch" id="inputlaunch" required></h2>
+            </div>
+            <div class="input_wrap form8">
+              <h2>
+                My email is <input type="text" name="inputemail" id="inputemail" required> My Phone is
+                <input type="text" name="inputphone" id="inputphone" required>
+              </h2>
+            </div>
+          <!-- <input type="submit" name="submit" value="submit"> -->
+            <button type="submit" name = "submit" id="save" >Submit</button>
+            <!-- onclick="formConformation('contact_form', true)"<div class="talk_button" data-toggle="modal" data-target="#success_tic" >
+              <a href="javascript:void(0)">SUBMIT</a>
+              
+            </div> -->
+          </div>
+        </form>
       <!-- modal  -->
       <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Open Modal</button> -->
       <div id="success_tic" class="modal fade" role="dialog">
@@ -146,51 +113,12 @@
 
     <!-- FORM ENDS -->
     <!-- footer start -->
-    <footer>
-        <div class="container">
-            <div class="inner row">
-                <div class="col-lg-3 col-sm-6">
-                    <ul class="footer_links address ft_item">
-                        <li class="footer_logo d-flex"><a href="javascript:void(0)"><img src="./images/logo.webp" alt="logo"></a></li>
-                        <li><p class="itm">Business Bay, Flat 3-I, 2nd Floor, Street 44,
-                                Sector F DHA Phase 1, Islamabad, 46000,
-                                Pakistan</p></li>
-                        <li><a class="itm mail" href="mailto:info@diligenttechnologies.co">info@diligenttechnologies.co</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <ul class="footer_links ft_item">
-                        <li>Who we are</li>
-                        <li><a class="itm" onclick="setNavElActive('our-team')" href="team.html">Our Team</a></li>
-                        <li><a class="itm" onclick="setNavElActive('about')" href="about.html">About us</a></li>
-                        <li><a class="itm" onclick="setNavElActive('contact')" href="contact.html">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <ul class="footer_links ft_item">
-                        <li>Customercare</li>
-                        <li><a class="itm" href="privacy.html">Privacy Policy</a></li>
-                        <li><a class="itm" href="terms.html">Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <ul class="footer_links ft_item">
-                        <li>Join Our Mailing List</li>
-                        <li>
-                            <form class="ftr_newsletter">
-                                <input type="text" name="" value="" placeholder="Enter valid email address">
-                                <button type="button" name="button">Subscribe Now</button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include('footer.php'); ?>
     <!-- footer ends -->
     </section>
 
     <script src="js/Jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -302,5 +230,38 @@ _range_input.on('change', function () {
     _tool.attr('data-value', _new_value);
 })
     </script>
+
+
+    <!-- form validation  -->
+    <script>
+      function formConformation(formName, flag){
+    // submitted = flag;
+    $("#"+formName).valid();
+}
+    </script>
+    <script>
+      $(function () {
+
+        $('form').on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: 'db.php',
+            data: $('form').serialize(),
+            success: function () {
+              $('#success_tic').modal('show');
+              $( '#contact_form' ).each(function(){
+                  this.reset();
+              });
+            }
+          });
+
+        });
+
+      });
+    </script>
+
   </body>
 </html>
