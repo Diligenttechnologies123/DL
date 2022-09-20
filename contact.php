@@ -77,21 +77,8 @@
                 <input type="text" name="inputphone" id="inputphone" required>
               </h2>
             </div>
-<<<<<<< HEAD
             <button type="button" id="submitBtn" onclick="formConformation('contact_form', true)">Submit</button>
-            <!-- <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
-=======
-<<<<<<< HEAD:contact.html
-            <button type="button" id="submitBtn" onclick="formConformation('contact_form', true)">Submit</button>
-            <!-- <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
-=======
-          <!-- <input type="submit" name="submit" value="submit"> -->
-            <button type="submit" name = "submit" id="save" >Submit</button>
-            <!-- onclick="formConformation('contact_form', true)"<div class="talk_button" data-toggle="modal" data-target="#success_tic" >
->>>>>>> development:contact.php
->>>>>>> main
-              <a href="javascript:void(0)">SUBMIT</a>
-            </div> -->
+          
           </div>
         </form>
       <!-- modal  -->
@@ -245,10 +232,6 @@ _range_input.on('change', function () {
     </script>
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:contact.html
->>>>>>> main
 	<!-- form validation  -->
 	<script> 
 		const formConformation = (formName, flag) => {
@@ -262,10 +245,8 @@ _range_input.on('change', function () {
 		}
 	}
 	</script>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> main
+  
+  
     <!-- form validation  -->
     <script>
       function formConformation(formName, flag){
@@ -296,10 +277,5 @@ _range_input.on('change', function () {
 
       });
     </script>
-
-<<<<<<< HEAD
-=======
->>>>>>> development:contact.php
->>>>>>> main
   </body>
 </html>
