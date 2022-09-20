@@ -78,12 +78,7 @@
               </h2>
             </div>
             <button type="button" id="submitBtn" onclick="formConformation('contact_form', true)">Submit</button>
-            <!-- <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
-
-            <button type="button" id="submitBtn" onclick="formConformation('contact_form', true)">Submit</button>
-            <!-- <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
-              <a href="javascript:void(0)">SUBMIT</a>
-            </div> -->
+          
           </div>
         </form>
       <!-- modal  -->
@@ -282,6 +277,7 @@ _range_input.on('change', function () {
 })
     </script>
 
+
 	<!-- form validation  -->
 	<script> 
 		const formConformation = (formName, flag) => {
@@ -295,6 +291,8 @@ _range_input.on('change', function () {
 		}
 	}
 	</script>
+  
+  
     <!-- form validation  -->
     <script>
       function formConformation(formName, flag){
