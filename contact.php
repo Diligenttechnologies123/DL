@@ -233,7 +233,6 @@ _range_input.on('change', function () {
 })
     </script>
 
-
 	<!-- form validation  -->
 	<script> 
 		const formConformation = (formName, flag) => {
@@ -277,6 +276,5 @@ _range_input.on('change', function () {
 
       });
     </script>
-
   </body>
 </html>
