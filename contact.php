@@ -77,16 +77,17 @@
                 <input type="text" name="inputphone" id="inputphone" required>
               </h2>
             </div>
-          <!-- <input type="submit" name="submit" value="submit"> -->
-            <button type="submit" name = "submit" id="save" >Submit</button>
-            <!-- onclick="formConformation('contact_form', true)"<div class="talk_button" data-toggle="modal" data-target="#success_tic" >
+            <button type="button" id="submitBtn" onclick="formConformation('contact_form', true)">Submit</button>
+            <!-- <div class="talk_button" data-toggle="modal" data-target="#success_tic" >
               <a href="javascript:void(0)">SUBMIT</a>
-              
             </div> -->
           </div>
         </form>
       <!-- modal  -->
+     
       <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Open Modal</button> -->
+      
+      
       <div id="success_tic" class="modal fade" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
@@ -110,6 +111,7 @@
       </div>
     </section>
 
+    
 
     <!-- FORM ENDS -->
     <!-- footer start -->
@@ -232,6 +234,19 @@ _range_input.on('change', function () {
     </script>
 
 
+	<!-- form validation  -->
+	<script> 
+		const formConformation = (formName, flag) => {
+		$("#"+formName).valid();
+		if($("#"+formName).valid() == false) {
+			alert ('please submitt all fields')
+			return false;
+		} else {
+			$("#success_tic").modal('show');
+			return true;
+		}
+	}
+	</script>
     <!-- form validation  -->
     <script>
       function formConformation(formName, flag){

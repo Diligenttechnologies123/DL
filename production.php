@@ -90,9 +90,55 @@
 
         <!-- detailed text section End -->
 
+<<<<<<< HEAD:production.html
+ <!-- footer start -->
+ <footer>
+    <div class="container">
+        <div class="inner row">
+            <div class="col-lg-3 col-sm-6">
+                <ul class="footer_links address ft_item">
+                    <li class="footer_logo d-flex"><a href="javascript:void(0)"><img src="./images/logo.webp" alt="logo"></a></li>
+                    <li><p class="itm">Business Bay, Flat 3-I, 2nd Floor, Street 44,
+                            Sector F DHA Phase 1, Islamabad, 46000,
+                            Pakistan</p></li>
+                    <li><a class="itm mail" href="mailto:info@diligenttechnologies.co">info@diligenttechnologies.co</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <ul class="footer_links ft_item">
+                    <li>Who we are</li>
+                    <li><a class="itm" onclick="setNavElActive('our-team')" href="team.html">Our Team</a></li>
+                    <li><a class="itm" onclick="setNavElActive('about')" href="about.html">About us</a></li>
+                    <li><a class="itm" onclick="setNavElActive('contact')" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <ul class="footer_links ft_item">
+                    <li>Customercare</li>
+                    <li><a class="itm" href="privacy.html">Privacy Policy</a></li>
+                    <li><a class="itm" href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <ul class="footer_links ft_item">
+                    <li>Join Our Mailing List</li>
+                    <li>
+                        <form class="ftr_newsletter" id="footerNewsLetter">
+                            <input type="email" name="email" value="" placeholder="Enter valid email address" required>
+                            <button type="button" onclick="validateAssessmentForm('footerNewsLetter', true)">Subscribe Now</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer ends -->
+=======
         <!-- footer start -->
         <?php include('footer.php'); ?>
         <!-- footer ends -->
+>>>>>>> development:production.php
 
         <script src="js/Jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
