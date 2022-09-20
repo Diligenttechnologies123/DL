@@ -324,7 +324,7 @@
                 <div class="industry_box about_section">
                     <h3>industries</h3>
                     <p>Having deep experience in these industries helped us deliver high end soluitions rapidly.</p>
-                    <a class="cta" href="industries.html">
+                    <a class="cta" href="industries.php">
                         View All
                         <span class="btn_icon">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 706.5 256" xml:space="preserve"> <g> <g> <path class="st0" d="M662,144.5H16.5C7.4,144.5,0,137.1,0,128v0c0-9.1,7.4-16.5,16.5-16.5H662c9.1,0,16.5,7.4,16.5,16.5v0
@@ -349,7 +349,7 @@
                             </svg>
                         </span>
                     </div>
-                    <a class="industry_box_link" href="production.html"></a>
+                    <a class="industry_box_link" href="production.php"></a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12">
@@ -365,7 +365,7 @@
                             </svg>
                         </span>
                     </div>
-                    <a class="industry_box_link" href="eComerece.html"></a>
+                    <a class="industry_box_link" href="eComerece.php"></a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12">
@@ -381,7 +381,7 @@
                             </svg>
                         </span>
                     </div>
-                    <a class="industry_box_link" href="education.html"></a>
+                    <a class="industry_box_link" href="education.php"></a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12">
@@ -397,7 +397,7 @@
                             </svg>
                         </span>
                     </div>
-                    <a class="industry_box_link" href="real-estate.html"></a>
+                    <a class="industry_box_link" href="real-estate.php"></a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12">
@@ -413,7 +413,7 @@
                             </svg>
                         </span>
                     </div>
-                    <a class="industry_box_link" href="health.html"></a>
+                    <a class="industry_box_link" href="health.php"></a>
                 </div>
             </div>
         </div>
