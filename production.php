@@ -30,58 +30,7 @@
     <body>
 
         <!-- header starts -->
-        <header class="header" id="header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg justify-content-end">
-                    <a class="navbar-brand" href="#"><img src="images/logo.webp"
-                            alt="logo"
-                            /></a>
-                    <button
-                        class="navbar-toggler collapsed"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                        onclick="toggleNav()">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"> </span>
-                        <span class="navbar-toggler-icon"> </span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" data-attr="home"
-                                    onclick="setNavElActive('home')"
-                                    href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-attr="services"
-                                    onclick="setNavElActive('services')"
-                                    href="index.html">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-attr="our-team"
-                                    onclick="setNavElActive('our-team')"
-                                    href="team.html">OUR TEAM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-attr="about"
-                                    onclick="setNavElActive('about')"
-                                    href="about.html">ABOUT US</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-attr="contact"
-                                    onclick="setNavElActive('contact')"
-                                    href="contact.html">CONTACT US</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+        <?php include('header.php'); ?>
         <div class="header_padding" id="headerTemp"></div>
         <div class="header_nav_overlay" onclick="closeNav()"></div>
         <!-- header ends -->
@@ -141,6 +90,7 @@
 
         <!-- detailed text section End -->
 
+<<<<<<< HEAD:production.html
  <!-- footer start -->
  <footer>
     <div class="container">
@@ -184,6 +134,11 @@
     </div>
 </footer>
 <!-- footer ends -->
+=======
+        <!-- footer start -->
+        <?php include('footer.php'); ?>
+        <!-- footer ends -->
+>>>>>>> development:production.php
 
         <script src="js/Jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
