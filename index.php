@@ -421,7 +421,7 @@
     <!-- industries ends -->
 
     <!-- testimonials starts -->
-    <section class="testimonials" id="testimonials">
+    <!-- <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="inner">
                 <div class="heading_sec text-center">
@@ -501,7 +501,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- testimonials ends -->
 
     <!-- work_together starts -->

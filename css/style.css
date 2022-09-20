@@ -1146,7 +1146,8 @@ header .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(3){
   width: 100%;
 }
 .solution .solution-svg {
-  width: 100%;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .problem_solution {
