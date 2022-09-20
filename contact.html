@@ -84,35 +84,35 @@
             <div class="input_wrap form1">
               <h2>
                 Hi, my name is <input type="text" name="input1" id="input1" required>
-                <input type="text" name="inputLastName" id="inputLastName" required>
+                <input type="text" name="inputLastName" id="inputLastName" onkeypress="inputNext()" required>
               </h2>
             </div>
             <div class="input_wrap form2">
-              <h2>and I work at <input type="text" name="inputWork" id="inputWork" required></h2>
+              <h2>and I work at <input type="text" name="inputWork" id="inputWork" onkeypress="inputNext2()" required></h2>
             </div>
             <div class="input_wrap form3">
-              <h2>I need help with <input type="text" name="inputHelp" id="inputHelp" required></h2>
+              <h2>I need help with <input type="text" name="inputHelp" id="inputHelp" onkeypress="inputNext3()" required></h2>
             </div>
             <div class="input_wrap form4">
               <h2>
-                Personally, I feel <input type="text" name="inputFeel" id="inputFeel" required> about this
+                Personally, I feel <input type="text" name="inputFeel" id="inputFeel" onkeypress="inputNext4()" required> about this
                 Project.
               </h2>
             </div>
             <div class="input_wrap form5">
-              <h2>Because, I am the <input type="text" name="inputbecause" id="inputbecause" required></h2>
+              <h2>Because, I am the <input type="text" name="inputbecause" id="inputbecause" onkeypress="inputNext5()" required></h2>
             </div>
-            <h2 class="budget">Our Budget is</h2>
-            <div class="slidecontainer form-range">
+            <h2 class="budget form6">Our Budget is</h2>
+            <div class="slidecontainer form-range form form6">
               <input type="text" data-min="10000" data-max="200000" data-from="25000" data-range="" value="" size="40" class="range_slider" readonly="">
             </div>
 
-            <div class="input_wrap form7">
-              <h2>and this has to launch <input type="text" name="inputlaunch" id="inputlaunch" required></h2>
+            <div class="input_wrap form6 form7">
+              <h2>and this has to launch <input type="text" name="inputlaunch" id="inputlaunch" onkeypress="inputNext7()" required></h2>
             </div>
             <div class="input_wrap form8">
               <h2>
-                My email is <input type="text" name="inputemail" id="inputemail" required> My Phone is
+                My email is <input type="text" name="inputemail"  id="inputemail" required> My Phone is
                 <input type="text" name="inputphone" id="inputphone" required>
               </h2>
             </div>
@@ -197,8 +197,9 @@
     </footer>
     <!-- footer ends -->
     </section>
-
-    <script src="js/Jquery.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="js/Jquery.js"></script> -->
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
@@ -211,83 +212,128 @@
 
 
     <script type="text/javascript">
-      $(document).ready(function () {
-        $("#inputLastName").focus(function () {
-          //$(".form2").css("display", "block").fadeIn(2000);
-          $(".form2")
+    // for input validation and show next input on keypress
+      function inputNext(){
+            $(".form2")
             .delay(100)
             .css("display", "block")
             .animate({ opacity: 1 }, 700);
-        });
+            // alert("awais");
+        }
+        function inputNext2(){
+            $(".form3")
+            .delay(100)
+            .css("display", "block")
+            .animate({ opacity: 1 }, 700);
+            // alert("awais");
+        }
+        function inputNext3(){
+            $(".form4")
+            .delay(100)
+            .css("display", "block")
+            .animate({ opacity: 1 }, 700);
+            // alert("awais");
+        }
+        function inputNext4(){
+            $(".form5")
+            .delay(100)
+            .css("display", "block")
+            .animate({ opacity: 1 }, 700);
+            // alert("awais");
+        }
+        function inputNext5(){
+            $(".form6")
+            .delay(100)
+            .css("display", "block")
+            .animate({ opacity: 1 }, 700);
+            // alert("awais");
+        }
+        function inputNext7(){
+            $(".form8")
+            .delay(100)
+            .css("display", "block")
+            .animate({ opacity: 1 }, 700);
+            // alert("awais");
+        }
+      
+      // $(document).ready(function () {
+      //   $("#inputLastName").focus(function () {
+      //     //$(".form2").css("display", "block").fadeIn(2000);
+      //     $(".form2")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
 
-        $("#inputWork").focus(function () {
-          $(".form3")
-            .delay(100)
-            .css("display", "block")
-            .animate({ opacity: 1 }, 700);
-        });
+      //   $("#inputWork").focus(function () {
+      //     $(".form3")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
 
-        $("#inputHelp").focus(function () {
-          $(".form4")
-            .delay(100)
-            .css("display", "block")
-            .animate({ opacity: 1 }, 700);
-        });
+      //   $("#inputHelp").focus(function () {
+      //     $(".form4")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
 
-        $("#inputFeel").focus(function () {
-          $(".form5")
-            .delay(100)
-            .css("display", "block")
-            .animate({ opacity: 1 }, 700);
-        });
-        $("#inputbecause").focus(function () {
-          $(".budget")
-            .delay(100)
-            .css("display", "block")
-            .animate({ opacity: 1 }, 700);
-        });
-        $("#inputbecause").focus(function () {
-          $(".slidecontainer")
-            .delay(100)
-            .css("display", "block")
-            .animate({ opacity: 1 }, 700);
-        });
+      //   $("#inputFeel").focus(function () {
+      //     $(".form5")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
+      //   $("#inputbecause").focus(function () {
+      //     $(".budget")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
+      //   $("#inputbecause").focus(function () {
+      //     $(".slidecontainer")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
 
-        $("#inputbecause").focus(function () {
-          $(".form7")
-            .delay(100)
-            .css("display", "block")
-            .animate({ opacity: 1 }, 700);
-        });
-        $("#inputlaunch").focus(function () {
-          $(".form8")
-            .delay(100)
-            .css("display", "block")
-            .animate({ opacity: 1 }, 700);
-        });
-        // $("#inputphone").focus(function () {
-        //   $(".form8")
-        //     .delay(100)
-        //     .css("display", "block")
-        //     .animate({ opacity: 1 }, 700);
-        // });
-      });
+      //   $("#inputbecause").focus(function () {
+      //     $(".form7")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
+      //   $("#inputlaunch").focus(function () {
+      //     $(".form8")
+      //       .delay(100)
+      //       .css("display", "block")
+      //       .animate({ opacity: 1 }, 700);
+      //   });
+      //   // $("#inputphone").focus(function () {
+      //   //   $(".form8")
+      //   //     .delay(100)
+      //   //     .css("display", "block")
+      //   //     .animate({ opacity: 1 }, 700);
+      //   // });
+      // });
+
 
       // Custom range input
-let _range_input = $('input[data-range]');
+        let _range_input = $('input[data-range]');
 
-if(_range_input) {
-    _range_input.ionRangeSlider({
-        prefix: "$",
-    });
-}
+        if(_range_input) {
+            _range_input.ionRangeSlider({
+                prefix: "$",
+            });
+        }
 
 
-// $10K - $25K
-// $25K - $50K
-// $50K - $100K
-// $100K - $200K
-// $200K +
+      // $10K - $25K
+      // $25K - $50K
+      // $50K - $100K
+      // $100K - $200K
+      // $200K +
 _range_input.on('change', function () {
     let that = $(this);
     let _new_value = '';
