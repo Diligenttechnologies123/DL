@@ -252,7 +252,7 @@
 
             <div class="inner_main">
                 <div class="card_single" data-aos="flip-left" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-                    <a class="cta_link" href="contact.html"></a>
+                    <a class="cta_link" href="contact.php"></a>
                     <div class="service_icon">
                         <img src="./images-new/it-consultancy-sv.svg" alt="IT IMage">
                     </div>
@@ -551,7 +551,7 @@
         <div class="container-fluid">
             <div class="business_text">
                 <p>Find out how we can help your business grow</p>
-                <a href="contact.html" onclick="setNavElActive('contact')">Get Free Consulation</a>
+                <a href="contact.php" onclick="setNavElActive('contact')">Get Free Consulation</a>
             </div>
         </div>
     </section>
